@@ -1,0 +1,532 @@
+{
+  "meta": {
+    "home": {
+      "title": "HogarPlus Solutions | Limpieza Profesional en New Jersey",
+      "description": "Servicios profesionales de limpieza residencial, comercial, limpieza profunda, organización y mantenimiento del hogar en New Jersey."
+    },
+    "about": {
+      "title": "Sobre nosotros | HogarPlus Solutions",
+      "description": "Somos una compañía apasionada por el bienestar del hogar. Conozca nuestro objetivo y nuestros servicios integrales de mantenimiento y limpieza profunda en New Jersey."
+    },
+    "services": {
+      "title": "Servicios de Limpieza | HogarPlus Solutions",
+      "description": "Limpieza residencial, comercial, profunda, organización del hogar, limpieza de mudanza y planes personalizados en New Jersey."
+    },
+    "gallery": {
+      "title": "Galería | HogarPlus Solutions",
+      "description": "Un vistazo a los espacios que cuidamos: resultados residenciales, comerciales y de antes y después en New Jersey."
+    },
+    "book": {
+      "title": "Reservar en Línea | HogarPlus Solutions",
+      "description": "Programe su servicio de limpieza en tres pasos sencillos. Elija el horario que le convenga y confirmaremos los detalles."
+    },
+    "contact": {
+      "title": "Contacto | HogarPlus Solutions",
+      "description": "Llame al (862) 423-3186, escríbanos o envíenos un mensaje. Atendemos en inglés y español en todo New Jersey."
+    }
+  },
+
+  "common": {
+    "brandName": "HogarPlus Solutions",
+    "brandTagline": "Cuidamos tu hogar para que disfrutes",
+    "brandSubtitle": "Servicios de Mantenimiento en la limpieza de su hogar",
+    "skipToContent": "Saltar al contenido principal",
+    "bookOnline": "Reservar en línea",
+    "exploreServices": "Explorar servicios",
+    "learnMore": "Más información",
+    "viewAll": "Ver todos los servicios",
+    "callUs": "Llámenos",
+    "callNow": "Llamar ahora",
+    "emailUs": "Escríbanos",
+    "contactUs": "Contáctenos",
+    "website": "Sitio web",
+    "loading": "Cargando",
+    "close": "Cerrar",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "sampleContent": "Contenido de muestra: será reemplazado por material aprobado por el cliente.",
+    "serviceAreaShort": "Atendemos todo New Jersey",
+    "county": "Condado",
+    "logoAlt": "Logotipo de HogarPlus Solutions"
+  },
+
+  "nav": {
+    "primaryLabel": "Principal",
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "gallery": "Galería",
+    "book": "Reservar en línea",
+    "contact": "Contacto",
+    "openMenu": "Abrir menú de navegación",
+    "closeMenu": "Cerrar menú de navegación",
+    "menuTitle": "Menú",
+    "languageLabel": "Idioma",
+    "switchToEnglish": "Switch to English",
+    "switchToSpanish": "Cambiar a español",
+    "english": "English",
+    "spanish": "Español",
+    "englishShort": "EN",
+    "spanishShort": "ES"
+  },
+
+  "hero": {
+    "eyebrow": "Servicios profesionales de limpieza en New Jersey",
+    "headline": "Cuidamos tu hogar para que disfrutes.",
+    "body": "Limpieza profunda, mantenimiento, organización y soluciones personalizadas para crear espacios impecables, saludables y cómodos.",
+    "primaryCta": "Reservar en línea",
+    "secondaryCta": "Explorar servicios",
+    "phoneCta": "Llamar al (862) 423-3186",
+    "scrollHint": "Desplácese para explorar",
+    "videoLabel": "Video de fondo de un hogar luminoso y recién limpiado"
+  },
+
+  "aboutPreview": {
+    "eyebrow": "¿Quiénes Somos?",
+    "heading": "Una compañía apasionada por el bienestar del hogar",
+    "body": "Somos una compañía apasionada por el bienestar del hogar. Ofrecemos el servicio integral de mantenimiento del hogar, creando una limpieza profunda y meticulosa en la comodidad del cliente. Nuestro equipo de profesionales está comprometido con la excelencia y la satisfacción.",
+    "cta": "Conozca más sobre nosotros",
+    "flyerAlt": "Folleto de marca de HogarPlus Solutions: logotipo de casa con hojas y destellos sobre fondo azul marino, el lema «Cuidamos tu hogar para que disfrutes» y los datos de contacto de la empresa.",
+    "flyerCaption": "Identidad de marca de HogarPlus Solutions",
+    "highlightsTitle": "Nuestro servicio integral",
+    "highlights": {
+      "0": "Limpieza Profunda Integral.",
+      "1": "Mantenimiento y Cuidado General de Áreas Internas.",
+      "2": "Limpieza y Organización del hogar.",
+      "3": "Servicios Personalizados y Adaptables a cada necesidad."
+    }
+  },
+
+  "objectives": {
+    "eyebrow": "Nuestro Objetivo",
+    "heading": "Lo que nos proponemos en cada visita",
+    "items": {
+      "0": "Transformar hogares en espacios impecables y saludables.",
+      "1": "Facilitar el descanso y el disfrute del cliente en su propio espacio.",
+      "2": "Brindar un servicio de limpieza profunda que exceda las expectativas.",
+      "3": "Contribuir a la calidad de vida y paz mental de las familias."
+    }
+  },
+
+  "services": {
+    "eyebrow": "Nuestros Servicios",
+    "heading": "Servicios pensados para su día a día",
+    "description": "Elija una visita única o un plan continuo. Cada servicio se ajusta a su espacio, sus prioridades y su presupuesto.",
+    "includedTitle": "Qué incluye",
+    "learnMore": "Más información",
+    "bookThis": "Reservar este servicio",
+    "items": {
+      "residential": {
+        "title": "Limpieza Residencial",
+        "description": "Limpieza regular y confiable que mantiene su hogar fresco semana tras semana.",
+        "badge": "El más solicitado",
+        "highlights": {
+          "0": "Cocinas y baños",
+          "1": "Pisos y áreas comunes",
+          "2": "Semanal, quincenal o mensual"
+        },
+        "included": {
+          "0": "Desempolvado de superficies, estantes y accesorios accesibles",
+          "1": "Encimeras, fregadero, estufa y exterior de electrodomésticos",
+          "2": "Lavamanos, tinas, duchas, inodoros y espejos",
+          "3": "Aspirado y trapeado de todos los pisos accesibles",
+          "4": "Retiro de basura y orden general de las áreas comunes"
+        }
+      },
+      "commercial": {
+        "title": "Limpieza Comercial",
+        "description": "Espacios de trabajo saludables y presentables para oficinas, estudios y negocios.",
+        "highlights": {
+          "0": "Oficinas y áreas comunes",
+          "1": "Baños y comedores",
+          "2": "Horarios fuera de jornada"
+        },
+        "included": {
+          "0": "Estaciones de trabajo, escritorios y superficies compartidas",
+          "1": "Detalle de recepción, vestíbulo y entradas",
+          "2": "Desinfección de baños y reposición de insumos que usted proporcione",
+          "3": "Encimeras, fregaderos y exterior de electrodomésticos del comedor",
+          "4": "Cuidado de pisos, retiro de basura y reciclaje"
+        }
+      },
+      "deep": {
+        "title": "Limpieza Profunda",
+        "description": "Una limpieza profunda y meticulosa de arriba a abajo, en la comodidad de su espacio.",
+        "highlights": {
+          "0": "Zócalos y marcos de puertas",
+          "1": "Interior de electrodomésticos a solicitud",
+          "2": "Ideal antes de eventos o temporadas"
+        },
+        "included": {
+          "0": "Zócalos, marcos de puertas, placas de interruptores y rejillas",
+          "1": "Fregado detallado de baños, incluidos azulejos y juntas",
+          "2": "Interior de horno, refrigerador o gabinetes a solicitud",
+          "3": "Lámparas, ventiladores de techo e interiores de ventanas accesibles",
+          "4": "Aspirado de bordes y tratamiento detallado de pisos"
+        }
+      },
+      "organization": {
+        "title": "Organización del Hogar",
+        "description": "Espacios funcionales y tranquilos con sistemas fáciles de mantener.",
+        "highlights": {
+          "0": "Clósets y despensas",
+          "1": "Cocinas y áreas de almacenamiento",
+          "2": "Sistemas sencillos de mantener"
+        },
+        "included": {
+          "0": "Clasificación y agrupación de artículos por categoría y uso",
+          "1": "Planificación de clósets, despensas o gabinetes",
+          "2": "Apoyo para reducir el desorden, siempre con sus decisiones al frente",
+          "3": "Etiquetado y sistemas sencillos de mantener",
+          "4": "Colocación final y recorrido por la nueva organización"
+        }
+      },
+      "moveInOut": {
+        "title": "Limpieza de Mudanza",
+        "description": "Una limpieza a fondo del inmueble vacío para entregar las llaves sin preocupaciones.",
+        "highlights": {
+          "0": "Detalle de propiedad vacía",
+          "1": "Interior de gabinetes y clósets",
+          "2": "Coordinado con sus fechas"
+        },
+        "included": {
+          "0": "Limpieza interior completa de una propiedad vacía o casi vacía",
+          "1": "Interior de gabinetes, cajones, clósets y áreas de almacenamiento",
+          "2": "Interior y exterior de electrodomésticos accesibles",
+          "3": "Detalle completo de baños y cocina",
+          "4": "Pisos, zócalos y ventanas interiores accesibles"
+        }
+      },
+      "custom": {
+        "title": "Planes Personalizados",
+        "description": "Servicios personalizados y adaptables a cada necesidad.",
+        "highlights": {
+          "0": "Combine los servicios",
+          "1": "Recurrente o por única vez",
+          "2": "Se adapta cuando todo cambia"
+        },
+        "included": {
+          "0": "Una breve conversación sobre su espacio y sus prioridades",
+          "1": "Una lista adaptada a las habitaciones que más importan",
+          "2": "Frecuencia flexible: única, por temporada o recurrente",
+          "3": "Combinación de limpieza y organización según se necesite",
+          "4": "Plan revisado en conjunto y ajustado cuando algo cambia"
+        }
+      }
+    }
+  },
+
+  "why": {
+    "eyebrow": "Por Qué Elegirnos",
+    "heading": "Un equipo comprometido con la excelencia y la satisfacción",
+    "description": "No hay dos hogares ni dos negocios iguales. Esto es lo que se mantiene constante en cualquier servicio que reserve.",
+    "values": {
+      "personalized": {
+        "title": "Servicio personalizado",
+        "description": "Su plan se define según sus habitaciones, sus prioridades y los detalles que usted señala."
+      },
+      "reliable": {
+        "title": "Profesionales confiables",
+        "description": "Personas cuidadosas y respetuosas que se comunican con claridad y llegan cuando lo prometen."
+      },
+      "flexible": {
+        "title": "Horarios flexibles",
+        "description": "Visitas únicas, planes recurrentes y opciones fuera de jornada que se ajustan a su semana."
+      },
+      "detail": {
+        "title": "Limpieza meticulosa",
+        "description": "Las esquinas, los bordes y los pequeños acabados que hacen que un espacio se sienta realmente limpio."
+      },
+      "bothMarkets": {
+        "title": "Residencial y comercial",
+        "description": "El mismo estándar de cuidado para hogares familiares, oficinas, estudios y negocios."
+      },
+      "coverage": {
+        "title": "Cobertura en New Jersey",
+        "description": "Atención bilingüe en inglés y español en todo el estado de New Jersey."
+      }
+    }
+  },
+
+  "testimonials": {
+    "eyebrow": "En Sus Palabras",
+    "heading": "Lo que nos comentan los clientes",
+    "description": "Una vista previa de la sección de opiniones. Los testimonios reales aprobados por el cliente reemplazarán estos ejemplos.",
+    "sampleNotice": "Contenido de muestra: texto de ejemplo mostrado solo para esta demostración. No representa clientes, identidades ni calificaciones reales.",
+    "roles": {
+      "residential": "Cliente residencial",
+      "commercial": "Cliente comercial",
+      "moveOut": "Cliente de mudanza"
+    },
+    "samples": {
+      "one": {
+        "quote": "El equipo escuchó exactamente lo que queríamos y la casa volvió a sentirse tranquila cuando se fueron. Agendar fue sencillo y todo se comunicó con claridad."
+      },
+      "two": {
+        "quote": "Nuestra oficina se limpia fuera de horario y está lista cada mañana. Lo que más valoramos es la constancia: nada queda a medias."
+      },
+      "three": {
+        "quote": "Se encargaron de la limpieza de mudanza con muy poco tiempo y la revisión final salió perfecta. Gabinetes, electrodomésticos y pisos quedaron como nuevos."
+      }
+    }
+  },
+
+  "serviceArea": {
+    "eyebrow": "Área de Servicio",
+    "heading": "Con orgullo al servicio de New Jersey",
+    "description": "Seleccione un condado para ver cómo trabajamos en su zona.",
+    "selectPrompt": "Seleccione un condado",
+    "mapLabel": "Mapa estilizado de los condados de New Jersey que atendemos",
+    "mapCaption": "Mapa ilustrativo, no a escala",
+    "note": "¿No ve su zona? Contáctenos para confirmar disponibilidad.",
+    "noteCta": "Contáctenos",
+    "regions": {
+      "north": "Norte de New Jersey",
+      "central": "Centro de New Jersey"
+    },
+    "counties": {
+      "union": "Planes residenciales regulares y limpieza para pequeños negocios en las comunidades del condado de Union.",
+      "hudson": "Limpieza de apartamentos, condominios y espacios comerciales en el condado de Hudson.",
+      "bergen": "Hogares familiares, oficinas y proyectos de mudanza en todo el condado de Bergen.",
+      "passaic": "Limpieza recurrente y visitas de limpieza profunda para hogares y negocios del condado de Passaic.",
+      "morris": "Cuidado residencial detallado y limpieza profunda de temporada en el condado de Morris.",
+      "sussex": "Limpieza programada y apoyo de organización para las familias del condado de Sussex.",
+      "somerset": "Planes residenciales y espacios comerciales atendidos en el condado de Somerset.",
+      "middlesex": "Hogares, oficinas y entregas de alquiler en todo el condado de Middlesex.",
+      "monmouth": "Limpieza residencial y proyectos de mudanza en el condado de Monmouth."
+    }
+  },
+
+  "bookingCta": {
+    "eyebrow": "Cuando Usted Quiera",
+    "heading": "Reserve su limpieza en pocos minutos",
+    "description": "Elija el horario que le convenga y confirmaremos los detalles. ¿Prefiere conversarlo primero? Llámenos.",
+    "primaryCta": "Reservar en línea",
+    "secondaryPrefix": "o llame al",
+    "trust": "Agendar es rápido y sencillo"
+  },
+
+  "footer": {
+    "brandSummary": "Servicios de mantenimiento y limpieza profunda del hogar en todo New Jersey. Atención en inglés y español.",
+    "navTitle": "Explorar",
+    "servicesTitle": "Servicios",
+    "areasTitle": "Área de servicio",
+    "contactTitle": "Contacto",
+    "copyright": "© {year} HogarPlus Solutions. Todos los derechos reservados.",
+    "privacy": "Política de privacidad",
+    "accessibility": "Accesibilidad",
+    "legalNote": "Las páginas legales son marcadores de posición en esta demostración.",
+    "languageTitle": "Idioma"
+  },
+
+  "aboutPage": {
+    "hero": {
+      "eyebrow": "Sobre HogarPlus Solutions",
+      "title": "Cuidamos tu hogar para que disfrutes.",
+      "subtitle": "Servicios de mantenimiento en la limpieza de su hogar, con un equipo comprometido con la excelencia y la satisfacción."
+    },
+    "story": {
+      "eyebrow": "¿Quiénes Somos?",
+      "heading": "Una compañía apasionada por el bienestar del hogar",
+      "body": "Somos una compañía apasionada por el bienestar del hogar. Ofrecemos el servicio integral de mantenimiento del hogar, creando una limpieza profunda y meticulosa en la comodidad del cliente. Nuestro equipo de profesionales está comprometido con la excelencia y la satisfacción."
+    },
+    "flyer": {
+      "eyebrow": "Material de Marca",
+      "heading": "El folleto de la compañía",
+      "description": "Todo el contenido de este folleto también está disponible como texto en esta página.",
+      "companyAlt": "Folleto informativo de HogarPlus Solutions sobre fondo azul marino. Incluye el logotipo, el lema «Cuidamos tu hogar para que disfrutes», la sección «¿Quiénes somos?» que describe una compañía apasionada por el bienestar del hogar, la sección «Nuestro objetivo» con cuatro metas y la sección «Nuestros servicios» con cuatro líneas de servicio, además del teléfono, el correo electrónico y el sitio web.",
+      "brandAlt": "Folleto de marca de HogarPlus Solutions: logotipo de casa con hojas y destellos sobre fondo azul marino, el lema «Cuidamos tu hogar para que disfrutes» y los datos de contacto de la empresa."
+    },
+    "services": {
+      "eyebrow": "Nuestros Servicios",
+      "heading": "Servicio integral de mantenimiento del hogar",
+      "description": "Cuatro líneas de servicio que se desarrollan en los seis servicios detallados de la página de Servicios."
+    },
+    "coverage": {
+      "eyebrow": "Dónde Trabajamos",
+      "heading": "Nueve condados en New Jersey",
+      "description": "Servicio bilingüe en el norte y centro de New Jersey."
+    }
+  },
+
+  "servicesPage": {
+    "hero": {
+      "eyebrow": "Nuestros Servicios",
+      "title": "Limpieza y cuidado del hogar a la medida de su espacio",
+      "subtitle": "Seis servicios principales que se pueden combinar, programar y ajustar exactamente a lo que su hogar o negocio necesita."
+    },
+    "intro": {
+      "eyebrow": "Elija Su Servicio",
+      "heading": "Comience aquí y ajustamos los detalles",
+      "description": "Cada servicio se puede reservar por separado o combinarse en un plan recurrente."
+    },
+    "checklists": {
+      "eyebrow": "Qué Incluye",
+      "heading": "Listas de ejemplo para cada servicio",
+      "description": "Estas listas muestran el nivel de detalle que puede esperar. Su lista final se confirma con usted antes de la primera visita.",
+      "disclaimer": "Listas provisionales con fines de demostración. El alcance y la redacción finales se reemplazarán por contenido aprobado por el cliente."
+    }
+  },
+
+  "galleryPage": {
+    "hero": {
+      "eyebrow": "Galería",
+      "title": "Un vistazo a los espacios que cuidamos",
+      "subtitle": "Resultados residenciales, comerciales y de antes y después en todo New Jersey."
+    },
+    "filtersLabel": "Filtrar la galería por categoría",
+    "filters": {
+      "all": "Todo",
+      "residential": "Residencial",
+      "commercial": "Comercial",
+      "beforeAfter": "Antes y después"
+    },
+    "empty": "Aún no hay elementos en esta categoría.",
+    "placeholderNote": "Galería de demostración: se muestran imágenes provisionales hasta recibir la fotografía del cliente.",
+    "openItem": "Abrir imagen",
+    "lightbox": {
+      "label": "Visor de imágenes de la galería",
+      "close": "Cerrar el visor de la galería",
+      "previous": "Imagen anterior",
+      "next": "Imagen siguiente",
+      "counter": "Imagen {current} de {total}",
+      "hint": "Use las flechas para navegar y Escape para cerrar."
+    },
+    "items": {
+      "livingRoom": {
+        "title": "Sala renovada",
+        "alt": "Una sala luminosa con pisos limpios, superficies desempolvadas y muebles ordenados"
+      },
+      "kitchen": {
+        "title": "Cocina con limpieza detallada",
+        "alt": "Una cocina impecable con encimeras despejadas, fregadero pulido y electrodomésticos limpios"
+      },
+      "office": {
+        "title": "Oficina atendida fuera de horario",
+        "alt": "Una oficina de planta abierta con escritorios ordenados, pisos limpios y papeleras vacías"
+      },
+      "bathroom": {
+        "title": "Baño antes y después",
+        "alt": "Un baño antes y después de una limpieza profunda de azulejos, grifería y espejos"
+      },
+      "bedroom": {
+        "title": "Dormitorio renovado",
+        "alt": "Un dormitorio tranquilo con ropa de cama fresca, superficies limpias y pisos aspirados"
+      },
+      "lobby": {
+        "title": "Cuidado de vestíbulo comercial",
+        "alt": "El vestíbulo de un edificio comercial con pisos pulidos y puertas de vidrio limpias"
+      },
+      "pantry": {
+        "title": "Despensa organizada",
+        "alt": "Una despensa antes y después de organizarse, con recipientes etiquetados y artículos agrupados"
+      },
+      "moveOut": {
+        "title": "Limpieza de mudanza",
+        "alt": "Un apartamento vacío después de la limpieza de mudanza, con pisos limpios y gabinetes abiertos"
+      }
+    }
+  },
+
+  "bookPage": {
+    "hero": {
+      "eyebrow": "Reservar en Línea",
+      "title": "Agendar toma solo unos minutos",
+      "subtitle": "Elija un horario, cuéntenos sobre su espacio y confirmaremos los detalles antes de su visita."
+    },
+    "steps": {
+      "eyebrow": "Cómo Funciona",
+      "heading": "Tres pasos sencillos",
+      "one": {
+        "title": "Elija un horario",
+        "description": "Seleccione en el calendario el espacio que mejor se ajuste a su semana."
+      },
+      "two": {
+        "title": "Cuéntenos sobre su espacio",
+        "description": "Indíquenos el tamaño de su hogar o negocio y las áreas que más le importan."
+      },
+      "three": {
+        "title": "Confirmamos los detalles",
+        "description": "Recibirá una confirmación con el alcance acordado, el horario y los próximos pasos."
+      }
+    },
+    "scheduler": {
+      "eyebrow": "Agenda",
+      "heading": "Elija su cita",
+      "placeholderTitle": "Calendario de reservas próximamente",
+      "placeholderBody": "El calendario de Calendly aparecerá en este panel una vez que se conecte el enlace de agenda del cliente. Mientras tanto, puede comunicarse con nosotros y con gusto agendamos su visita.",
+      "placeholderNote": "Configure NEXT_PUBLIC_CALENDLY_URL para activar el calendario integrado.",
+      "openInNewTab": "Abrir la página de reservas",
+      "frameTitle": "Calendario de reservas en línea",
+      "alternativeTitle": "¿Prefiere conversarlo primero?",
+      "alternativeBody": "Llámenos y revisamos juntos las opciones para encontrar un horario."
+    }
+  },
+
+  "contactPage": {
+    "hero": {
+      "eyebrow": "Contacto",
+      "title": "Hablemos sobre su espacio",
+      "subtitle": "Envíe un mensaje, llame o escríbanos. Atendemos en inglés y español."
+    },
+    "info": {
+      "eyebrow": "Comuníquese",
+      "heading": "Cómo contactarnos",
+      "phone": { "title": "Llámenos", "description": "Hable con nuestro equipo sobre horarios y alcance del servicio." },
+      "email": { "title": "Escríbanos", "description": "Envíe los detalles de su espacio y le responderemos con los próximos pasos." },
+      "website": { "title": "Sitio web", "description": "Conozca todos nuestros servicios de mantenimiento y limpieza del hogar." },
+      "area": { "title": "Área de servicio", "description": "Atendemos todo New Jersey, con servicio en inglés y español." }
+    },
+    "form": {
+      "eyebrow": "Envíe un Mensaje",
+      "heading": "Cuéntenos qué necesita",
+      "description": "Complete el formulario y le responderemos con la disponibilidad y los próximos pasos.",
+      "demoNotice": "Formulario de demostración: los envíos se validan en el navegador y todavía no se envían a ningún destino.",
+      "labels": {
+        "name": "Nombre completo",
+        "email": "Correo electrónico",
+        "phone": "Teléfono",
+        "service": "Servicio",
+        "language": "Idioma preferido",
+        "message": "Mensaje",
+        "consent": "Acepto que me contacten sobre mi solicitud."
+      },
+      "placeholders": {
+        "name": "Su nombre completo",
+        "email": "usted@ejemplo.com",
+        "phone": "(862) 000-0000",
+        "service": "Seleccione un servicio",
+        "message": "Cuéntenos sobre su espacio, las habitaciones que más importan y el horario que prefiere."
+      },
+      "languages": {
+        "en": "Inglés",
+        "es": "Español"
+      },
+      "optional": "opcional",
+      "required": "obligatorio",
+      "submit": "Enviar mensaje",
+      "submitting": "Enviando…",
+      "successTitle": "Gracias: su mensaje está listo para enviarse.",
+      "successBody": "Este es un formulario de demostración, así que no se transmitió nada. Cuando se conecte el servicio de correo del cliente, este mismo envío llegará a su bandeja de entrada.",
+      "sendAnother": "Enviar otro mensaje",
+      "errorSummary": "Revise los campos señalados.",
+      "validation": {
+        "nameMin": "Ingrese su nombre completo (mínimo 2 caracteres).",
+        "nameMax": "El nombre es demasiado largo.",
+        "emailInvalid": "Ingrese un correo electrónico válido.",
+        "phoneInvalid": "Ingrese un número de teléfono válido.",
+        "serviceRequired": "Elija un servicio.",
+        "languageRequired": "Elija un idioma preferido.",
+        "messageMin": "Cuéntenos un poco más (mínimo 10 caracteres).",
+        "messageMax": "El mensaje es demasiado largo (máximo 2000 caracteres).",
+        "consentRequired": "Confirme que podemos contactarle."
+      }
+    }
+  },
+
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que busca no existe o fue movida.",
+    "cta": "Volver al inicio"
+  }
+}

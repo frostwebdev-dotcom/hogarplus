@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    /* Height of the sticky header, kept in sync with Header.tsx so that
+       anchor links and `scroll-margin` never hide content behind it. */
+    --header-height: 5.5rem;
+    --header-height-scrolled: 4.5rem;
+  }
+
+  * {
+    @apply border-navy-100;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Prevents any child from creating a horizontal scrollbar on mobile. */
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-surface font-body text-[1rem] leading-relaxed text-navy-700 antialiased;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading font-semibold text-navy;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Offset in-page anchors so headings clear the sticky header. */
+  [id] {
+    scroll-margin-top: calc(var(--header-height) + 1.5rem);
+  }
+
+  /* A single, consistent, high-contrast focus ring everywhere. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-blue ring-offset-2 ring-offset-white;
+    border-radius: 0.375rem;
+  }
+
+  /* Dark surfaces need a light ring to stay visible. */
+  .on-dark :focus-visible {
+    @apply ring-white ring-offset-navy-900;
+  }
+
+  ::selection {
+    @apply bg-brand-blue/20 text-navy;
+  }
+}
+
+@layer components {
+  /* ── Layout primitives ───────────────────────────────────────────── */
+
+  .section {
+    @apply py-16 md:py-section lg:py-section-lg;
+  }
+
+  .section-tight {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  .shell {
+    @apply mx-auto w-full max-w-container px-5 sm:px-6 lg:px-8;
+  }
+
+  .shell-wide {
+    @apply mx-auto w-full max-w-container-wide px-5 sm:px-6 lg:px-8;
+  }
+
+  /* ── Brand text & surfaces ───────────────────────────────────────── */
+
+  .text-gradient {
+    @apply bg-gradient-brand bg-clip-text text-transparent;
+    /* Descenders (g, y, p) get clipped without a little breathing room. */
+    padding-bottom: 0.06em;
+  }
+
+  .surface-card {
+    @apply rounded-card border border-navy-100/70 bg-white shadow-card;
+  }
+
+  .surface-card-dark {
+    @apply rounded-card border border-white/10 bg-white/[0.06] shadow-inset;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.14em] text-brand-blue;
+  }
+
+  .eyebrow-light {
+    @apply inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.14em] text-brand-orchid;
+  }
+
+  /* ── Buttons ─────────────────────────────────────────────────────── */
+
+  .btn {
+    @apply inline-flex min-h-[3rem] items-center justify-center gap-2 rounded-pill px-6 text-[0.95rem] font-semibold
+           transition-all duration-300 ease-brand disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-primary {
+    @apply btn bg-gradient-brand text-white shadow-glow hover:-translate-y-0.5 hover:shadow-glow-purple;
+  }
+
+  .btn-secondary {
+    @apply btn border-2 border-navy-200 bg-white text-navy hover:-translate-y-0.5 hover:border-brand-blue hover:text-brand-blue hover:shadow-card;
+  }
+
+  .btn-ghost-light {
+    @apply btn border-2 border-white/35 bg-white/10 text-white hover:-translate-y-0.5 hover:border-white/70 hover:bg-white/20;
+  }
+
+  .btn-sm {
+    @apply min-h-[2.75rem] px-5 text-sm;
+  }
+
+  /* ── Misc ────────────────────────────────────────────────────────── */
+
+  .link-underline {
+    @apply relative font-semibold text-brand-blue transition-colors hover:text-brand-purple;
+  }
+
+  .link-underline::after {
+    content: '';
+    @apply absolute -bottom-0.5 left-0 h-px w-0 bg-current transition-[width] duration-300 ease-brand;
+  }
+
+  .link-underline:hover::after {
+    @apply w-full;
+  }
+
+  /* Hides content visually but keeps it available to screen readers. */
+  .sr-only-focusable:not(:focus):not(:focus-within) {
+    @apply sr-only;
+  }
+}
+
+@layer utilities {
+  .grain {
+    background-image: radial-gradient(
+      circle at 1px 1px,
+      rgba(255, 255, 255, 0.07) 1px,
+      transparent 0
+    );
+    background-size: 28px 28px;
+  }
+
+  .mask-fade-b {
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  }
+}
+
+/*
+ * Reduced-motion support.
+ * Framer Motion variants are additionally gated with `useReducedMotion()`, but
+ * this stylesheet-level guard also neutralises CSS keyframes, smooth scrolling
+ * and transitions so nothing animates when the user has asked it not to.
+ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .btn-primary:hover,
+  .btn-secondary:hover,
+  .btn-ghost-light:hover {
+    transform: none;
+  }
+}

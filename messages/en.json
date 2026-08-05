@@ -1,0 +1,532 @@
+{
+  "meta": {
+    "home": {
+      "title": "HogarPlus Solutions | Professional Cleaning in New Jersey",
+      "description": "Professional residential, commercial, deep-cleaning, organization, and home-maintenance services across New Jersey."
+    },
+    "about": {
+      "title": "About Us | HogarPlus Solutions",
+      "description": "We are a company passionate about the well-being of every home. Learn about our objective and our comprehensive home-maintenance and deep-cleaning services across New Jersey."
+    },
+    "services": {
+      "title": "Cleaning Services | HogarPlus Solutions",
+      "description": "Residential, commercial, deep cleaning, home organization, move-in/move-out cleaning and customized plans across New Jersey."
+    },
+    "gallery": {
+      "title": "Gallery | HogarPlus Solutions",
+      "description": "A look at the spaces we care for — residential, commercial and before-and-after results from across New Jersey."
+    },
+    "book": {
+      "title": "Book Online | HogarPlus Solutions",
+      "description": "Schedule your cleaning in three simple steps. Choose a time that works for you and we will confirm the details."
+    },
+    "contact": {
+      "title": "Contact Us | HogarPlus Solutions",
+      "description": "Call (862) 423-3186, email us, or send a message. We answer in English and Spanish across New Jersey."
+    }
+  },
+
+  "common": {
+    "brandName": "HogarPlus Solutions",
+    "brandTagline": "We care for your home, so you can enjoy what matters",
+    "brandSubtitle": "Home cleaning and maintenance services",
+    "skipToContent": "Skip to main content",
+    "bookOnline": "Book Online",
+    "exploreServices": "Explore Services",
+    "learnMore": "Learn more",
+    "viewAll": "View all services",
+    "callUs": "Call us",
+    "callNow": "Call now",
+    "emailUs": "Email us",
+    "contactUs": "Contact us",
+    "website": "Website",
+    "loading": "Loading",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next",
+    "sampleContent": "Sample content — to be replaced with client-approved material.",
+    "serviceAreaShort": "Serving New Jersey",
+    "county": "County",
+    "logoAlt": "HogarPlus Solutions logo"
+  },
+
+  "nav": {
+    "primaryLabel": "Primary",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "gallery": "Gallery",
+    "book": "Book Online",
+    "contact": "Contact",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "menuTitle": "Menu",
+    "languageLabel": "Language",
+    "switchToEnglish": "Switch to English",
+    "switchToSpanish": "Cambiar a español",
+    "english": "English",
+    "spanish": "Español",
+    "englishShort": "EN",
+    "spanishShort": "ES"
+  },
+
+  "hero": {
+    "eyebrow": "Professional cleaning services in New Jersey",
+    "headline": "We care for your home, so you can enjoy what matters.",
+    "body": "Deep cleaning, maintenance, organization, and personalized solutions designed to create spotless, healthy, and comfortable spaces.",
+    "primaryCta": "Book Online",
+    "secondaryCta": "Explore Services",
+    "phoneCta": "Call (862) 423-3186",
+    "scrollHint": "Scroll to explore",
+    "videoLabel": "Background video of a bright, freshly cleaned home"
+  },
+
+  "aboutPreview": {
+    "eyebrow": "Who We Are",
+    "heading": "A company passionate about the well‑being of every home",
+    "body": "We are a company passionate about the well-being of every home. We provide comprehensive home-maintenance services, delivering deep and meticulous cleaning in the comfort of each client's space. Our professional team is committed to excellence and customer satisfaction.",
+    "cta": "More about us",
+    "flyerAlt": "HogarPlus Solutions brand flyer: a house logo with leaves and sparkles on a navy background, the tagline “Cuidamos tu hogar para que disfrutes”, and the company's contact details.",
+    "flyerCaption": "HogarPlus Solutions brand identity",
+    "highlightsTitle": "Our comprehensive service",
+    "highlights": {
+      "0": "Comprehensive Deep Cleaning",
+      "1": "Maintenance and General Care of Interior Areas",
+      "2": "Home Cleaning and Organization",
+      "3": "Personalized Services Adapted to Every Need"
+    }
+  },
+
+  "objectives": {
+    "eyebrow": "Our Objective",
+    "heading": "What we set out to do on every visit",
+    "items": {
+      "0": "Transform homes into spotless and healthy spaces.",
+      "1": "Help clients relax and enjoy their own space.",
+      "2": "Provide deep-cleaning services that exceed expectations.",
+      "3": "Contribute to families' quality of life and peace of mind."
+    }
+  },
+
+  "services": {
+    "eyebrow": "Our Services",
+    "heading": "Services built around how you actually live",
+    "description": "Choose a single visit or an ongoing plan. Every service can be adjusted to your space, priorities and budget.",
+    "includedTitle": "What's included",
+    "learnMore": "Learn more",
+    "bookThis": "Book this service",
+    "items": {
+      "residential": {
+        "title": "Residential Cleaning",
+        "description": "Regular, reliable cleaning that keeps your home fresh week after week.",
+        "badge": "Most requested",
+        "highlights": {
+          "0": "Kitchens & bathrooms",
+          "1": "Floors & living areas",
+          "2": "Weekly, biweekly or monthly"
+        },
+        "included": {
+          "0": "Dusting of reachable surfaces, shelves and fixtures",
+          "1": "Kitchen counters, sink, stovetop and exterior of appliances",
+          "2": "Bathroom sinks, tubs, showers, toilets and mirrors",
+          "3": "Vacuuming and mopping of all accessible floors",
+          "4": "Trash removal and general tidying of shared spaces"
+        }
+      },
+      "commercial": {
+        "title": "Commercial Cleaning",
+        "description": "Presentable, healthy workspaces for offices, studios and small businesses.",
+        "highlights": {
+          "0": "Offices & common areas",
+          "1": "Restrooms & break rooms",
+          "2": "After-hours scheduling"
+        },
+        "included": {
+          "0": "Workstations, desks and shared surfaces",
+          "1": "Reception, lobby and entryway detailing",
+          "2": "Restroom sanitizing and restocking of supplies you provide",
+          "3": "Break room counters, sinks and exterior of appliances",
+          "4": "Floor care, trash removal and recycling"
+        }
+      },
+      "deep": {
+        "title": "Deep Cleaning",
+        "description": "Deep, meticulous cleaning from top to bottom, in the comfort of your space.",
+        "highlights": {
+          "0": "Baseboards & door frames",
+          "1": "Inside appliances on request",
+          "2": "Ideal before events or seasons"
+        },
+        "included": {
+          "0": "Baseboards, door frames, switch plates and vents",
+          "1": "Detailed bathroom scrubbing including tile and grout lines",
+          "2": "Inside of oven, refrigerator or cabinets on request",
+          "3": "Light fixtures, ceiling fans and reachable window interiors",
+          "4": "Edge vacuuming and detailed floor treatment"
+        }
+      },
+      "organization": {
+        "title": "Home Organization",
+        "description": "Calm, functional spaces with systems that are easy to maintain.",
+        "highlights": {
+          "0": "Closets & pantries",
+          "1": "Kitchens & storage areas",
+          "2": "Simple systems to keep"
+        },
+        "included": {
+          "0": "Sorting and grouping of items by category and use",
+          "1": "Closet, pantry or cabinet layout planning",
+          "2": "Decluttering support with your decisions guiding every choice",
+          "3": "Labeling and simple systems that are easy to maintain",
+          "4": "Final placement and a walkthrough of the new setup"
+        }
+      },
+      "moveInOut": {
+        "title": "Move-In / Move-Out Cleaning",
+        "description": "An empty-home clean that makes handing over the keys straightforward.",
+        "highlights": {
+          "0": "Empty-property detailing",
+          "1": "Inside cabinets & closets",
+          "2": "Coordinated with your dates"
+        },
+        "included": {
+          "0": "Full interior clean of an empty or nearly empty property",
+          "1": "Inside cabinets, drawers, closets and storage areas",
+          "2": "Appliance interiors and exteriors where accessible",
+          "3": "Complete bathroom and kitchen detailing",
+          "4": "Floors, baseboards and reachable interior windows"
+        }
+      },
+      "custom": {
+        "title": "Customized Plans",
+        "description": "Personalized services adapted to every need.",
+        "highlights": {
+          "0": "Mix and match services",
+          "1": "Recurring or one-time",
+          "2": "Adjusts as life changes"
+        },
+        "included": {
+          "0": "A short conversation about your space and priorities",
+          "1": "A checklist tailored to the rooms that matter most",
+          "2": "Flexible frequency — one-time, seasonal or recurring",
+          "3": "Combination of cleaning and organization as needed",
+          "4": "Plan reviewed together and adjusted whenever things change"
+        }
+      }
+    }
+  },
+
+  "why": {
+    "eyebrow": "Why Choose Us",
+    "heading": "A team committed to excellence and satisfaction",
+    "description": "No two homes or businesses are the same. Here is what stays consistent no matter which service you book.",
+    "values": {
+      "personalized": {
+        "title": "Personalized service",
+        "description": "Your plan is shaped by your rooms, your priorities and the details you point out."
+      },
+      "reliable": {
+        "title": "Reliable professionals",
+        "description": "Careful, respectful team members who communicate clearly and show up when promised."
+      },
+      "flexible": {
+        "title": "Flexible scheduling",
+        "description": "One-time visits, recurring plans and after-hours options that fit around your week."
+      },
+      "detail": {
+        "title": "Meticulous cleaning",
+        "description": "The corners, edges and small finishing touches that make a space feel genuinely clean."
+      },
+      "bothMarkets": {
+        "title": "Residential & commercial",
+        "description": "The same standard of care for family homes, offices, studios and small businesses."
+      },
+      "coverage": {
+        "title": "New Jersey coverage",
+        "description": "Bilingual support in English and Spanish throughout the state of New Jersey."
+      }
+    }
+  },
+
+  "testimonials": {
+    "eyebrow": "In Their Words",
+    "heading": "What clients tell us",
+    "description": "A preview of the feedback section. Real, client-approved testimonials will replace these examples.",
+    "sampleNotice": "Sample content — placeholder text shown for this demo only. No real customers, identities or ratings are represented.",
+    "roles": {
+      "residential": "Residential Client",
+      "commercial": "Commercial Client",
+      "moveOut": "Move-Out Client"
+    },
+    "samples": {
+      "one": {
+        "quote": "The team listened to exactly what we wanted and the house felt calm again by the time they left. Scheduling was simple and everything was communicated clearly."
+      },
+      "two": {
+        "quote": "Our office is cleaned after hours and it is ready every single morning. The consistency is what we appreciate most — nothing is ever left half done."
+      },
+      "three": {
+        "quote": "They handled the move-out clean on a tight timeline and the walkthrough went perfectly. Cabinets, appliances and floors all looked brand new."
+      }
+    }
+  },
+
+  "serviceArea": {
+    "eyebrow": "Service Area",
+    "heading": "Proudly serving New Jersey",
+    "description": "Select a county to see how we work in your area.",
+    "selectPrompt": "Select a county",
+    "mapLabel": "Stylised map of the New Jersey counties we serve",
+    "mapCaption": "Illustrative map — not to scale",
+    "note": "Don't see your area? Contact us to confirm availability.",
+    "noteCta": "Contact us",
+    "regions": {
+      "north": "Northern New Jersey",
+      "central": "Central New Jersey"
+    },
+    "counties": {
+      "union": "Regular residential plans and small-business cleaning across Union County towns and neighborhoods.",
+      "hudson": "Apartment, condo and commercial cleaning throughout Hudson County's dense residential communities.",
+      "bergen": "Family homes, offices and move-in/move-out projects across Bergen County.",
+      "passaic": "Recurring home cleaning and deep-clean visits for Passaic County households and workplaces.",
+      "morris": "Detailed residential care and seasonal deep cleaning throughout Morris County.",
+      "sussex": "Scheduled home cleaning and organization support for Sussex County families.",
+      "somerset": "Residential plans and commercial spaces served across Somerset County.",
+      "middlesex": "Homes, offices and rental turnovers throughout Middlesex County.",
+      "monmouth": "Residential cleaning and move-in/move-out projects across Monmouth County."
+    }
+  },
+
+  "bookingCta": {
+    "eyebrow": "Ready When You Are",
+    "heading": "Book your cleaning in a few minutes",
+    "description": "Pick a time that works for you and we'll confirm the details. Prefer to talk it through first? Give us a call.",
+    "primaryCta": "Book Online",
+    "secondaryPrefix": "or call",
+    "trust": "Fast and simple scheduling"
+  },
+
+  "footer": {
+    "brandSummary": "Home maintenance and deep-cleaning services across New Jersey. Support in English and Spanish.",
+    "navTitle": "Explore",
+    "servicesTitle": "Services",
+    "areasTitle": "Service area",
+    "contactTitle": "Contact",
+    "copyright": "© {year} HogarPlus Solutions. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "accessibility": "Accessibility",
+    "legalNote": "Policy pages are placeholders for this demo.",
+    "languageTitle": "Language"
+  },
+
+  "aboutPage": {
+    "hero": {
+      "eyebrow": "About HogarPlus Solutions",
+      "title": "We care for your home, so you can enjoy what matters.",
+      "subtitle": "Home cleaning and maintenance services delivered by a team committed to excellence and customer satisfaction."
+    },
+    "story": {
+      "eyebrow": "Who We Are",
+      "heading": "A company passionate about the well‑being of every home",
+      "body": "We are a company passionate about the well-being of every home. We provide comprehensive home-maintenance services, delivering deep and meticulous cleaning in the comfort of each client's space. Our professional team is committed to excellence and customer satisfaction."
+    },
+    "flyer": {
+      "eyebrow": "Brand Material",
+      "heading": "The company flyer",
+      "description": "Everything shown in this flyer is also available as text on this page.",
+      "companyAlt": "HogarPlus Solutions information flyer on a navy background. It shows the logo, the tagline “Cuidamos tu hogar para que disfrutes”, a “¿Quiénes somos?” section describing a company passionate about the well-being of the home, a “Nuestro objetivo” section listing four goals, and a “Nuestros servicios” section listing four service lines, along with the phone number, email address and website.",
+      "brandAlt": "HogarPlus Solutions brand flyer: a house logo with leaves and sparkles on a navy background, the tagline “Cuidamos tu hogar para que disfrutes”, and the company's contact details."
+    },
+    "services": {
+      "eyebrow": "Our Services",
+      "heading": "Comprehensive home-maintenance service",
+      "description": "Four service lines that expand into the six detailed services on the Services page."
+    },
+    "coverage": {
+      "eyebrow": "Where We Work",
+      "heading": "Nine counties across New Jersey",
+      "description": "Bilingual service across northern and central New Jersey."
+    }
+  },
+
+  "servicesPage": {
+    "hero": {
+      "eyebrow": "Our Services",
+      "title": "Cleaning and home care, tailored to your space",
+      "subtitle": "Six core services that can be combined, scheduled and adjusted to fit exactly what your home or business needs."
+    },
+    "intro": {
+      "eyebrow": "Choose Your Service",
+      "heading": "Start here, then we tailor the details",
+      "description": "Every service below can be booked on its own or combined into a recurring plan."
+    },
+    "checklists": {
+      "eyebrow": "What's Included",
+      "heading": "Example checklists for each service",
+      "description": "These lists show the level of detail you can expect. Your final checklist is confirmed with you before the first visit.",
+      "disclaimer": "Placeholder checklists for demonstration purposes. Final scope and wording will be replaced with client-approved content."
+    }
+  },
+
+  "galleryPage": {
+    "hero": {
+      "eyebrow": "Gallery",
+      "title": "A look at the spaces we care for",
+      "subtitle": "Residential, commercial and before-and-after results from across New Jersey."
+    },
+    "filtersLabel": "Filter gallery by category",
+    "filters": {
+      "all": "All",
+      "residential": "Residential",
+      "commercial": "Commercial",
+      "beforeAfter": "Before & After"
+    },
+    "empty": "No items in this category yet.",
+    "placeholderNote": "Demo gallery — placeholder tiles are shown until the client's photography is supplied.",
+    "openItem": "Open image",
+    "lightbox": {
+      "label": "Gallery image viewer",
+      "close": "Close gallery viewer",
+      "previous": "Previous image",
+      "next": "Next image",
+      "counter": "Image {current} of {total}",
+      "hint": "Use the arrow keys to browse, Escape to close."
+    },
+    "items": {
+      "livingRoom": {
+        "title": "Living room refresh",
+        "alt": "A bright living room with clean floors, dusted surfaces and neatly arranged furniture"
+      },
+      "kitchen": {
+        "title": "Kitchen detail clean",
+        "alt": "A spotless kitchen with clear counters, a polished sink and clean appliance exteriors"
+      },
+      "office": {
+        "title": "Office after-hours service",
+        "alt": "An open-plan office with tidy desks, clean floors and empty waste bins"
+      },
+      "bathroom": {
+        "title": "Bathroom before & after",
+        "alt": "A bathroom shown before and after a detailed deep clean of tile, fixtures and mirrors"
+      },
+      "bedroom": {
+        "title": "Bedroom reset",
+        "alt": "A calm bedroom with fresh linens, dusted surfaces and vacuumed floors"
+      },
+      "lobby": {
+        "title": "Commercial lobby care",
+        "alt": "A commercial building lobby with polished floors and clean glass entry doors"
+      },
+      "pantry": {
+        "title": "Pantry organization",
+        "alt": "A pantry before and after organization, with labeled containers and grouped items"
+      },
+      "moveOut": {
+        "title": "Move-out clean",
+        "alt": "An empty apartment after a move-out clean, with clean floors and open cabinets"
+      }
+    }
+  },
+
+  "bookPage": {
+    "hero": {
+      "eyebrow": "Book Online",
+      "title": "Scheduling that takes a few minutes",
+      "subtitle": "Choose a time, tell us about your space, and we'll confirm the details before your visit."
+    },
+    "steps": {
+      "eyebrow": "How It Works",
+      "heading": "Three simple steps",
+      "one": {
+        "title": "Pick a time",
+        "description": "Choose a slot from the scheduling calendar that fits your week."
+      },
+      "two": {
+        "title": "Tell us about your space",
+        "description": "Share the size of your home or business and the areas that matter most."
+      },
+      "three": {
+        "title": "We confirm the details",
+        "description": "You receive a confirmation with the agreed scope, timing and next steps."
+      }
+    },
+    "scheduler": {
+      "eyebrow": "Scheduling",
+      "heading": "Choose your appointment",
+      "placeholderTitle": "Scheduling calendar coming soon",
+      "placeholderBody": "The live Calendly calendar will appear in this panel once the client's scheduling link is connected. Until then, you can reach us directly and we'll book you in.",
+      "placeholderNote": "Set NEXT_PUBLIC_CALENDLY_URL to activate the embedded calendar.",
+      "openInNewTab": "Open scheduling page",
+      "frameTitle": "Online scheduling calendar",
+      "alternativeTitle": "Prefer to talk first?",
+      "alternativeBody": "Call us and we'll walk through your options and find a time together."
+    }
+  },
+
+  "contactPage": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Let's talk about your space",
+      "subtitle": "Send a message, call, or email us. We answer in English and Spanish."
+    },
+    "info": {
+      "eyebrow": "Reach Us",
+      "heading": "How to get in touch",
+      "phone": { "title": "Call us", "description": "Speak with our team about scheduling and scope." },
+      "email": { "title": "Email us", "description": "Send details about your space and we'll reply with next steps." },
+      "website": { "title": "Website", "description": "Explore all of our home cleaning and maintenance services." },
+      "area": { "title": "Service area", "description": "Serving all of New Jersey, in English and Spanish." }
+    },
+    "form": {
+      "eyebrow": "Send a Message",
+      "heading": "Tell us what you need",
+      "description": "Fill in the form and we'll get back to you with availability and next steps.",
+      "demoNotice": "Demo form — submissions are validated in the browser and are not sent anywhere yet.",
+      "labels": {
+        "name": "Full name",
+        "email": "Email",
+        "phone": "Phone",
+        "service": "Service",
+        "language": "Preferred language",
+        "message": "Message",
+        "consent": "I agree to be contacted about my request."
+      },
+      "placeholders": {
+        "name": "Your full name",
+        "email": "you@example.com",
+        "phone": "(862) 000-0000",
+        "service": "Select a service",
+        "message": "Tell us about your space, the rooms that matter most, and your preferred timing."
+      },
+      "languages": {
+        "en": "English",
+        "es": "Spanish"
+      },
+      "optional": "optional",
+      "required": "required",
+      "submit": "Send message",
+      "submitting": "Sending…",
+      "successTitle": "Thank you — your message is ready to send.",
+      "successBody": "This is a demonstration form, so nothing was transmitted. Once the client's email service is connected, this same submission will be delivered to their inbox.",
+      "sendAnother": "Send another message",
+      "errorSummary": "Please review the highlighted fields.",
+      "validation": {
+        "nameMin": "Please enter your full name (at least 2 characters).",
+        "nameMax": "Name is too long.",
+        "emailInvalid": "Please enter a valid email address.",
+        "phoneInvalid": "Please enter a valid phone number.",
+        "serviceRequired": "Please choose a service.",
+        "languageRequired": "Please choose a preferred language.",
+        "messageMin": "Please tell us a little more (at least 10 characters).",
+        "messageMax": "Message is too long (2000 characters maximum).",
+        "consentRequired": "Please confirm we may contact you."
+      }
+    }
+  },
+
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or has moved.",
+    "cta": "Back to home"
+  }
+}
