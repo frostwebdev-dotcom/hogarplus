@@ -25,7 +25,6 @@
       "description": "Llame al (862) 423-3186, escríbanos o envíenos un mensaje. Atendemos en inglés y español en todo New Jersey."
     }
   },
-
   "common": {
     "brandName": "HogarPlus Solutions",
     "brandTagline": "Cuidamos tu hogar para que disfrutes",
@@ -49,7 +48,6 @@
     "county": "Condado",
     "logoAlt": "Logotipo de HogarPlus Solutions"
   },
-
   "nav": {
     "primaryLabel": "Principal",
     "home": "Inicio",
@@ -69,7 +67,6 @@
     "englishShort": "EN",
     "spanishShort": "ES"
   },
-
   "hero": {
     "eyebrow": "Servicios profesionales de limpieza en New Jersey",
     "headline": "Cuidamos tu hogar para que disfrutes.",
@@ -80,7 +77,6 @@
     "scrollHint": "Desplácese para explorar",
     "videoLabel": "Video de fondo de un hogar luminoso y recién limpiado"
   },
-
   "aboutPreview": {
     "eyebrow": "¿Quiénes Somos?",
     "heading": "Una compañía apasionada por el bienestar del hogar",
@@ -96,7 +92,6 @@
       "3": "Servicios Personalizados y Adaptables a cada necesidad."
     }
   },
-
   "objectives": {
     "eyebrow": "Nuestro Objetivo",
     "heading": "Lo que nos proponemos en cada visita",
@@ -107,7 +102,6 @@
       "3": "Contribuir a la calidad de vida y paz mental de las familias."
     }
   },
-
   "services": {
     "eyebrow": "Nuestros Servicios",
     "heading": "Servicios pensados para su día a día",
@@ -215,7 +209,6 @@
       }
     }
   },
-
   "why": {
     "eyebrow": "Por Qué Elegirnos",
     "heading": "Un equipo comprometido con la excelencia y la satisfacción",
@@ -247,7 +240,6 @@
       }
     }
   },
-
   "testimonials": {
     "eyebrow": "En Sus Palabras",
     "heading": "Lo que nos comentan los clientes",
@@ -270,7 +262,6 @@
       }
     }
   },
-
   "serviceArea": {
     "eyebrow": "Área de Servicio",
     "heading": "Con orgullo al servicio de New Jersey",
@@ -296,7 +287,6 @@
       "monmouth": "Limpieza residencial y proyectos de mudanza en el condado de Monmouth."
     }
   },
-
   "bookingCta": {
     "eyebrow": "Cuando Usted Quiera",
     "heading": "Reserve su limpieza en pocos minutos",
@@ -305,7 +295,6 @@
     "secondaryPrefix": "o llame al",
     "trust": "Agendar es rápido y sencillo"
   },
-
   "footer": {
     "brandSummary": "Servicios de mantenimiento y limpieza profunda del hogar en todo New Jersey. Atención en inglés y español.",
     "navTitle": "Explorar",
@@ -318,7 +307,6 @@
     "legalNote": "Las páginas legales son marcadores de posición en esta demostración.",
     "languageTitle": "Idioma"
   },
-
   "aboutPage": {
     "hero": {
       "eyebrow": "Sobre HogarPlus Solutions",
@@ -348,7 +336,6 @@
       "description": "Servicio bilingüe en el norte y centro de New Jersey."
     }
   },
-
   "servicesPage": {
     "hero": {
       "eyebrow": "Nuestros Servicios",
@@ -367,7 +354,6 @@
       "disclaimer": "Listas provisionales con fines de demostración. El alcance y la redacción finales se reemplazarán por contenido aprobado por el cliente."
     }
   },
-
   "galleryPage": {
     "hero": {
       "eyebrow": "Galería",
@@ -382,7 +368,7 @@
       "beforeAfter": "Antes y después"
     },
     "empty": "Aún no hay elementos en esta categoría.",
-    "placeholderNote": "Galería de demostración: se muestran imágenes provisionales hasta recibir la fotografía del cliente.",
+    "placeholderNote": "Galería de demostración: las fotografías mostradas son imágenes de archivo temporales que ilustran el diseño. Se reemplazarán por la fotografía propia de HogarPlus Solutions.",
     "openItem": "Abrir imagen",
     "lightbox": {
       "label": "Visor de imágenes de la galería",
@@ -393,41 +379,40 @@
       "hint": "Use las flechas para navegar y Escape para cerrar."
     },
     "items": {
-      "livingRoom": {
-        "title": "Sala renovada",
-        "alt": "Una sala luminosa con pisos limpios, superficies desempolvadas y muebles ordenados"
+      "teamBedroom": {
+        "title": "Dormitorio renovado",
+        "alt": "Dos profesionales de limpieza con uniforme trabajan juntas para tender una cama con ropa de cama limpia en un dormitorio luminoso."
       },
-      "kitchen": {
-        "title": "Cocina con limpieza detallada",
-        "alt": "Una cocina impecable con encimeras despejadas, fregadero pulido y electrodomésticos limpios"
+      "surfaceDetail": {
+        "title": "Limpieza detallada de superficies",
+        "alt": "Una profesional de limpieza con guantes protectores limpia una encimera de mármol en un espacio moderno."
+      },
+      "detailDusting": {
+        "title": "Desempolvado en altura",
+        "alt": "Una profesional de limpieza sobre una escalera de mano usa un plumero extensible para alcanzar una pared alta en una sala de planta abierta."
+      },
+      "supplies": {
+        "title": "Productos y equipo",
+        "alt": "Un conjunto de botellas rociadoras y envases de productos de limpieza sin marca sobre un fondo claro."
       },
       "office": {
         "title": "Oficina atendida fuera de horario",
         "alt": "Una oficina de planta abierta con escritorios ordenados, pisos limpios y papeleras vacías"
       },
-      "bathroom": {
-        "title": "Baño antes y después",
-        "alt": "Un baño antes y después de una limpieza profunda de azulejos, grifería y espejos"
-      },
-      "bedroom": {
-        "title": "Dormitorio renovado",
-        "alt": "Un dormitorio tranquilo con ropa de cama fresca, superficies limpias y pisos aspirados"
-      },
       "lobby": {
         "title": "Cuidado de vestíbulo comercial",
         "alt": "El vestíbulo de un edificio comercial con pisos pulidos y puertas de vidrio limpias"
       },
+      "bathroom": {
+        "title": "Baño antes y después",
+        "alt": "Un baño antes y después de una limpieza profunda de azulejos, grifería y espejos"
+      },
       "pantry": {
         "title": "Despensa organizada",
         "alt": "Una despensa antes y después de organizarse, con recipientes etiquetados y artículos agrupados"
-      },
-      "moveOut": {
-        "title": "Limpieza de mudanza",
-        "alt": "Un apartamento vacío después de la limpieza de mudanza, con pisos limpios y gabinetes abiertos"
       }
     }
   },
-
   "bookPage": {
     "hero": {
       "eyebrow": "Reservar en Línea",
@@ -462,7 +447,6 @@
       "alternativeBody": "Llámenos y revisamos juntos las opciones para encontrar un horario."
     }
   },
-
   "contactPage": {
     "hero": {
       "eyebrow": "Contacto",
@@ -472,10 +456,22 @@
     "info": {
       "eyebrow": "Comuníquese",
       "heading": "Cómo contactarnos",
-      "phone": { "title": "Llámenos", "description": "Hable con nuestro equipo sobre horarios y alcance del servicio." },
-      "email": { "title": "Escríbanos", "description": "Envíe los detalles de su espacio y le responderemos con los próximos pasos." },
-      "website": { "title": "Sitio web", "description": "Conozca todos nuestros servicios de mantenimiento y limpieza del hogar." },
-      "area": { "title": "Área de servicio", "description": "Atendemos todo New Jersey, con servicio en inglés y español." }
+      "phone": {
+        "title": "Llámenos",
+        "description": "Hable con nuestro equipo sobre horarios y alcance del servicio."
+      },
+      "email": {
+        "title": "Escríbanos",
+        "description": "Envíe los detalles de su espacio y le responderemos con los próximos pasos."
+      },
+      "website": {
+        "title": "Sitio web",
+        "description": "Conozca todos nuestros servicios de mantenimiento y limpieza del hogar."
+      },
+      "area": {
+        "title": "Área de servicio",
+        "description": "Atendemos todo New Jersey, con servicio en inglés y español."
+      }
     },
     "form": {
       "eyebrow": "Envíe un Mensaje",
@@ -523,7 +519,6 @@
       }
     }
   },
-
   "notFound": {
     "title": "Página no encontrada",
     "description": "La página que busca no existe o fue movida.",

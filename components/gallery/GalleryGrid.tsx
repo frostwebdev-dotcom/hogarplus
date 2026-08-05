@@ -114,7 +114,6 @@ export function GalleryGrid() {
                       item={item}
                       priority={index === 0}
                       alt={t(`items.${item.captionKey}.alt`)}
-                      title={t(`items.${item.captionKey}.title`)}
                       className="transition-transform duration-500 ease-brand group-hover:scale-[1.04] motion-reduce:transform-none"
                     />
                   </span>

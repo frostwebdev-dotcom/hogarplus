@@ -25,7 +25,6 @@
       "description": "Call (862) 423-3186, email us, or send a message. We answer in English and Spanish across New Jersey."
     }
   },
-
   "common": {
     "brandName": "HogarPlus Solutions",
     "brandTagline": "We care for your home, so you can enjoy what matters",
@@ -49,7 +48,6 @@
     "county": "County",
     "logoAlt": "HogarPlus Solutions logo"
   },
-
   "nav": {
     "primaryLabel": "Primary",
     "home": "Home",
@@ -69,7 +67,6 @@
     "englishShort": "EN",
     "spanishShort": "ES"
   },
-
   "hero": {
     "eyebrow": "Professional cleaning services in New Jersey",
     "headline": "We care for your home, so you can enjoy what matters.",
@@ -80,7 +77,6 @@
     "scrollHint": "Scroll to explore",
     "videoLabel": "Background video of a bright, freshly cleaned home"
   },
-
   "aboutPreview": {
     "eyebrow": "Who We Are",
     "heading": "A company passionate about the well‑being of every home",
@@ -96,7 +92,6 @@
       "3": "Personalized Services Adapted to Every Need"
     }
   },
-
   "objectives": {
     "eyebrow": "Our Objective",
     "heading": "What we set out to do on every visit",
@@ -107,7 +102,6 @@
       "3": "Contribute to families' quality of life and peace of mind."
     }
   },
-
   "services": {
     "eyebrow": "Our Services",
     "heading": "Services built around how you actually live",
@@ -215,7 +209,6 @@
       }
     }
   },
-
   "why": {
     "eyebrow": "Why Choose Us",
     "heading": "A team committed to excellence and satisfaction",
@@ -247,7 +240,6 @@
       }
     }
   },
-
   "testimonials": {
     "eyebrow": "In Their Words",
     "heading": "What clients tell us",
@@ -270,7 +262,6 @@
       }
     }
   },
-
   "serviceArea": {
     "eyebrow": "Service Area",
     "heading": "Proudly serving New Jersey",
@@ -296,7 +287,6 @@
       "monmouth": "Residential cleaning and move-in/move-out projects across Monmouth County."
     }
   },
-
   "bookingCta": {
     "eyebrow": "Ready When You Are",
     "heading": "Book your cleaning in a few minutes",
@@ -305,7 +295,6 @@
     "secondaryPrefix": "or call",
     "trust": "Fast and simple scheduling"
   },
-
   "footer": {
     "brandSummary": "Home maintenance and deep-cleaning services across New Jersey. Support in English and Spanish.",
     "navTitle": "Explore",
@@ -318,7 +307,6 @@
     "legalNote": "Policy pages are placeholders for this demo.",
     "languageTitle": "Language"
   },
-
   "aboutPage": {
     "hero": {
       "eyebrow": "About HogarPlus Solutions",
@@ -348,7 +336,6 @@
       "description": "Bilingual service across northern and central New Jersey."
     }
   },
-
   "servicesPage": {
     "hero": {
       "eyebrow": "Our Services",
@@ -367,7 +354,6 @@
       "disclaimer": "Placeholder checklists for demonstration purposes. Final scope and wording will be replaced with client-approved content."
     }
   },
-
   "galleryPage": {
     "hero": {
       "eyebrow": "Gallery",
@@ -382,7 +368,7 @@
       "beforeAfter": "Before & After"
     },
     "empty": "No items in this category yet.",
-    "placeholderNote": "Demo gallery — placeholder tiles are shown until the client's photography is supplied.",
+    "placeholderNote": "Demo gallery — the photographs shown are temporary stock images used to illustrate the layout. They will be replaced with HogarPlus Solutions' own photography.",
     "openItem": "Open image",
     "lightbox": {
       "label": "Gallery image viewer",
@@ -393,41 +379,40 @@
       "hint": "Use the arrow keys to browse, Escape to close."
     },
     "items": {
-      "livingRoom": {
-        "title": "Living room refresh",
-        "alt": "A bright living room with clean floors, dusted surfaces and neatly arranged furniture"
+      "teamBedroom": {
+        "title": "Bedroom refresh",
+        "alt": "Two cleaning professionals in uniform working together to make a bed with fresh linens in a bright bedroom."
       },
-      "kitchen": {
-        "title": "Kitchen detail clean",
-        "alt": "A spotless kitchen with clear counters, a polished sink and clean appliance exteriors"
+      "surfaceDetail": {
+        "title": "Surface detail clean",
+        "alt": "A cleaning professional wearing protective gloves wiping down a marble countertop in a modern living space."
+      },
+      "detailDusting": {
+        "title": "High detail dusting",
+        "alt": "A cleaning professional on a step ladder using an extendable duster to reach a high wall in an open-plan living room."
+      },
+      "supplies": {
+        "title": "Products and equipment",
+        "alt": "An assortment of unbranded spray bottles and cleaning product containers arranged on a light background."
       },
       "office": {
         "title": "Office after-hours service",
         "alt": "An open-plan office with tidy desks, clean floors and empty waste bins"
       },
-      "bathroom": {
-        "title": "Bathroom before & after",
-        "alt": "A bathroom shown before and after a detailed deep clean of tile, fixtures and mirrors"
-      },
-      "bedroom": {
-        "title": "Bedroom reset",
-        "alt": "A calm bedroom with fresh linens, dusted surfaces and vacuumed floors"
-      },
       "lobby": {
         "title": "Commercial lobby care",
         "alt": "A commercial building lobby with polished floors and clean glass entry doors"
       },
+      "bathroom": {
+        "title": "Bathroom before & after",
+        "alt": "A bathroom shown before and after a detailed deep clean of tile, fixtures and mirrors"
+      },
       "pantry": {
         "title": "Pantry organization",
         "alt": "A pantry before and after organization, with labeled containers and grouped items"
-      },
-      "moveOut": {
-        "title": "Move-out clean",
-        "alt": "An empty apartment after a move-out clean, with clean floors and open cabinets"
       }
     }
   },
-
   "bookPage": {
     "hero": {
       "eyebrow": "Book Online",
@@ -462,7 +447,6 @@
       "alternativeBody": "Call us and we'll walk through your options and find a time together."
     }
   },
-
   "contactPage": {
     "hero": {
       "eyebrow": "Contact",
@@ -472,10 +456,22 @@
     "info": {
       "eyebrow": "Reach Us",
       "heading": "How to get in touch",
-      "phone": { "title": "Call us", "description": "Speak with our team about scheduling and scope." },
-      "email": { "title": "Email us", "description": "Send details about your space and we'll reply with next steps." },
-      "website": { "title": "Website", "description": "Explore all of our home cleaning and maintenance services." },
-      "area": { "title": "Service area", "description": "Serving all of New Jersey, in English and Spanish." }
+      "phone": {
+        "title": "Call us",
+        "description": "Speak with our team about scheduling and scope."
+      },
+      "email": {
+        "title": "Email us",
+        "description": "Send details about your space and we'll reply with next steps."
+      },
+      "website": {
+        "title": "Website",
+        "description": "Explore all of our home cleaning and maintenance services."
+      },
+      "area": {
+        "title": "Service area",
+        "description": "Serving all of New Jersey, in English and Spanish."
+      }
     },
     "form": {
       "eyebrow": "Send a Message",
@@ -523,7 +519,6 @@
       }
     }
   },
-
   "notFound": {
     "title": "Page not found",
     "description": "The page you're looking for doesn't exist or has moved.",

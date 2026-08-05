@@ -166,7 +166,6 @@ export function GalleryLightbox({
                   priority
                   sizes="(min-width: 1024px) 900px, 100vw"
                   alt={t(`items.${item.captionKey}.alt`)}
-                  title={t(`items.${item.captionKey}.title`)}
                 />
               </div>
 

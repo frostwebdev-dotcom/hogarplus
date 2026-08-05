@@ -9,21 +9,22 @@ import { cn } from '@/lib/utils';
  * Renders a gallery item's visual.
  *
  * When `item.src` points at a real file we use `next/image` (lazy by default,
- * `priority` only for the first tile). When it is absent — which is the case for
- * the whole demo set — we render a branded gradient placeholder so the grid
- * still looks intentional rather than broken.
+ * `priority` only for the first tile). When it is absent we render a branded
+ * gradient placeholder so the grid still looks intentional rather than broken.
+ *
+ * Tiles are a fixed height, so portrait source images get centre-cropped.
+ * `item.focal` overrides the crop anchor for photos whose subject is not in the
+ * middle of the frame.
  */
 export function GalleryTile({
   item,
   alt,
-  title,
   priority = false,
   className,
   sizes = '(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw'
 }: {
   item: DemoGalleryItem;
   alt: string;
-  title: string;
   priority?: boolean;
   className?: string;
   sizes?: string;
@@ -37,6 +38,7 @@ export function GalleryTile({
         sizes={sizes}
         priority={priority}
         loading={priority ? undefined : 'lazy'}
+        style={item.focal ? { objectPosition: item.focal } : undefined}
         className={cn('object-cover', className)}
       />
     );
@@ -45,13 +47,14 @@ export function GalleryTile({
   return (
     <GradientPanel tone={item.tone} className={cn('absolute inset-0 h-full w-full', className)}>
       {/* Decorative placeholder — the accessible name comes from the parent
-          button/figure, so this block is hidden from assistive tech. */}
+          button/figure, so this block is hidden from assistive tech.
+          The title is deliberately NOT repeated here: the caption overlay on
+          top of the tile already shows it, and rendering both read as a bug. */}
       <div
         aria-hidden="true"
-        className="relative flex h-full flex-col items-center justify-center gap-3 p-6 text-center"
+        className="relative flex h-full items-center justify-center p-6"
       >
-        <ImageIcon className="h-8 w-8 text-white/70" />
-        <p className="font-heading text-lg leading-snug text-white">{title}</p>
+        <ImageIcon className="h-9 w-9 text-white/60" />
       </div>
     </GradientPanel>
   );

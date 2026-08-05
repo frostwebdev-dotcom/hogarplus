@@ -53,21 +53,75 @@ export type DemoGalleryItem = {
   src?: string;
   /** Key into `gallery.items.<captionKey>` for title + alt text. */
   captionKey: string;
+  /**
+   * `object-position` for the tile crop. Tiles are a fixed height, so portrait
+   * photos are centre-cropped by default; set this when the subject sits off
+   * centre. e.g. `'center 30%'`.
+   */
+  focal?: string;
   /** Gradient preset used by the placeholder tile. */
   tone: 'blue' | 'purple' | 'orchid' | 'navy';
   /** Grid emphasis — `wide` spans two columns on large screens. */
   span?: 'wide' | 'tall';
 };
 
+/**
+ * ⚠️ TEMPORARY STOCK PHOTOGRAPHY ⚠️
+ *
+ * The first four entries use free stock photos so the client can see how the
+ * gallery reads with real imagery. They are NOT photographs of HogarPlus
+ * Solutions' own work, and they do not show the client's team, clients or
+ * properties. They must be replaced before launch.
+ *
+ * Source: Pexels (Pexels License — free for commercial use, no attribution
+ * required). Downloaded to `public/images/`:
+ *   team-bedroom.jpg      pexels.com/photo/9462341  (Liliana Drew)
+ *   surface-detail.jpg    pexels.com/photo/6195198  (Tima Miroshnichenko)
+ *   detail-dusting.jpg    pexels.com/photo/6195292  (Tima Miroshnichenko)
+ *   cleaning-supplies.jpg pexels.com/photo/5217900  (Anna Shvets)
+ *
+ * The remaining entries have no `src` and fall back to the branded gradient
+ * placeholder, which is what every tile will look like until real photos
+ * arrive. Point `src` at the client's own files to replace them.
+ */
 export const demoGallery: DemoGalleryItem[] = [
-  { id: 'g1', category: 'residential', captionKey: 'livingRoom', tone: 'blue', span: 'wide' },
-  { id: 'g2', category: 'residential', captionKey: 'kitchen', tone: 'purple' },
-  { id: 'g3', category: 'commercial', captionKey: 'office', tone: 'navy' },
-  { id: 'g4', category: 'beforeAfter', captionKey: 'bathroom', tone: 'orchid' },
-  { id: 'g5', category: 'residential', captionKey: 'bedroom', tone: 'orchid' },
+  {
+    id: 'g1',
+    category: 'residential',
+    captionKey: 'teamBedroom',
+    src: '/images/team-bedroom.jpg',
+    tone: 'blue',
+    span: 'wide'
+  },
+  {
+    id: 'g2',
+    category: 'residential',
+    captionKey: 'surfaceDetail',
+    src: '/images/surface-detail.jpg',
+    tone: 'purple'
+  },
+  {
+    id: 'g3',
+    category: 'residential',
+    captionKey: 'detailDusting',
+    src: '/images/detail-dusting.jpg',
+    // Portrait source; the figure sits in the lower-middle of the frame.
+    focal: 'center 55%',
+    tone: 'orchid'
+  },
+  {
+    id: 'g4',
+    category: 'residential',
+    captionKey: 'supplies',
+    src: '/images/cleaning-supplies.jpg',
+    // Portrait source; the bottles occupy the bottom two thirds.
+    focal: 'center 70%',
+    tone: 'navy'
+  },
+  { id: 'g5', category: 'commercial', captionKey: 'office', tone: 'navy' },
   { id: 'g6', category: 'commercial', captionKey: 'lobby', tone: 'blue', span: 'wide' },
-  { id: 'g7', category: 'beforeAfter', captionKey: 'pantry', tone: 'purple' },
-  { id: 'g8', category: 'residential', captionKey: 'moveOut', tone: 'navy' }
+  { id: 'g7', category: 'beforeAfter', captionKey: 'bathroom', tone: 'orchid' },
+  { id: 'g8', category: 'beforeAfter', captionKey: 'pantry', tone: 'purple' }
 ];
 
 export const galleryFilters: Array<'all' | GalleryCategory> = [
