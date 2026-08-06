@@ -106,8 +106,12 @@ export function Header() {
             </Link>
           </div>
 
-          {/* Mobile actions */}
+          {/* Mobile actions.
+              The language toggle stays visible here rather than living only
+              inside the menu — a bilingual audience should never have to open
+              a hamburger to find their own language. */}
           <div className="flex items-center gap-2 lg:hidden">
+            <LanguageSwitcher tone="light" compact />
             <Link href="/book" className="btn-primary btn-sm hidden sm:inline-flex">
               {tCommon('bookOnline')}
             </Link>

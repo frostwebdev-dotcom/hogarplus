@@ -12,6 +12,12 @@ type LanguageSwitcherProps = {
   tone?: 'dark' | 'light';
   /** `segmented` = pill toggle (header/footer); `stacked` = full-width rows (mobile menu). */
   layout?: 'segmented' | 'stacked';
+  /**
+   * Tightens the segmented toggle for the mobile header, where it shares a row
+   * with the logo and the menu trigger. Drops the globe icon and trims the
+   * padding while keeping both buttons at a 44px tap target.
+   */
+  compact?: boolean;
   className?: string;
 };
 
@@ -40,6 +46,7 @@ const SWITCH_LABEL_KEY: Record<Locale, 'switchToEnglish' | 'switchToSpanish'> = 
 export function LanguageSwitcher({
   tone = 'dark',
   layout = 'segmented',
+  compact = false,
   className
 }: LanguageSwitcherProps) {
   const t = useTranslations('nav');
@@ -109,16 +116,20 @@ export function LanguageSwitcher({
         className
       )}
     >
-      <span
-        aria-hidden="true"
-        className={cn('ml-2 mr-1 hidden sm:inline', isLight ? 'text-white/70' : 'text-navy-400')}
-      >
-        {isPending ? (
-          <Loader2 className="h-4 w-4 animate-spin" />
-        ) : (
-          <Globe className="h-4 w-4" />
-        )}
-      </span>
+      {/* The globe is decoration; the compact header variant drops it entirely
+          so the toggle fits beside the logo at 375px. */}
+      {!compact ? (
+        <span
+          aria-hidden="true"
+          className={cn('ml-2 mr-1 hidden sm:inline', isLight ? 'text-white/70' : 'text-navy-400')}
+        >
+          {isPending ? (
+            <Loader2 className="h-4 w-4 animate-spin" />
+          ) : (
+            <Globe className="h-4 w-4" />
+          )}
+        </span>
+      ) : null}
 
       {locales.map((locale) => {
         const isActive = locale === activeLocale;
@@ -131,7 +142,10 @@ export function LanguageSwitcher({
             aria-current={isActive ? 'true' : undefined}
             aria-label={t(SWITCH_LABEL_KEY[locale])}
             className={cn(
-              'min-h-[2.25rem] min-w-[2.75rem] rounded-pill px-3 text-sm font-semibold transition-all duration-200',
+              'rounded-pill text-sm font-semibold transition-all duration-200',
+              compact
+                ? 'min-h-[2.25rem] min-w-[2.5rem] px-2.5'
+                : 'min-h-[2.25rem] min-w-[2.75rem] px-3',
               isActive
                 ? 'bg-gradient-brand text-white shadow-sm'
                 : isLight
