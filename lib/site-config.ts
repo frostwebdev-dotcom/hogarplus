@@ -19,8 +19,8 @@ const env = {
 };
 
 /* ── Confirmed business details (source: client brand flyer) ─────────────── */
-const PHONE_DISPLAY = '(862) 423-3186';
-const PHONE_E164 = '+18624233186';
+const PHONE_DISPLAY = '(908) 540-5734';
+const PHONE_E164 = '+19085405734';
 const EMAIL = 'HogarPlusSolution@gmail.com';
 const WEBSITE_DISPLAY = 'www.HogarPlusSolution.com';
 const WEBSITE_URL = 'https://www.hogarplussolution.com';
