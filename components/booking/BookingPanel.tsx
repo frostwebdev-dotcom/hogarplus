@@ -23,6 +23,36 @@ export function BookingPanel() {
   const tIntake = useTranslations('intake');
   const tCommon = useTranslations('common');
 
+  /*
+   * "Email us" opens a message already containing the questions, so the
+   * visitor only has to answer them.
+   *
+   * The three time windows are listed in full because they are a fixed choice.
+   * The space checklist is NOT: at twenty items it would push the mailto URL
+   * past the length some mail clients still truncate, so the email asks for the
+   * spaces and the full checklist stays on the page above.
+   */
+  const emailBody = [
+    t('email.intro'),
+    '',
+    t('email.timeHeading'),
+    ...timeWindows.map(
+      (slot) => `  - ${tIntake(`timeWindows.${slot}.label`)}: ${tIntake(`timeWindows.${slot}.hours`)}`
+    ),
+    '',
+    t('email.propertyHeading'),
+    ...propertyTypes.map((type) => `  - ${tIntake(`propertyTypes.${type}.label`)}`),
+    '',
+    t('email.spacesHeading'),
+    '',
+    t('email.contactHeading'),
+    ''
+  ].join('\n');
+
+  const emailHref = `${siteConfig.emailHref}?subject=${encodeURIComponent(
+    t('email.subject')
+  )}&body=${encodeURIComponent(emailBody)}`;
+
   return (
     <Reveal className="w-full">
       <div className="overflow-hidden rounded-panel border border-navy-100 bg-white shadow-card">
@@ -115,7 +145,7 @@ export function BookingPanel() {
               <PrimaryButton href="/contact" withArrow>
                 {t('formCta')}
               </PrimaryButton>
-              <a href={siteConfig.emailHref} className="btn-secondary">
+              <a href={emailHref} className="btn-secondary">
                 {tCommon('emailUs')}
               </a>
             </div>

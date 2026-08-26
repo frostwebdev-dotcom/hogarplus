@@ -369,8 +369,7 @@
     "flyer": {
       "eyebrow": "Brand Material",
       "heading": "The company flyer",
-      "description": "Everything shown in this flyer is also available as text on this page.",
-      "companyAlt": "HogarPlus Solutions information flyer on a navy background. It shows the logo, the tagline “Cuidamos tu hogar para que disfrutes”, a “¿Quiénes somos?” section describing a company passionate about the well-being of the home, a “Nuestro objetivo” section listing four goals, and a “Nuestros servicios” section listing four service lines, along with the phone number, email address and website.",
+      "description": "The same information the client hands out in print, in your language.",
       "brandAlt": "HogarPlus Solutions brand flyer: a house logo with leaves and sparkles on a navy background, the tagline “Cuidamos tu hogar para que disfrutes”, and the company's contact details."
     },
     "services": {
@@ -398,8 +397,7 @@
     "checklists": {
       "eyebrow": "What's Included",
       "heading": "Example checklists for each service",
-      "description": "These lists show the level of detail you can expect. Your final checklist is confirmed with you before the first visit.",
-      "disclaimer": "Placeholder checklists for demonstration purposes. Final scope and wording will be replaced with client-approved content."
+      "description": "These lists show the level of detail you can expect. Your final checklist is confirmed with you before the first visit."
     }
   },
   "galleryPage": {
@@ -485,7 +483,20 @@
       "nextStepBody": "Once we have your window of time and your list of spaces — by email or over the phone — we schedule a phone call with you to set the best time to visit the house or office.",
       "formCta": "Send us the details",
       "alternativeTitle": "Prefer to talk first?",
-      "alternativeBody": "Call us and we will take down your window of time and spaces over the phone."
+      "alternativeBody": "Call us and we will take down your window of time and spaces over the phone.",
+      "email": {
+        "subject": "Cleaning estimate request",
+        "intro": "Hello HogarPlus Solutions, I would like an estimate. My details are below.",
+        "timeHeading": "1) The window of time that works for me (keep one):",
+        "propertyHeading": "2) This is for (keep one):",
+        "spacesHeading": "3) The spaces to be cleaned (please list them):",
+        "contactHeading": "4) My name, town and the best number to reach me:"
+      }
+    },
+    "coverage": {
+      "eyebrow": "Service Area",
+      "heading": "The counties we cover",
+      "description": "We work across northern and central New Jersey. If your town is nearby but not listed, call or email and we will confirm."
     }
   },
   "contactPage": {
@@ -518,7 +529,6 @@
       "eyebrow": "Send a Message",
       "heading": "Tell us what you need",
       "description": "Fill in the form and we'll get back to you with availability and next steps.",
-      "demoNotice": "Demo form — submissions are validated in the browser and are not sent anywhere yet.",
       "labels": {
         "name": "Full name",
         "email": "Email",

@@ -1,5 +1,5 @@
 import type { Locale } from '@/i18n/routing';
-import { siteConfig } from './site-config';
+import { getPhone, siteConfig } from './site-config';
 
 /**
  * Organization / LocalBusiness structured data.
@@ -28,7 +28,7 @@ export function buildLocalBusinessJsonLd(
     url: `${siteConfig.url}/${locale}`,
     description,
     inLanguage: [locale],
-    telephone: siteConfig.phone,
+    telephone: getPhone(locale).display,
     email: siteConfig.email,
     knowsLanguage: ['en', 'es'],
     areaServed: {

@@ -1,9 +1,14 @@
+import type { Locale } from '@/i18n/routing';
+
 /**
  * ─────────────────────────────────────────────────────────────────────────────
  * CENTRAL SITE CONFIGURATION
  * ─────────────────────────────────────────────────────────────────────────────
  * Every contact detail, URL and brand asset path the site depends on lives here.
  * No component may hardcode a phone number, email address or website URL.
+ *
+ * NOTE: the phone number is per-language and is NOT on `siteConfig`. Call
+ * `getPhone(locale)` instead — see below.
  *
  * The contact details below are CONFIRMED — they come directly from the client's
  * brand flyer (`public/brand/hogarplus-brand-flyer.jpeg`). Environment variables
@@ -13,18 +18,27 @@
 
 const env = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
-  phone: process.env.NEXT_PUBLIC_PHONE,
+  phoneEn: process.env.NEXT_PUBLIC_PHONE_EN,
+  phoneEs: process.env.NEXT_PUBLIC_PHONE_ES,
   email: process.env.NEXT_PUBLIC_EMAIL
 };
 
 /* ── Confirmed business details (source: client brand flyer) ─────────────── */
-const PHONE_DISPLAY = '(908) 540-5734';
-const PHONE_E164 = '+19085405734';
+
+/**
+ * The English line and the Spanish line are DIFFERENT NUMBERS. There is no
+ * single "site phone number" — always resolve one through `getPhone(locale)`
+ * so a visitor is never handed the wrong line.
+ */
+const PHONE_BY_LOCALE: Record<Locale, { display: string; e164: string }> = {
+  en: { display: '(908) 540-5734', e164: '+19085405734' },
+  es: { display: '(862) 423-3186', e164: '+18624233186' }
+};
+
 const EMAIL = 'HogarPlusSolution@gmail.com';
 const WEBSITE_DISPLAY = 'www.HogarPlusSolution.com';
 const WEBSITE_URL = 'https://www.hogarplussolution.com';
 
-const phone = env.phone?.trim() || PHONE_DISPLAY;
 const email = env.email?.trim() || EMAIL;
 const siteUrl = (env.siteUrl?.trim() || WEBSITE_URL).replace(/\/$/, '');
 
@@ -35,13 +49,37 @@ function toTelHref(value: string): string {
   return digits.length === 10 ? `+1${digits}` : `+${digits}`;
 }
 
+const PHONE_ENV_OVERRIDE: Record<Locale, string | undefined> = {
+  en: env.phoneEn,
+  es: env.phoneEs
+};
+
+export type PhoneLine = {
+  /** Formatted for display, e.g. `(908) 540-5734`. */
+  display: string;
+  /** Ready for an anchor, e.g. `tel:+19085405734`. */
+  href: string;
+};
+
+/**
+ * The phone line for a given language.
+ *
+ * Server and client components alike can reach the active locale with
+ * next-intl's `useLocale()`; route handlers and metadata already have it.
+ */
+export function getPhone(locale: Locale): PhoneLine {
+  const override = PHONE_ENV_OVERRIDE[locale]?.trim();
+  if (override) return { display: override, href: `tel:${toTelHref(override)}` };
+
+  const line = PHONE_BY_LOCALE[locale];
+  return { display: line.display, href: `tel:${line.e164}` };
+}
+
 export const siteConfig = {
   name: 'HogarPlus Solutions',
   shortName: 'HogarPlus',
   url: siteUrl,
 
-  phone,
-  phoneHref: `tel:${env.phone?.trim() ? toTelHref(env.phone.trim()) : PHONE_E164}`,
   email,
   emailHref: `mailto:${email}`,
   websiteDisplay: WEBSITE_DISPLAY,

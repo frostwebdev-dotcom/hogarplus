@@ -1,7 +1,8 @@
 import { Phone } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
-import { siteConfig } from '@/lib/site-config';
+import type { Locale } from '@/i18n/routing';
+import { getPhone } from '@/lib/site-config';
 import { cn } from '@/lib/utils';
 
 type ClickToCallButtonProps = {
@@ -24,7 +25,8 @@ export function ClickToCallButton({
   showNumber = true
 }: ClickToCallButtonProps) {
   const t = useTranslations('common');
-  const label = showNumber ? siteConfig.phone : t('callUs');
+  const phone = getPhone(useLocale() as Locale);
+  const label = showNumber ? phone.display : t('callUs');
 
   const base =
     'inline-flex items-center gap-2 font-semibold transition-colors duration-200 ease-brand';
@@ -48,9 +50,9 @@ export function ClickToCallButton({
 
   return (
     <a
-      href={siteConfig.phoneHref}
+      href={phone.href}
       className={cn(base, styles[variant], className)}
-      aria-label={`${t('callUs')}: ${siteConfig.phone}`}
+      aria-label={`${t('callUs')}: ${phone.display}`}
     >
       <Phone aria-hidden="true" className="h-4 w-4 shrink-0" />
       <span>{label}</span>

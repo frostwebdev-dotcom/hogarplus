@@ -1,9 +1,10 @@
 import { Globe, Mail, MapPin, Phone } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { Link } from '@/i18n/navigation';
+import type { Locale } from '@/i18n/routing';
 import { footerNav } from '@/lib/navigation-items';
-import { siteConfig } from '@/lib/site-config';
+import { getPhone, siteConfig } from '@/lib/site-config';
 import { services } from '@/data/services';
 import { counties } from '@/data/counties';
 import { LanguageSwitcher } from './LanguageSwitcher';
@@ -18,6 +19,7 @@ import { Logo } from './Logo';
  */
 export function Footer() {
   const t = useTranslations('footer');
+  const phone = getPhone(useLocale() as Locale);
   const tNav = useTranslations('nav');
   const tCommon = useTranslations('common');
   const tServices = useTranslations('services.items');
@@ -96,11 +98,11 @@ export function Footer() {
             <ul className="mt-4 flex flex-col gap-3 text-[0.9375rem]">
               <li>
                 <a
-                  href={siteConfig.phoneHref}
+                  href={phone.href}
                   className="inline-flex items-center gap-2.5 text-navy-100/85 transition-colors hover:text-white"
                 >
                   <Phone aria-hidden="true" className="h-4 w-4 shrink-0 text-brand-orchid" />
-                  {siteConfig.phone}
+                  {phone.display}
                 </a>
               </li>
               <li>

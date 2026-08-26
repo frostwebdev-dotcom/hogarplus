@@ -1,15 +1,17 @@
 'use client';
 
 import { motion, useReducedMotion, type Variants } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Phone, Sparkles } from 'lucide-react';
 
 import { Link } from '@/i18n/navigation';
-import { siteConfig } from '@/lib/site-config';
+import type { Locale } from '@/i18n/routing';
+import { getPhone, siteConfig } from '@/lib/site-config';
 import { HeroBackground } from './HeroBackground';
 
 export function Hero() {
   const t = useTranslations('hero');
+  const phone = getPhone(useLocale() as Locale);
   const shouldReduceMotion = useReducedMotion();
 
   const container: Variants = {
@@ -81,7 +83,7 @@ export function Hero() {
           {/* Click-to-call — the flyer leads with the phone number, so does this. */}
           <motion.p variants={item} className="mt-6">
             <a
-              href={siteConfig.phoneHref}
+              href={phone.href}
               className="inline-flex items-center gap-2.5 text-[1.0625rem] font-semibold text-white underline decoration-brand-orchid decoration-2 underline-offset-[6px] transition-colors hover:text-brand-orchid"
             >
               <Phone aria-hidden="true" className="h-[1.1rem] w-[1.1rem] shrink-0" />

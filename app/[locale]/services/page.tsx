@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { Info } from 'lucide-react';
 
 import type { Locale } from '@/i18n/routing';
 import { buildPageMetadata } from '@/lib/metadata';
@@ -8,7 +7,7 @@ import { services } from '@/data/services';
 import { PageHero } from '@/components/ui/PageHero';
 import { PrimaryButton } from '@/components/ui/PrimaryButton';
 import { SectionHeading } from '@/components/ui/SectionHeading';
-import { Reveal, RevealGroup } from '@/components/ui/Reveal';
+import { RevealGroup } from '@/components/ui/Reveal';
 import { ServiceCard } from '@/components/services/ServiceCard';
 import { ServiceChecklist } from '@/components/services/ServiceChecklist';
 import { BookingCTA } from '@/components/home/BookingCTA';
@@ -74,17 +73,9 @@ export default async function ServicesPage({ params }: PageProps) {
             className="mx-auto max-w-3xl"
           />
 
-          {/* Explicit, visible statement that these lists are placeholders. */}
-          <Reveal className="mt-8 flex justify-center">
-            <p className="flex max-w-2xl items-start gap-2.5 rounded-card border border-navy-100 bg-surface px-5 py-4 text-sm leading-relaxed text-navy-400">
-              <Info aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-brand-blue" />
-              {t('checklists.disclaimer')}
-            </p>
-          </Reveal>
-
           <RevealGroup
             as="ul"
-            className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3"
+            className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3"
             stagger={0.06}
           >
             {services.map((service) => (

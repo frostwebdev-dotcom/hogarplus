@@ -22,7 +22,7 @@
     },
     "contact": {
       "title": "Contacto | HogarPlus Solutions",
-      "description": "Llame al (908) 540-5734, escríbanos o envíenos un mensaje. Atendemos en inglés y español en todo New Jersey."
+      "description": "Llame al (862) 423-3186, escríbanos o envíenos un mensaje. Atendemos en inglés y español en todo New Jersey."
     }
   },
   "common": {
@@ -73,7 +73,7 @@
     "body": "Limpieza profunda, mantenimiento, organización y soluciones personalizadas para crear espacios impecables, saludables y cómodos.",
     "primaryCta": "Obtener Estimado",
     "secondaryCta": "Explorar servicios",
-    "phoneCta": "Llamar al (908) 540-5734",
+    "phoneCta": "Llamar al (862) 423-3186",
     "scrollHint": "Desplácese para explorar",
     "videoLabel": "Video de fondo de un hogar luminoso y recién limpiado",
     "illustrationAlt": "Dos profesionales de limpieza de HogarPlus Solutions con camisetas de la marca, una con atomizador y paño y otro con trapeador, en una casa luminosa."
@@ -369,8 +369,7 @@
     "flyer": {
       "eyebrow": "Material de Marca",
       "heading": "El folleto de la compañía",
-      "description": "Todo el contenido de este folleto también está disponible como texto en esta página.",
-      "companyAlt": "Folleto informativo de HogarPlus Solutions sobre fondo azul marino. Incluye el logotipo, el lema «Cuidamos tu hogar para que disfrutes», la sección «¿Quiénes somos?» que describe una compañía apasionada por el bienestar del hogar, la sección «Nuestro objetivo» con cuatro metas y la sección «Nuestros servicios» con cuatro líneas de servicio, además del teléfono, el correo electrónico y el sitio web.",
+      "description": "La misma información que la empresa entrega impresa, en su idioma.",
       "brandAlt": "Folleto de marca de HogarPlus Solutions: logotipo de casa con hojas y destellos sobre fondo azul marino, el lema «Cuidamos tu hogar para que disfrutes» y los datos de contacto de la empresa."
     },
     "services": {
@@ -398,8 +397,7 @@
     "checklists": {
       "eyebrow": "Qué Incluye",
       "heading": "Listas de ejemplo para cada servicio",
-      "description": "Estas listas muestran el nivel de detalle que puede esperar. Su lista final se confirma con usted antes de la primera visita.",
-      "disclaimer": "Listas provisionales con fines de demostración. El alcance y la redacción finales se reemplazarán por contenido aprobado por el cliente."
+      "description": "Estas listas muestran el nivel de detalle que puede esperar. Su lista final se confirma con usted antes de la primera visita."
     }
   },
   "galleryPage": {
@@ -456,13 +454,13 @@
     "hero": {
       "eyebrow": "Obtener Estimado",
       "title": "Con dos respuestas podemos empezar",
-      "subtitle": "Cuéntenos la franja horaria que le funciona y los espacios que incluye el trabajo. Le llamamos para fijar el mejor momento para la visita."
+      "subtitle": "Díganos el horario de servicio que requiere y los espacios que incluye el trabajo. Le llamaremos para acordar la visita y poder revisar en persona los espacios."
     },
     "steps": {
       "eyebrow": "Cómo Funciona",
       "heading": "Tres pasos sencillos",
       "one": {
-        "title": "Elija su franja horaria",
+        "title": "Elija su horario",
         "description": "Mañana, tarde o noche: la franja que mejor se ajuste a su día."
       },
       "two": {
@@ -482,10 +480,23 @@
       "spacesTitle": "Los espacios",
       "spacesBody": "La lista depende de si el trabajo es para una casa o una oficina.",
       "nextStepTitle": "Luego le llamamos",
-      "nextStepBody": "En cuanto tengamos su franja horaria y su lista de espacios —por correo o por teléfono— agendamos una llamada con usted para fijar el mejor momento para visitar la casa u oficina.",
+      "nextStepBody": "Apenas sepamos el horario de servicio y la lista de espacios por correo o teléfono nos contactaremos con usted para fijar el mejor momento para visitar su casa u oficina.",
       "formCta": "Envíenos los detalles",
       "alternativeTitle": "¿Prefiere conversarlo primero?",
-      "alternativeBody": "Llámenos y tomamos su franja horaria y sus espacios por teléfono."
+      "alternativeBody": "Llámenos para dejarnos saber el horario de servicio y los espacios por teléfono.",
+      "email": {
+        "subject": "Solicitud de estimado de limpieza",
+        "intro": "Hola HogarPlus Solutions, quisiera un estimado. Mis datos están abajo.",
+        "timeHeading": "1) El horario que me funciona (deje uno):",
+        "propertyHeading": "2) Esto es para (deje uno):",
+        "spacesHeading": "3) Los espacios que se limpiarán (por favor enumérelos):",
+        "contactHeading": "4) Mi nombre, mi pueblo y el mejor número para llamarme:"
+      }
+    },
+    "coverage": {
+      "eyebrow": "Área de Servicio",
+      "heading": "Los condados que cubrimos",
+      "description": "Trabajamos en el norte y el centro de New Jersey. Si su pueblo está cerca pero no aparece, llámenos o escríbanos y lo confirmamos."
     }
   },
   "contactPage": {
@@ -518,7 +529,6 @@
       "eyebrow": "Envíe un Mensaje",
       "heading": "Cuéntenos qué necesita",
       "description": "Complete el formulario y le responderemos con la disponibilidad y los próximos pasos.",
-      "demoNotice": "Formulario de demostración: los envíos se validan en el navegador y todavía no se envían a ningún destino.",
       "labels": {
         "name": "Nombre completo",
         "email": "Correo electrónico",

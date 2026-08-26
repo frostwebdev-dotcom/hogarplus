@@ -4,7 +4,7 @@ import { useId, useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useLocale, useTranslations } from 'next-intl';
-import { AlertCircle, CheckCircle2, Info, Loader2, Send } from 'lucide-react';
+import { AlertCircle, CheckCircle2, Loader2, Send } from 'lucide-react';
 
 import { services } from '@/data/services';
 import {
@@ -139,12 +139,6 @@ export function DemoContactForm() {
       onSubmit={handleSubmit(onSubmit)}
       className="flex flex-col gap-6 rounded-panel border border-navy-100 bg-white p-6 shadow-card sm:p-8"
     >
-      {/* Demo disclosure */}
-      <p className="flex items-start gap-2.5 rounded-card border border-navy-100 bg-surface px-4 py-3 text-sm leading-relaxed text-navy-400">
-        <Info aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-brand-blue" />
-        {t('demoNotice')}
-      </p>
-
       {/* Error summary — announced after a failed submit. */}
       {hasErrors ? (
         <p

@@ -4,7 +4,7 @@ import { Globe, Mail, MapPin, Phone } from 'lucide-react';
 
 import type { Locale } from '@/i18n/routing';
 import { buildPageMetadata } from '@/lib/metadata';
-import { siteConfig } from '@/lib/site-config';
+import { getPhone, siteConfig } from '@/lib/site-config';
 import { PageHero } from '@/components/ui/PageHero';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Reveal } from '@/components/ui/Reveal';
@@ -24,6 +24,7 @@ export default async function ContactPage({ params }: PageProps) {
 
   const t = await getTranslations('contactPage');
   const tCommon = await getTranslations('common');
+  const phone = getPhone(locale);
 
   return (
     <>
@@ -32,8 +33,8 @@ export default async function ContactPage({ params }: PageProps) {
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
       >
-        <PrimaryButton href={siteConfig.phoneHref} icon={<Phone aria-hidden="true" className="h-4 w-4" />}>
-          {siteConfig.phone}
+        <PrimaryButton href={phone.href} icon={<Phone aria-hidden="true" className="h-4 w-4" />}>
+          {phone.display}
         </PrimaryButton>
         <PrimaryButton href="/book" variant="ghostLight" withArrow>
           {tCommon('getEstimate')}
@@ -54,7 +55,7 @@ export default async function ContactPage({ params }: PageProps) {
             {/* Phone — a link, because it navigates (dials). */}
             <Reveal>
               <a
-                href={siteConfig.phoneHref}
+                href={phone.href}
                 className="group flex h-full flex-col gap-3 rounded-card border border-navy-100/70 bg-white p-6 shadow-card transition-all duration-300 ease-brand hover:-translate-y-1 hover:border-brand-blue/30 hover:shadow-card-hover motion-reduce:transform-none"
               >
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-brand-soft text-brand-purple transition-colors group-hover:bg-gradient-brand group-hover:text-white">
@@ -63,7 +64,7 @@ export default async function ContactPage({ params }: PageProps) {
                 <span className="font-heading text-lg font-semibold text-navy">
                   {t('info.phone.title')}
                 </span>
-                <span className="text-[0.9375rem] text-brand-blue">{siteConfig.phone}</span>
+                <span className="text-[0.9375rem] text-brand-blue">{phone.display}</span>
                 <span className="text-sm leading-relaxed text-navy-500">
                   {t('info.phone.description')}
                 </span>

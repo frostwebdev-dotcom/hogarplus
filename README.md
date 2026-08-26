@@ -96,11 +96,16 @@ only to override something per environment:
 
 ```
 NEXT_PUBLIC_SITE_URL=
-NEXT_PUBLIC_PHONE=
+NEXT_PUBLIC_PHONE_EN=
+NEXT_PUBLIC_PHONE_ES=
 NEXT_PUBLIC_EMAIL=
 ```
 
 Every value has a working default, so nothing is missing to run the demo.
+
+**The phone number is per language.** English and Spanish are two different
+lines, so there is no `siteConfig.phone` — resolve one with `getPhone(locale)`
+from `lib/site-config.ts`. Never hardcode a number in a component.
 
 ## Demo content — what must be replaced
 

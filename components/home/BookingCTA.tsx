@@ -1,12 +1,14 @@
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { CalendarCheck, Zap } from 'lucide-react';
 
 import { Link } from '@/i18n/navigation';
-import { siteConfig } from '@/lib/site-config';
+import type { Locale } from '@/i18n/routing';
+import { getPhone } from '@/lib/site-config';
 import { Reveal } from '@/components/ui/Reveal';
 
 export function BookingCTA() {
   const t = useTranslations('bookingCta');
+  const phone = getPhone(useLocale() as Locale);
 
   return (
     <section className="section-tight bg-surface" aria-labelledby="booking-cta-heading">
@@ -47,10 +49,10 @@ export function BookingCTA() {
                 <p className="text-[0.9375rem] text-white/90">
                   {t('secondaryPrefix')}{' '}
                   <a
-                    href={siteConfig.phoneHref}
+                    href={phone.href}
                     className="font-semibold text-white underline decoration-white/60 decoration-2 underline-offset-4 transition-colors hover:decoration-white"
                   >
-                    {siteConfig.phone}
+                    {phone.display}
                   </a>
                 </p>
               </div>

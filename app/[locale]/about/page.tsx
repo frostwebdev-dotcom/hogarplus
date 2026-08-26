@@ -1,16 +1,15 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Check, MapPin } from 'lucide-react';
 
 import type { Locale } from '@/i18n/routing';
 import { buildPageMetadata } from '@/lib/metadata';
-import { siteConfig } from '@/lib/site-config';
 import { counties } from '@/data/counties';
 import { PageHero } from '@/components/ui/PageHero';
 import { PrimaryButton } from '@/components/ui/PrimaryButton';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Reveal, RevealGroup } from '@/components/ui/Reveal';
+import { CompanyFlyerPanel } from '@/components/about/CompanyFlyerPanel';
 import { ValueBadge } from '@/components/ui/ValueBadge';
 import { BookingCTA } from '@/components/home/BookingCTA';
 import { Objectives } from '@/components/home/Objectives';
@@ -50,9 +49,10 @@ export default async function AboutPage({ params }: PageProps) {
       {/*
         Story + company flyer.
         The Spanish body text is verbatim from the client's flyer; the English is
-        a professional localization of the same paragraph. The flyer image sits
-        beside it as a framed figure — every word it contains also exists as
-        real HTML on this page, so nothing is locked inside a JPEG.
+        a professional localization of the same paragraph. The flyer itself is
+        rebuilt as `CompanyFlyerPanel` rather than shown as the supplied JPEG,
+        which had Spanish baked into the pixels and so could not be translated,
+        selected or read aloud. The original artwork remains in public/brand/.
       */}
       <section className="section bg-surface" aria-labelledby="about-story-heading">
         <div className="shell">
@@ -100,16 +100,7 @@ export default async function AboutPage({ params }: PageProps) {
             <Reveal delay={0.08}>
               <figure className="lg:sticky lg:top-[calc(var(--header-height)+2rem)]">
                 <div className="rounded-panel bg-gradient-brand p-[2px] shadow-card-hover">
-                  <div className="overflow-hidden rounded-[calc(theme(borderRadius.panel)-2px)] bg-navy-950">
-                    <Image
-                      src={siteConfig.brand.companyFlyer}
-                      alt={t('flyer.companyAlt')}
-                      width={siteConfig.brand.companyFlyerSize.width}
-                      height={siteConfig.brand.companyFlyerSize.height}
-                      sizes="(min-width: 1024px) 44vw, 92vw"
-                      className="h-auto w-full"
-                    />
-                  </div>
+                  <CompanyFlyerPanel />
                 </div>
                 <figcaption className="mt-3 text-center text-sm text-navy-400">
                   {t('flyer.heading')} — {t('flyer.description')}

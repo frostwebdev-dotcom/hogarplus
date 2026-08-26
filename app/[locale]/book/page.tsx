@@ -4,12 +4,14 @@ import { Phone } from 'lucide-react';
 
 import type { Locale } from '@/i18n/routing';
 import { buildPageMetadata } from '@/lib/metadata';
-import { siteConfig } from '@/lib/site-config';
+import { getPhone, siteConfig } from '@/lib/site-config';
 import { PageHero } from '@/components/ui/PageHero';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Reveal, RevealGroup } from '@/components/ui/Reveal';
 import { PrimaryButton } from '@/components/ui/PrimaryButton';
 import { BookingPanel } from '@/components/booking/BookingPanel';
+import { counties } from '@/data/counties';
+import { MapPin } from 'lucide-react';
 
 type PageProps = { params: Promise<{ locale: Locale }> };
 
@@ -26,6 +28,7 @@ export default async function BookPage({ params }: PageProps) {
 
   const t = await getTranslations('bookPage');
   const tCommon = await getTranslations('common');
+  const phone = getPhone(locale);
 
   return (
     <>
@@ -34,8 +37,8 @@ export default async function BookPage({ params }: PageProps) {
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
       >
-        <PrimaryButton href={siteConfig.phoneHref} variant="ghostLight" icon={<Phone aria-hidden="true" className="h-4 w-4" />}>
-          {siteConfig.phone}
+        <PrimaryButton href={phone.href} variant="ghostLight" icon={<Phone aria-hidden="true" className="h-4 w-4" />}>
+          {phone.display}
         </PrimaryButton>
       </PageHero>
 
@@ -91,8 +94,8 @@ export default async function BookPage({ params }: PageProps) {
                 </p>
 
                 <div className="mt-6 flex flex-col gap-3">
-                  <PrimaryButton href={siteConfig.phoneHref} icon={<Phone aria-hidden="true" className="h-4 w-4" />}>
-                    {siteConfig.phone}
+                  <PrimaryButton href={phone.href} icon={<Phone aria-hidden="true" className="h-4 w-4" />}>
+                    {phone.display}
                   </PrimaryButton>
                   <PrimaryButton href="/contact" variant="secondary" withArrow>
                     {tCommon('contactUs')}
@@ -113,6 +116,36 @@ export default async function BookPage({ params }: PageProps) {
               </div>
             </Reveal>
           </div>
+        </div>
+      </section>
+      {/* Where we work — the same nine counties listed on About and in the footer. */}
+      <section className="section-tight bg-surface" aria-labelledby="book-coverage-heading">
+        <div className="shell">
+          <SectionHeading
+            id="book-coverage-heading"
+            eyebrow={t('coverage.eyebrow')}
+            title={t('coverage.heading')}
+            description={t('coverage.description')}
+            className="mx-auto max-w-3xl"
+          />
+
+          <RevealGroup
+            as="ul"
+            className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3"
+            stagger={0.04}
+          >
+            {counties.map((county) => (
+              <li
+                key={county.id}
+                className="flex items-center gap-3 rounded-card border border-navy-100 bg-white px-5 py-4 transition-colors hover:border-brand-blue/40"
+              >
+                <MapPin aria-hidden="true" className="h-5 w-5 shrink-0 text-brand-blue" />
+                <span className="font-semibold text-navy">
+                  {county.name} {tCommon('county')}
+                </span>
+              </li>
+            ))}
+          </RevealGroup>
         </div>
       </section>
     </>
