@@ -14,7 +14,7 @@
     },
     "gallery": {
       "title": "Galería | HogarPlus Solutions",
-      "description": "Un vistazo a los espacios que cuidamos: trabajos residenciales y comerciales en todo New Jersey."
+      "description": "Un vistazo a los espacios que cuidamos: trabajos residenciales y comerciales en el norte y centro de New Jersey."
     },
     "book": {
       "title": "Obtener Estimado | HogarPlus Solutions",
@@ -22,7 +22,7 @@
     },
     "contact": {
       "title": "Contacto | HogarPlus Solutions",
-      "description": "Llame al (862) 423-3186, escríbanos o envíenos un mensaje. Atendemos en inglés y español en todo New Jersey."
+      "description": "Llame al (862) 423-3186, escríbanos o envíenos un mensaje. Atendemos en inglés y español en el norte y centro de New Jersey."
     }
   },
   "common": {
@@ -43,8 +43,7 @@
     "close": "Cerrar",
     "previous": "Anterior",
     "next": "Siguiente",
-    "sampleContent": "Contenido de muestra: será reemplazado por material aprobado por el cliente.",
-    "serviceAreaShort": "Atendemos todo New Jersey",
+    "serviceAreaShort": "Atendemos el norte y centro de NJ",
     "county": "Condado",
     "logoAlt": "Logotipo de HogarPlus Solutions"
   },
@@ -291,8 +290,6 @@
   "testimonials": {
     "eyebrow": "En Sus Palabras",
     "heading": "Lo que nos comentan los clientes",
-    "description": "Una vista previa de la sección de opiniones. Los testimonios reales aprobados por el cliente reemplazarán estos ejemplos.",
-    "sampleNotice": "Contenido de muestra: texto de ejemplo mostrado solo para esta demostración. No representa clientes, identidades ni calificaciones reales.",
     "roles": {
       "residential": "Cliente residencial",
       "commercial": "Cliente comercial",
@@ -312,7 +309,7 @@
   },
   "serviceArea": {
     "eyebrow": "Área de Servicio",
-    "heading": "Con orgullo al servicio de New Jersey",
+    "heading": "Con orgullo, atendemos el norte y centro de New Jersey",
     "description": "Seleccione un condado para ver cómo trabajamos en su zona.",
     "selectPrompt": "Seleccione un condado",
     "mapLabel": "Mapa estilizado de los condados de New Jersey que atendemos",
@@ -329,6 +326,7 @@
       "warren": "Limpieza del hogar y visitas de limpieza profunda de temporada en el condado de Warren.",
       "morris": "Cuidado residencial detallado y limpieza profunda de temporada en el condado de Morris.",
       "essex": "Planes residenciales, apartamentos y limpieza para pequeños negocios en el condado de Essex.",
+      "union": "Planes residenciales regulares y limpieza para pequeños negocios en las comunidades del condado de Union.",
       "hunterdon": "Limpieza recurrente del hogar y mudanzas de entrada y salida en el condado de Hunterdon.",
       "somerset": "Planes residenciales y espacios comerciales atendidos en el condado de Somerset.",
       "middlesex": "Hogares, oficinas y entregas de alquiler en todo el condado de Middlesex."
@@ -343,7 +341,7 @@
     "trust": "Agendar es rápido y sencillo"
   },
   "footer": {
-    "brandSummary": "Servicios de mantenimiento y limpieza profunda del hogar en todo New Jersey. Atención en inglés y español.",
+    "brandSummary": "Servicios de mantenimiento y limpieza profunda del hogar en el norte y centro de New Jersey. Atención en inglés y español.",
     "navTitle": "Explorar",
     "servicesTitle": "Servicios",
     "areasTitle": "Área de servicio",
@@ -403,7 +401,7 @@
     "hero": {
       "eyebrow": "Galería",
       "title": "Un vistazo a los espacios que cuidamos",
-      "subtitle": "Espacios residenciales y comerciales en todo New Jersey."
+      "subtitle": "Espacios residenciales y comerciales en el norte y centro de New Jersey."
     },
     "filtersLabel": "Filtrar la galería por categoría",
     "filters": {
@@ -412,7 +410,6 @@
       "commercial": "Comercial"
     },
     "empty": "Aún no hay elementos en esta categoría.",
-    "placeholderNote": "Galería de demostración: estas son fotografías de archivo temporales de espacios similares, usadas para mostrar el diseño. Se reemplazarán con las fotografías propias de HogarPlus Solutions.",
     "openItem": "Abrir imagen",
     "lightbox": {
       "label": "Visor de imágenes de la galería",
@@ -514,14 +511,6 @@
       "email": {
         "title": "Escríbanos",
         "description": "Envíe los detalles de su espacio y le responderemos con los próximos pasos."
-      },
-      "website": {
-        "title": "Sitio web",
-        "description": "Conozca todos nuestros servicios de mantenimiento y limpieza del hogar."
-      },
-      "area": {
-        "title": "Área de servicio",
-        "description": "Atendemos todo New Jersey, con servicio en inglés y español."
       }
     },
     "form": {

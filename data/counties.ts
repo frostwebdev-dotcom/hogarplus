@@ -34,6 +34,7 @@ export const counties: County[] = [
   { id: 'warren', name: 'Warren', point: { x: 38.4, y: 22.7 }, region: 'north' },
   { id: 'morris', name: 'Morris', point: { x: 62.2, y: 22.7 }, region: 'north' },
   { id: 'essex', name: 'Essex', point: { x: 78.4, y: 25.4 }, region: 'north' },
+  { id: 'union', name: 'Union', point: { x: 75.7, y: 30.4 }, region: 'north' },
   { id: 'hunterdon', name: 'Hunterdon', point: { x: 42.7, y: 33.8 }, region: 'central' },
   { id: 'somerset', name: 'Somerset', point: { x: 58.9, y: 34.2 }, region: 'central' },
   { id: 'middlesex', name: 'Middlesex', point: { x: 69.7, y: 38.8 }, region: 'central' }

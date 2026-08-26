@@ -34,8 +34,8 @@ export type DemoTestimonial = {
 
 export const demoTestimonials: DemoTestimonial[] = [
   { id: 'one', quoteKey: 'one', roleKey: 'residential', county: 'Essex', initials: 'RC' },
-  { id: 'two', quoteKey: 'two', roleKey: 'commercial', county: 'Morris', initials: 'CC' },
-  { id: 'three', quoteKey: 'three', roleKey: 'moveOut', county: 'Middlesex', initials: 'MC' }
+  { id: 'two', quoteKey: 'two', roleKey: 'commercial', county: 'Union', initials: 'CC' },
+  { id: 'three', quoteKey: 'three', roleKey: 'moveOut', county: 'Union', initials: 'MC' }
 ];
 
 /* ───────────────────────────── Gallery ───────────────────────────── */

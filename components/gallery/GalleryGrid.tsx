@@ -3,7 +3,7 @@
 import { useMemo, useRef, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { Info, Maximize2 } from 'lucide-react';
+import { Maximize2 } from 'lucide-react';
 
 import { demoGallery, galleryFilters, type GalleryCategory } from '@/data/demo-content';
 import { cn } from '@/lib/utils';
@@ -142,12 +142,6 @@ export function GalleryGrid() {
           </AnimatePresence>
         </ul>
       )}
-
-      {/* Honest disclosure that the tiles are placeholders. */}
-      <p className="mx-auto mt-8 flex max-w-2xl items-start gap-2.5 rounded-card border border-navy-100 bg-white px-5 py-4 text-sm leading-relaxed text-navy-400">
-        <Info aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-brand-blue" />
-        {t('placeholderNote')}
-      </p>
 
       <GalleryLightbox
         items={visibleItems}

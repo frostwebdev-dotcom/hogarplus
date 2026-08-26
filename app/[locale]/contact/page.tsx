@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { Globe, Mail, MapPin, Phone } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 
 import type { Locale } from '@/i18n/routing';
 import { buildPageMetadata } from '@/lib/metadata';
@@ -51,7 +51,7 @@ export default async function ContactPage({ params }: PageProps) {
             className="mx-auto max-w-3xl"
           />
 
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mx-auto mt-10 grid max-w-3xl gap-5 sm:grid-cols-2">
             {/* Phone — a link, because it navigates (dials). */}
             <Reveal>
               <a
@@ -89,39 +89,6 @@ export default async function ContactPage({ params }: PageProps) {
               </a>
             </Reveal>
 
-            <Reveal delay={0.12}>
-              <a
-                href={siteConfig.url}
-                className="group flex h-full flex-col gap-3 rounded-card border border-navy-100/70 bg-white p-6 shadow-card transition-all duration-300 ease-brand hover:-translate-y-1 hover:border-brand-blue/30 hover:shadow-card-hover motion-reduce:transform-none"
-              >
-                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-brand-soft text-brand-purple transition-colors group-hover:bg-gradient-brand group-hover:text-white">
-                  <Globe aria-hidden="true" className="h-6 w-6" />
-                </span>
-                <span className="font-heading text-lg font-semibold text-navy">
-                  {t('info.website.title')}
-                </span>
-                <span className="break-all text-[0.9375rem] text-brand-blue">
-                  {siteConfig.websiteDisplay}
-                </span>
-                <span className="text-sm leading-relaxed text-navy-500">
-                  {t('info.website.description')}
-                </span>
-              </a>
-            </Reveal>
-
-            <Reveal delay={0.18}>
-              <div className="flex h-full flex-col gap-3 rounded-card border border-navy-100/70 bg-white p-6 shadow-card">
-                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-brand-soft text-brand-purple">
-                  <MapPin aria-hidden="true" className="h-6 w-6" />
-                </span>
-                <span className="font-heading text-lg font-semibold text-navy">
-                  {t('info.area.title')}
-                </span>
-                <span className="text-sm leading-relaxed text-navy-500">
-                  {t('info.area.description')}
-                </span>
-              </div>
-            </Reveal>
           </div>
 
         </div>

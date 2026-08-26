@@ -2,19 +2,19 @@
   "meta": {
     "home": {
       "title": "HogarPlus Solutions | Professional Cleaning in New Jersey",
-      "description": "Professional residential, commercial, deep-cleaning, organization, and home-maintenance services across New Jersey."
+      "description": "Professional residential, commercial, deep-cleaning, organization, and home-maintenance services in northern and central New Jersey."
     },
     "about": {
       "title": "About Us | HogarPlus Solutions",
-      "description": "We are a company passionate about the well-being of every home. Learn about our objective and our comprehensive home-maintenance and deep-cleaning services across New Jersey."
+      "description": "We are a company passionate about the well-being of every home. Learn about our objective and our comprehensive home-maintenance and deep-cleaning services in northern and central New Jersey."
     },
     "services": {
       "title": "Cleaning Services | HogarPlus Solutions",
-      "description": "Residential, commercial, deep cleaning, home organization, move-in/move-out cleaning and customized plans across New Jersey."
+      "description": "Residential, commercial, deep cleaning, home organization, move-in/move-out cleaning and customized plans in northern and central New Jersey."
     },
     "gallery": {
       "title": "Gallery | HogarPlus Solutions",
-      "description": "A look at the spaces we care for — residential and commercial work from across New Jersey."
+      "description": "A look at the spaces we care for — residential and commercial work across northern and central New Jersey."
     },
     "book": {
       "title": "Get Estimate | HogarPlus Solutions",
@@ -22,7 +22,7 @@
     },
     "contact": {
       "title": "Contact Us | HogarPlus Solutions",
-      "description": "Call (908) 540-5734, email us, or send a message. We answer in English and Spanish across New Jersey."
+      "description": "Call (908) 540-5734, email us, or send a message. We answer in English and Spanish across northern and central New Jersey."
     }
   },
   "common": {
@@ -43,8 +43,7 @@
     "close": "Close",
     "previous": "Previous",
     "next": "Next",
-    "sampleContent": "Sample content — to be replaced with client-approved material.",
-    "serviceAreaShort": "Serving New Jersey",
+    "serviceAreaShort": "Serving northern & central NJ",
     "county": "County",
     "logoAlt": "HogarPlus Solutions logo"
   },
@@ -291,8 +290,6 @@
   "testimonials": {
     "eyebrow": "In Their Words",
     "heading": "What clients tell us",
-    "description": "A preview of the feedback section. Real, client-approved testimonials will replace these examples.",
-    "sampleNotice": "Sample content — placeholder text shown for this demo only. No real customers, identities or ratings are represented.",
     "roles": {
       "residential": "Residential Client",
       "commercial": "Commercial Client",
@@ -312,7 +309,7 @@
   },
   "serviceArea": {
     "eyebrow": "Service Area",
-    "heading": "Proudly serving New Jersey",
+    "heading": "Proudly serving northern and central New Jersey",
     "description": "Select a county to see how we work in your area.",
     "selectPrompt": "Select a county",
     "mapLabel": "Stylised map of the New Jersey counties we serve",
@@ -329,6 +326,7 @@
       "warren": "Home cleaning and seasonal deep-clean visits across Warren County.",
       "morris": "Detailed residential care and seasonal deep cleaning throughout Morris County.",
       "essex": "Residential plans, apartments and small-business cleaning across Essex County.",
+      "union": "Regular residential plans and small-business cleaning across Union County towns and neighborhoods.",
       "hunterdon": "Recurring home cleaning and move-in/move-out projects throughout Hunterdon County.",
       "somerset": "Residential plans and commercial spaces served across Somerset County.",
       "middlesex": "Homes, offices and rental turnovers throughout Middlesex County."
@@ -343,7 +341,7 @@
     "trust": "Fast and simple scheduling"
   },
   "footer": {
-    "brandSummary": "Home maintenance and deep-cleaning services across New Jersey. Support in English and Spanish.",
+    "brandSummary": "Home maintenance and deep-cleaning services in northern and central New Jersey. Support in English and Spanish.",
     "navTitle": "Explore",
     "servicesTitle": "Services",
     "areasTitle": "Service area",
@@ -378,7 +376,7 @@
     },
     "coverage": {
       "eyebrow": "Where We Work",
-      "heading": "Nine counties across New Jersey",
+      "heading": "Nine counties in New Jersey",
       "description": "Bilingual service across northern and central New Jersey."
     }
   },
@@ -403,7 +401,7 @@
     "hero": {
       "eyebrow": "Gallery",
       "title": "A look at the spaces we care for",
-      "subtitle": "Residential and commercial spaces from across New Jersey."
+      "subtitle": "Residential and commercial spaces across northern and central New Jersey."
     },
     "filtersLabel": "Filter gallery by category",
     "filters": {
@@ -412,7 +410,6 @@
       "commercial": "Commercial"
     },
     "empty": "No items in this category yet.",
-    "placeholderNote": "Demo gallery — these are temporary stock photographs of similar spaces, used to illustrate the layout. They will be replaced with HogarPlus Solutions’ own photography.",
     "openItem": "Open image",
     "lightbox": {
       "label": "Gallery image viewer",
@@ -514,14 +511,6 @@
       "email": {
         "title": "Email us",
         "description": "Send details about your space and we'll reply with next steps."
-      },
-      "website": {
-        "title": "Website",
-        "description": "Explore all of our home cleaning and maintenance services."
-      },
-      "area": {
-        "title": "Service area",
-        "description": "Serving all of New Jersey, in English and Spanish."
       }
     },
     "form": {

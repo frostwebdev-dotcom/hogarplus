@@ -138,6 +138,7 @@ export const siteConfig = {
    */
   counties: [
     'essex',
+    'union',
     'passaic',
     'morris',
     'sussex',
