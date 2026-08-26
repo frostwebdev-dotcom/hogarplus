@@ -11,7 +11,7 @@ import { revealItemVariants, revealItemVariantsReduced } from '@/components/ui/R
  * Testimonial card.
  *
  * The attribution is intentionally anonymous — an anonymous role plus a county
- * (e.g. "Residential Client — Union County"). No names, photos, star ratings or
+ * (e.g. "Residential Client — Essex County"). No names, photos, star ratings or
  * dates are rendered, because none of that has been verified.
  */
 export function TestimonialCard({ testimonial }: { testimonial: DemoTestimonial }) {

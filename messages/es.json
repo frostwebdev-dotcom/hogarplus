@@ -324,15 +324,14 @@
       "central": "Centro de New Jersey"
     },
     "counties": {
-      "union": "Planes residenciales regulares y limpieza para pequeños negocios en las comunidades del condado de Union.",
-      "hudson": "Limpieza de apartamentos, condominios y espacios comerciales en el condado de Hudson.",
-      "bergen": "Hogares familiares, oficinas y proyectos de mudanza en todo el condado de Bergen.",
-      "passaic": "Limpieza recurrente y visitas de limpieza profunda para hogares y negocios del condado de Passaic.",
-      "morris": "Cuidado residencial detallado y limpieza profunda de temporada en el condado de Morris.",
       "sussex": "Limpieza programada y apoyo de organización para las familias del condado de Sussex.",
+      "passaic": "Limpieza recurrente y visitas de limpieza profunda para hogares y negocios del condado de Passaic.",
+      "warren": "Limpieza del hogar y visitas de limpieza profunda de temporada en el condado de Warren.",
+      "morris": "Cuidado residencial detallado y limpieza profunda de temporada en el condado de Morris.",
+      "essex": "Planes residenciales, apartamentos y limpieza para pequeños negocios en el condado de Essex.",
+      "hunterdon": "Limpieza recurrente del hogar y mudanzas de entrada y salida en el condado de Hunterdon.",
       "somerset": "Planes residenciales y espacios comerciales atendidos en el condado de Somerset.",
-      "middlesex": "Hogares, oficinas y entregas de alquiler en todo el condado de Middlesex.",
-      "monmouth": "Limpieza residencial y proyectos de mudanza en el condado de Monmouth."
+      "middlesex": "Hogares, oficinas y entregas de alquiler en todo el condado de Middlesex."
     }
   },
   "bookingCta": {

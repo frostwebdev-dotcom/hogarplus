@@ -7,7 +7,7 @@
  * NO certifications and NO performance claims.
  *
  * Testimonial authors are described only by an anonymous role + county label
- * (e.g. "Residential Client — Union County") precisely so that nothing here can
+ * (e.g. "Residential Client — Essex County") precisely so that nothing here can
  * be mistaken for a verified identity.
  *
  * TODO(client): replace with approved testimonials, real photography and final
@@ -33,9 +33,9 @@ export type DemoTestimonial = {
 };
 
 export const demoTestimonials: DemoTestimonial[] = [
-  { id: 'one', quoteKey: 'one', roleKey: 'residential', county: 'Union', initials: 'RC' },
-  { id: 'two', quoteKey: 'two', roleKey: 'commercial', county: 'Hudson', initials: 'CC' },
-  { id: 'three', quoteKey: 'three', roleKey: 'moveOut', county: 'Bergen', initials: 'MC' }
+  { id: 'one', quoteKey: 'one', roleKey: 'residential', county: 'Essex', initials: 'RC' },
+  { id: 'two', quoteKey: 'two', roleKey: 'commercial', county: 'Morris', initials: 'CC' },
+  { id: 'three', quoteKey: 'three', roleKey: 'moveOut', county: 'Middlesex', initials: 'MC' }
 ];
 
 /* ───────────────────────────── Gallery ───────────────────────────── */

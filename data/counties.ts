@@ -27,16 +27,16 @@ export type County = {
   region: 'north' | 'central';
 };
 
+/* Ordered north to south, which is also how the locator reads down the map. */
 export const counties: County[] = [
   { id: 'sussex', name: 'Sussex', point: { x: 52.4, y: 11.9 }, region: 'north' },
   { id: 'passaic', name: 'Passaic', point: { x: 75.7, y: 16.2 }, region: 'north' },
-  { id: 'bergen', name: 'Bergen', point: { x: 87.5, y: 18.8 }, region: 'north' },
+  { id: 'warren', name: 'Warren', point: { x: 38.4, y: 22.7 }, region: 'north' },
   { id: 'morris', name: 'Morris', point: { x: 62.2, y: 22.7 }, region: 'north' },
-  { id: 'hudson', name: 'Hudson', point: { x: 86.8, y: 27.7 }, region: 'north' },
-  { id: 'union', name: 'Union', point: { x: 75.7, y: 30.4 }, region: 'north' },
+  { id: 'essex', name: 'Essex', point: { x: 78.4, y: 25.4 }, region: 'north' },
+  { id: 'hunterdon', name: 'Hunterdon', point: { x: 42.7, y: 33.8 }, region: 'central' },
   { id: 'somerset', name: 'Somerset', point: { x: 58.9, y: 34.2 }, region: 'central' },
-  { id: 'middlesex', name: 'Middlesex', point: { x: 69.7, y: 38.8 }, region: 'central' },
-  { id: 'monmouth', name: 'Monmouth', point: { x: 78.4, y: 44.6 }, region: 'central' }
+  { id: 'middlesex', name: 'Middlesex', point: { x: 69.7, y: 38.8 }, region: 'central' }
 ];
 
 export const countyById = new Map(counties.map((county) => [county.id, county]));

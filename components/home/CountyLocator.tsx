@@ -48,7 +48,7 @@ export function CountyLocator() {
   const t = useTranslations('serviceArea');
   const tCommon = useTranslations('common');
 
-  const [selectedId, setSelectedId] = useState<CountyId>('union');
+  const [selectedId, setSelectedId] = useState<CountyId>('essex');
   const chipRefs = useRef<Record<string, HTMLButtonElement | null>>({});
 
   const selected = counties.find((county) => county.id === selectedId) ?? counties[0];

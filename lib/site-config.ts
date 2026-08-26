@@ -131,17 +131,20 @@ export const siteConfig = {
    */
   social: [] as Array<{ label: string; href: string }>,
 
-  /** Counties served, in the order the client listed them. */
+  /**
+   * Counties served — the client's confirmed list, and the ONLY ones served.
+   * Adding a county here without the client's say-so is a factual claim about
+   * where they work, so treat this list as client-supplied data.
+   */
   counties: [
-    'union',
-    'hudson',
-    'bergen',
+    'essex',
     'passaic',
     'morris',
     'sussex',
+    'warren',
+    'hunterdon',
     'somerset',
-    'middlesex',
-    'monmouth'
+    'middlesex'
   ] as const
 } as const;
 

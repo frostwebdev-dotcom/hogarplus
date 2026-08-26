@@ -324,15 +324,14 @@
       "central": "Central New Jersey"
     },
     "counties": {
-      "union": "Regular residential plans and small-business cleaning across Union County towns and neighborhoods.",
-      "hudson": "Apartment, condo and commercial cleaning throughout Hudson County's dense residential communities.",
-      "bergen": "Family homes, offices and move-in/move-out projects across Bergen County.",
-      "passaic": "Recurring home cleaning and deep-clean visits for Passaic County households and workplaces.",
-      "morris": "Detailed residential care and seasonal deep cleaning throughout Morris County.",
       "sussex": "Scheduled home cleaning and organization support for Sussex County families.",
+      "passaic": "Recurring home cleaning and deep-clean visits for Passaic County households and workplaces.",
+      "warren": "Home cleaning and seasonal deep-clean visits across Warren County.",
+      "morris": "Detailed residential care and seasonal deep cleaning throughout Morris County.",
+      "essex": "Residential plans, apartments and small-business cleaning across Essex County.",
+      "hunterdon": "Recurring home cleaning and move-in/move-out projects throughout Hunterdon County.",
       "somerset": "Residential plans and commercial spaces served across Somerset County.",
-      "middlesex": "Homes, offices and rental turnovers throughout Middlesex County.",
-      "monmouth": "Residential cleaning and move-in/move-out projects across Monmouth County."
+      "middlesex": "Homes, offices and rental turnovers throughout Middlesex County."
     }
   },
   "bookingCta": {
