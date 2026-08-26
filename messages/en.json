@@ -467,7 +467,7 @@
       },
       "two": {
         "title": "List your spaces",
-        "description": "Tick the rooms and areas the job should cover, at home or at the office. Anything missing goes under \"Other\"."
+        "description": "Check off the rooms and areas the job should cover, at home or at the office. Anything missing goes under \"Other\"."
       },
       "three": {
         "title": "We call to arrange the visit",
@@ -570,7 +570,7 @@
       },
       "hints": {
         "timeWindow": "Pick the block that suits you. We confirm the exact hour when we call.",
-        "spaces": "Tick every space the job should cover. Choose \"Other\" if something is missing.",
+        "spaces": "Check every space the job should cover. Choose \"Other\" if something is missing.",
         "choosePropertyType": "Choose a home or an office above to see the list of spaces."
       }
     }
