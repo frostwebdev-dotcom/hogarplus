@@ -1,89 +1,126 @@
 import { useTranslations } from 'next-intl';
-import { CalendarClock, ExternalLink, Info, Phone } from 'lucide-react';
+import { Check, Clock, ClipboardList, PhoneCall } from 'lucide-react';
 
+import { propertyTypes, spacesByPropertyType, timeWindows } from '@/data/intake';
 import { siteConfig } from '@/lib/site-config';
-import { GradientPanel } from '@/components/ui/GradientPanel';
 import { Reveal } from '@/components/ui/Reveal';
+import { PrimaryButton } from '@/components/ui/PrimaryButton';
 
 /**
- * Scheduling panel.
+ * Intake requirements panel.
  *
- * Renders the Calendly embed when `NEXT_PUBLIC_CALENDLY_URL` is set, and an
- * elegant branded placeholder when it is not. It never throws and never shows a
- * broken frame — the demo is fully presentable with no scheduling URL at all.
+ * There is no scheduling calendar in phase 1 — by design. Before a visit can be
+ * quoted the client needs exactly two things from the visitor: the window of
+ * time they want the work done in, and the list of spaces the job covers. This
+ * panel states both up front so the request that arrives by form, email or
+ * phone is already complete, and a phone call is all that remains.
  *
- * The embed is a plain `<iframe>` rather than Calendly's widget script so the
- * page ships no third-party JavaScript and needs no CSP changes for the demo.
+ * The options mirror `data/intake.ts`, the same source the contact form's
+ * checklist is built from, so the two can never drift apart.
  */
 export function BookingPanel() {
-  const t = useTranslations('bookPage.scheduler');
+  const t = useTranslations('bookPage.request');
+  const tIntake = useTranslations('intake');
   const tCommon = useTranslations('common');
-  const { calendlyUrl } = siteConfig;
 
   return (
     <Reveal className="w-full">
       <div className="overflow-hidden rounded-panel border border-navy-100 bg-white shadow-card">
         <div className="border-b border-navy-100 bg-surface px-6 py-5 sm:px-8">
           <p className="eyebrow">
-            <CalendarClock aria-hidden="true" className="h-4 w-4" />
+            <ClipboardList aria-hidden="true" className="h-4 w-4" />
             {t('eyebrow')}
           </p>
           <h2 className="mt-2 font-heading text-2xl text-navy">{t('heading')}</h2>
         </div>
 
-        {calendlyUrl ? (
-          <div className="bg-white">
-            <iframe
-              src={calendlyUrl}
-              title={t('frameTitle')}
-              loading="lazy"
-              className="h-[42rem] w-full border-0"
-            />
-            <div className="border-t border-navy-100 px-6 py-4 sm:px-8">
-              <a
-                href={calendlyUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="link-underline inline-flex items-center gap-2 text-sm"
-              >
-                {t('openInNewTab')}
-                <ExternalLink aria-hidden="true" className="h-3.5 w-3.5" />
+        <div className="flex flex-col gap-10 px-6 py-8 sm:px-8 sm:py-10">
+          {/* 1 — window of time */}
+          <section>
+            <h3 className="flex items-center gap-2.5 font-heading text-lg font-semibold text-navy">
+              <Clock aria-hidden="true" className="h-5 w-5 shrink-0 text-brand-purple" />
+              {t('timeWindowsTitle')}
+            </h3>
+            <p className="mt-2 text-[0.9375rem] leading-relaxed text-navy-500">
+              {t('timeWindowsBody')}
+            </p>
+
+            <ul className="mt-5 grid gap-3 sm:grid-cols-3">
+              {timeWindows.map((slot) => (
+                <li
+                  key={slot}
+                  className="rounded-card border border-navy-100/70 bg-surface px-4 py-4 text-center"
+                >
+                  <p className="font-heading text-base font-semibold text-navy">
+                    {tIntake(`timeWindows.${slot}.label`)}
+                  </p>
+                  <p className="mt-1 text-sm text-navy-400">
+                    {tIntake(`timeWindows.${slot}.hours`)}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* 2 — spaces, one checklist per property type */}
+          <section>
+            <h3 className="flex items-center gap-2.5 font-heading text-lg font-semibold text-navy">
+              <ClipboardList aria-hidden="true" className="h-5 w-5 shrink-0 text-brand-purple" />
+              {t('spacesTitle')}
+            </h3>
+            <p className="mt-2 text-[0.9375rem] leading-relaxed text-navy-500">
+              {t('spacesBody')}
+            </p>
+
+            <div className="mt-5 grid gap-6 md:grid-cols-2">
+              {propertyTypes.map((type) => (
+                <div
+                  key={type}
+                  className="rounded-card border border-navy-100/70 bg-surface p-5 sm:p-6"
+                >
+                  <p className="text-sm font-semibold uppercase tracking-[0.12em] text-navy-400">
+                    {tIntake(`propertyTypes.${type}.heading`)}
+                  </p>
+
+                  <ul className="mt-4 flex flex-col gap-2.5">
+                    {spacesByPropertyType[type].map((space) => (
+                      <li
+                        key={space}
+                        className="flex items-start gap-2.5 text-[0.9375rem] leading-relaxed text-navy-600"
+                      >
+                        <Check
+                          aria-hidden="true"
+                          className="mt-1 h-4 w-4 shrink-0 text-brand-blue"
+                        />
+                        {tIntake(`spaces.${space}`)}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* 3 — what happens next */}
+          <section className="rounded-card border border-brand-blue/25 bg-brand-blue/5 p-5 sm:p-6">
+            <h3 className="flex items-center gap-2.5 font-heading text-lg font-semibold text-navy">
+              <PhoneCall aria-hidden="true" className="h-5 w-5 shrink-0 text-brand-purple" />
+              {t('nextStepTitle')}
+            </h3>
+            <p className="mt-2 text-[0.9375rem] leading-relaxed text-navy-600">
+              {t('nextStepBody')}
+            </p>
+
+            <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <PrimaryButton href="/contact" withArrow>
+                {t('formCta')}
+              </PrimaryButton>
+              <a href={siteConfig.emailHref} className="btn-secondary">
+                {tCommon('emailUs')}
               </a>
             </div>
-          </div>
-        ) : (
-          <GradientPanel tone="navy" className="min-h-[26rem] p-6 sm:p-10">
-            <div className="on-dark relative flex h-full flex-col items-center justify-center gap-5 text-center">
-              <span className="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/20 bg-white/10 text-white backdrop-blur-sm">
-                <CalendarClock aria-hidden="true" className="h-8 w-8" />
-              </span>
-
-              <h3 className="font-heading text-2xl text-white sm:text-3xl">
-                {t('placeholderTitle')}
-              </h3>
-
-              <p className="max-w-lg text-[0.9375rem] leading-relaxed text-navy-100">
-                {t('placeholderBody')}
-              </p>
-
-              <div className="mt-2 flex flex-col items-center gap-4 sm:flex-row">
-                <a href={siteConfig.phoneHref} className="btn bg-white text-navy hover:-translate-y-0.5">
-                  <Phone aria-hidden="true" className="h-4 w-4" />
-                  {tCommon('callNow')}
-                </a>
-                <a href={siteConfig.emailHref} className="btn-ghost-light">
-                  {tCommon('emailUs')}
-                </a>
-              </div>
-
-              {/* Developer-facing note; harmless and useful during the demo. */}
-              <p className="mt-4 flex items-center gap-2 rounded-pill border border-white/15 bg-white/5 px-4 py-2 text-xs text-white/60">
-                <Info aria-hidden="true" className="h-3.5 w-3.5" />
-                {t('placeholderNote')}
-              </p>
-            </div>
-          </GradientPanel>
-        )}
+          </section>
+        </div>
       </div>
     </Reveal>
   );

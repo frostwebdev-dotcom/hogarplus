@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220" role="img" aria-labelledby="t">
+  <title id="t">Stacked moving cartons beside an open front door</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EEF3FA"/>
+      <stop offset="1" stop-color="#DFE9F8"/>
+    </linearGradient>
+    <linearGradient id="tee" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3E8BFF"/><stop offset="1" stop-color="#1F66DE"/>
+    </linearGradient>
+    <linearGradient id="tee2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9B7BFF"/><stop offset="1" stop-color="#6F45E8"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="220" fill="url(#sky)"/>
+  <rect x="228" y="26" width="118" height="166" rx="6" fill="#FFFFFF"/>
+  <path d="M228 26h118v166H228z" fill="none" stroke="#CBDAF0" stroke-width="3"/>
+  <path d="M246 40h82v152h-82z" fill="#DDEAFD"/>
+  <circle cx="256" cy="118" r="5" fill="#2A7DFF"/>
+  <rect x="0" y="192" width="400" height="28" fill="#CBDAF0"/>
+  <g>
+    <path d="M62 118h96v74H62z" fill="#E3B183"/>
+    <path d="M62 118h96v14H62z" fill="#CE9A6B"/>
+    <path d="M104 118h12v74h-12z" fill="#CE9A6B" opacity="0.65"/>
+    <path d="M78 68h74v50H78z" fill="#EFC49A"/>
+    <path d="M78 68h74v12H78z" fill="#CE9A6B"/>
+    <path d="M110 68h10v50h-10z" fill="#CE9A6B" opacity="0.6"/>
+    <path d="M168 146h50v46h-50z" fill="#E3B183"/>
+    <path d="M168 146h50v11h-50z" fill="#CE9A6B"/>
+  </g>
+  <path d="M200 52l5 12 12 5-12 5-5 12-5-12-12-5 12-5z" fill="#2A7DFF" opacity="0.9"/>
+  <path d="M44 92l4.5 10.799999999999999 10.799999999999999 4.5-10.799999999999999 4.5-4.5 10.799999999999999-4.5-10.799999999999999-10.799999999999999-4.5 10.799999999999999-4.5z" fill="#2A7DFF" opacity="0.6"/>
+</svg>

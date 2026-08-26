@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" width="640" height="560" role="img" aria-labelledby="team-hero-title">
+  <title id="team-hero-title">Two HogarPlus Solutions cleaning professionals in branded T-shirts at work in a bright home</title>
+
+  <!--
+    HogarPlus Solutions — hero illustration.
+
+    Drawn to the client's brief: the crew is Colombian, so the figures are
+    warm-toned with dark hair, and the uniform is a branded T-shirt rather than
+    a maid's dress or coveralls. Palette is the site's own (tailwind.config.ts):
+    navy #071B4D / #0D255F, brand blue #2A7DFF, purple #845EF7, orchid #C06CFF.
+
+    Sits on the navy hero, so the background is transparent and every value is
+    chosen to read against a dark field.
+  -->
+
+  <defs>
+    <linearGradient id="hp-shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3E8BFF"/>
+      <stop offset="1" stop-color="#1F66DE"/>
+    </linearGradient>
+    <linearGradient id="hp-shirt-b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9B7BFF"/>
+      <stop offset="1" stop-color="#6F45E8"/>
+    </linearGradient>
+    <linearGradient id="hp-window" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.05"/>
+    </linearGradient>
+    <radialGradient id="hp-bloom" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#C06CFF" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#C06CFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hp-bloom-2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#2A7DFF" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#2A7DFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ── ambient light blooms, echoing HeroBackground ───────────────────── -->
+  <circle cx="190" cy="170" r="185" fill="url(#hp-bloom)"/>
+  <circle cx="470" cy="250" r="205" fill="url(#hp-bloom-2)"/>
+
+  <!-- ── room: window + shelf ───────────────────────────────────────────── -->
+  <g opacity="0.9">
+    <rect x="372" y="70" width="196" height="212" rx="16" fill="url(#hp-window)" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="2.5"/>
+    <path d="M470 72v208M374 176h192" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="2.5"/>
+  </g>
+
+  <!-- floor -->
+  <ellipse cx="330" cy="512" rx="268" ry="30" fill="#FFFFFF" opacity="0.08"/>
+
+  <!-- ═══════════════ FIGURE B — behind, mop, purple tee ═══════════════ -->
+  <g>
+    <!-- mop handle -->
+    <rect x="486" y="272" width="9" height="212" rx="4.5" fill="#D7DEEE" transform="rotate(7 490 378)"/>
+    <path d="M500 470h58l10 34a6 6 0 0 1-6 8h-66a6 6 0 0 1-6-8z" fill="#F2F5FB"/>
+    <path d="M500 470h58l4 13h-66z" fill="#C7D3EA"/>
+
+    <!-- legs -->
+    <path d="M400 386h30v96a9 9 0 0 1-9 9h-12a9 9 0 0 1-9-9z" fill="#0D255F"/>
+    <path d="M438 386h30v96a9 9 0 0 1-9 9h-12a9 9 0 0 1-9-9z" fill="#132F6E"/>
+    <rect x="392" y="486" width="42" height="16" rx="8" fill="#EEF2FB"/>
+    <rect x="436" y="486" width="42" height="16" rx="8" fill="#EEF2FB"/>
+
+    <!-- torso: branded T-shirt -->
+    <path d="M434 272c14 0 26 3 37 9l17 10a10 10 0 0 1 4 13l-11 24a9 9 0 0 1-13 4l-8-5v67a8 8 0 0 1-8 8h-72a8 8 0 0 1-8-8v-67l-8 5a9 9 0 0 1-13-4l-11-24a10 10 0 0 1 4-13l17-10c11-6 23-9 37-9z" fill="url(#hp-shirt-b)"/>
+    <path d="M416 272h36c0 12-8 20-18 20s-18-8-18-20z" fill="#5B33C9" opacity="0.55"/>
+    <!-- chest mark: house + sparkle -->
+    <g opacity="0.95">
+      <path d="M420 318l14-12 14 12v17a3 3 0 0 1-3 3h-22a3 3 0 0 1-3-3z" fill="#FFFFFF"/>
+      <path d="M457 314l2.6 6.4 6.4 2.6-6.4 2.6-2.6 6.4-2.6-6.4-6.4-2.6 6.4-2.6z" fill="#FFFFFF" opacity="0.9"/>
+    </g>
+
+    <!-- arms -->
+    <path d="M472 300l22 14a10 10 0 0 1 3 14l-6 9a10 10 0 0 1-14 3l-19-13z" fill="url(#hp-shirt-b)"/>
+    <circle cx="494" cy="336" r="11" fill="#B0764E"/>
+    <path d="M396 300l-22 14a10 10 0 0 0-3 14l6 9a10 10 0 0 0 14 3l19-13z" fill="url(#hp-shirt-b)"/>
+    <circle cx="374" cy="336" r="11" fill="#B0764E"/>
+
+    <!-- head -->
+    <rect x="424" y="242" width="20" height="24" rx="9" fill="#9C6743"/>
+    <ellipse cx="434" cy="222" rx="29" ry="33" fill="#B0764E"/>
+    <path d="M405 218c0-19 13-32 29-32s29 13 29 32c0 4-1 8-2 11-2-13-6-19-13-21-8-2-15 3-27 2-9-1-14 4-15 19-1-3-1-7-1-11z" fill="#241610"/>
+    <ellipse cx="424" cy="222" rx="2.8" ry="3.4" fill="#241610"/>
+    <ellipse cx="445" cy="222" rx="2.8" ry="3.4" fill="#241610"/>
+    <path d="M427 236c4 4 10 4 14 0" stroke="#7A4B2E" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- ═══════════════ FIGURE A — front, spray bottle, blue tee ═══════════ -->
+  <g>
+    <!-- legs -->
+    <path d="M212 400h32v104a10 10 0 0 1-10 10h-12a10 10 0 0 1-10-10z" fill="#0D255F"/>
+    <path d="M252 400h32v104a10 10 0 0 1-10 10h-12a10 10 0 0 1-10-10z" fill="#132F6E"/>
+    <rect x="204" y="508" width="46" height="17" rx="8.5" fill="#FFFFFF"/>
+    <rect x="250" y="508" width="46" height="17" rx="8.5" fill="#FFFFFF"/>
+
+    <!-- torso: branded T-shirt -->
+    <path d="M248 278c15 0 28 3 40 10l19 11a11 11 0 0 1 4 14l-12 26a10 10 0 0 1-14 4l-9-5v72a9 9 0 0 1-9 9h-78a9 9 0 0 1-9-9v-72l-9 5a10 10 0 0 1-14-4l-12-26a11 11 0 0 1 4-14l19-11c12-7 25-10 40-10z" fill="url(#hp-shirt)"/>
+    <path d="M228 278h39c0 13-9 22-19.5 22S228 291 228 278z" fill="#1552BC" opacity="0.5"/>
+    <!-- chest mark: house + sparkle -->
+    <g>
+      <path d="M232 328l15-13 15 13v18a3 3 0 0 1-3 3h-24a3 3 0 0 1-3-3z" fill="#FFFFFF"/>
+      <path d="M272 324l2.8 6.9 6.9 2.8-6.9 2.8-2.8 6.9-2.8-6.9-6.9-2.8 6.9-2.8z" fill="#FFFFFF" opacity="0.92"/>
+    </g>
+
+    <!-- right arm, down, holding a folded cloth -->
+    <path d="M288 308l24 18a11 11 0 0 1 3 15l-6 9a11 11 0 0 1-15 3l-22-15z" fill="url(#hp-shirt)"/>
+    <circle cx="312" cy="352" r="12" fill="#C98A5E"/>
+    <g transform="rotate(-8 306 372)">
+      <rect x="284" y="358" width="44" height="30" rx="7" fill="#EAF1FF"/>
+      <path d="M284 372h44" stroke="#C7D3EA" stroke-width="3"/>
+    </g>
+
+    <!-- left arm, down holding spray bottle -->
+    <path d="M206 308l-24 18a11 11 0 0 0-3 15l6 9a11 11 0 0 0 15 3l22-15z" fill="url(#hp-shirt)"/>
+    <circle cx="182" cy="352" r="12" fill="#C98A5E"/>
+    <g transform="translate(150 340)">
+      <rect x="0" y="14" width="30" height="46" rx="8" fill="#F2F5FB"/>
+      <rect x="0" y="30" width="30" height="16" fill="#2A7DFF" opacity="0.55"/>
+      <rect x="9" y="2" width="12" height="14" rx="3" fill="#C7D3EA"/>
+      <path d="M9 8h-14l-6-8" stroke="#C7D3EA" stroke-width="5" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- head -->
+    <rect x="236" y="246" width="22" height="26" rx="10" fill="#B0764E"/>
+    <ellipse cx="247" cy="224" rx="31" ry="35" fill="#C98A5E"/>
+    <!-- hair: centre part with a low ponytail -->
+    <path d="M216 220c0-21 14-35 31-35s31 14 31 35c0 5-1 9-2 13-3-15-7-22-14-24-9-3-16 3-29 2-10-1-16 5-16 22-1-4-1-8-1-13z" fill="#2B1B12"/>
+    <path d="M278 224c9 3 15 12 15 24 0 14-8 24-18 26 6-9 8-19 6-30-1-8-2-14-3-20z" fill="#2B1B12"/>
+    <ellipse cx="236" cy="224" rx="3" ry="3.6" fill="#241610"/>
+    <ellipse cx="259" cy="224" rx="3" ry="3.6" fill="#241610"/>
+    <path d="M239 239c5 5 12 5 17 0" stroke="#8A5533" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+    <circle cx="220" cy="233" r="4.5" fill="#E09A8A" opacity="0.45"/>
+    <circle cx="275" cy="233" r="4.5" fill="#E09A8A" opacity="0.45"/>
+  </g>
+
+  <!-- ── bucket ─────────────────────────────────────────────────────────── -->
+  <g transform="translate(78 424)">
+    <path d="M0 22h74l-9 62a10 10 0 0 1-10 9H19a10 10 0 0 1-10-9z" fill="#2A7DFF"/>
+    <path d="M0 22h74l-3 18H3z" fill="#5C9CFF"/>
+    <path d="M6 22C6 6 20 0 37 0s31 6 31 22" stroke="#D7DEEE" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="37" cy="34" rx="30" ry="7" fill="#8FBEFF" opacity="0.7"/>
+  </g>
+
+  <!-- ── sparkles ───────────────────────────────────────────────────────── -->
+  <g fill="#FFFFFF">
+    <path d="M556 330l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" opacity="0.85"/>
+    <path d="M120 196l3.4 8.6 8.6 3.4-8.6 3.4-3.4 8.6-3.4-8.6-8.6-3.4 8.6-3.4z" opacity="0.7"/>
+    <path d="M344 120l2.8 7 7 2.8-7 2.8-2.8 7-2.8-7-7-2.8 7-2.8z" opacity="0.55"/>
+  </g>
+</svg>

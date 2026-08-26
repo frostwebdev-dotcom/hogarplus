@@ -40,7 +40,11 @@ export const demoTestimonials: DemoTestimonial[] = [
 
 /* ───────────────────────────── Gallery ───────────────────────────── */
 
-export type GalleryCategory = 'residential' | 'commercial' | 'beforeAfter';
+/**
+ * Before-and-after pairs are deliberately not a category: the client does not
+ * publish them.
+ */
+export type GalleryCategory = 'residential' | 'commercial';
 
 export type DemoGalleryItem = {
   id: string;
@@ -68,65 +72,61 @@ export type DemoGalleryItem = {
 /**
  * ⚠️ TEMPORARY STOCK PHOTOGRAPHY ⚠️
  *
- * The first four entries use free stock photos so the client can see how the
- * gallery reads with real imagery. They are NOT photographs of HogarPlus
- * Solutions' own work, and they do not show the client's team, clients or
- * properties. They must be replaced before launch.
+ * These are free stock photographs of *spaces* — living rooms, kitchens,
+ * bathrooms, offices. They are not HogarPlus Solutions' own work and show none
+ * of the client's team, clients or properties. They must be replaced before
+ * launch.
+ *
+ * Deliberately no people: the team is Colombian and wears branded T-shirts, and
+ * no stock library carries that convincingly. Rather than show a crew that is
+ * not theirs, the photographs carry the rooms and the illustrations in
+ * `public/illustrations/` carry the people.
  *
  * Source: Pexels (Pexels License — free for commercial use, no attribution
  * required). Downloaded to `public/images/`:
- *   team-bedroom.jpg      pexels.com/photo/9462341  (Liliana Drew)
- *   surface-detail.jpg    pexels.com/photo/6195198  (Tima Miroshnichenko)
- *   detail-dusting.jpg    pexels.com/photo/6195292  (Tima Miroshnichenko)
- *   cleaning-supplies.jpg pexels.com/photo/5217900  (Anna Shvets)
+ *   living-room.jpg       pexels.com/photo/11671083  (Deno Wang)
+ *   kitchen.jpg           pexels.com/photo/13009887  (Alesha)
+ *   bathroom.jpg          pexels.com/photo/7005268   (Artbovich)
+ *   dining-area.jpg       pexels.com/photo/7587743   (Artbovich)
+ *   office-workspace.jpg  pexels.com/photo/5511098   (Mike van Schoonderwalt)
+ *   office-reception.jpg  pexels.com/photo/6899544   (Artbovich)
  *
- * The remaining entries have no `src` and fall back to the branded gradient
- * placeholder, which is what every tile will look like until real photos
- * arrive. Point `src` at the client's own files to replace them.
+ * Point each `src` at the client's own files to replace them. An entry with no
+ * `src` falls back to the branded gradient placeholder; the layout never breaks.
  */
 export const demoGallery: DemoGalleryItem[] = [
   {
     id: 'g1',
     category: 'residential',
-    captionKey: 'teamBedroom',
-    src: '/images/team-bedroom.jpg',
+    captionKey: 'livingRoom',
+    src: '/images/living-room.jpg',
     tone: 'blue',
     span: 'wide'
   },
-  {
-    id: 'g2',
-    category: 'residential',
-    captionKey: 'surfaceDetail',
-    src: '/images/surface-detail.jpg',
-    tone: 'purple'
-  },
-  {
-    id: 'g3',
-    category: 'residential',
-    captionKey: 'detailDusting',
-    src: '/images/detail-dusting.jpg',
-    // Portrait source; the figure sits in the lower-middle of the frame.
-    focal: 'center 55%',
-    tone: 'orchid'
-  },
+  { id: 'g2', category: 'residential', captionKey: 'kitchen', src: '/images/kitchen.jpg', tone: 'purple' },
+  { id: 'g3', category: 'residential', captionKey: 'bathroom', src: '/images/bathroom.jpg', tone: 'orchid' },
   {
     id: 'g4',
     category: 'residential',
-    captionKey: 'supplies',
-    src: '/images/cleaning-supplies.jpg',
-    // Portrait source; the bottles occupy the bottom two thirds.
-    focal: 'center 70%',
+    captionKey: 'diningArea',
+    src: '/images/dining-area.jpg',
     tone: 'navy'
   },
-  { id: 'g5', category: 'commercial', captionKey: 'office', tone: 'navy' },
-  { id: 'g6', category: 'commercial', captionKey: 'lobby', tone: 'blue', span: 'wide' },
-  { id: 'g7', category: 'beforeAfter', captionKey: 'bathroom', tone: 'orchid' },
-  { id: 'g8', category: 'beforeAfter', captionKey: 'pantry', tone: 'purple' }
+  {
+    id: 'g5',
+    category: 'commercial',
+    captionKey: 'workspace',
+    src: '/images/office-workspace.jpg',
+    tone: 'navy'
+  },
+  {
+    id: 'g6',
+    category: 'commercial',
+    captionKey: 'reception',
+    src: '/images/office-reception.jpg',
+    tone: 'blue',
+    span: 'wide'
+  }
 ];
 
-export const galleryFilters: Array<'all' | GalleryCategory> = [
-  'all',
-  'residential',
-  'commercial',
-  'beforeAfter'
-];
+export const galleryFilters: Array<'all' | GalleryCategory> = ['all', 'residential', 'commercial'];

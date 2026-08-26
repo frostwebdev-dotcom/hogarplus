@@ -42,7 +42,24 @@ export function ServiceCard({ service, className }: { service: Service; classNam
           className="absolute inset-x-6 top-0 h-0.5 origin-left scale-x-0 rounded-full bg-gradient-brand transition-transform duration-500 ease-brand group-hover:scale-x-100"
         />
 
-        <div className="flex items-start justify-between gap-3">
+        {/*
+          Illustrated banner. Decorative: the heading, description and
+          highlights below already carry the meaning, so it is hidden from
+          assistive tech rather than repeating the card in alt text.
+        */}
+        {/* eslint-disable-next-line @next/next/no-img-element -- an inline SVG asset; next/image adds nothing to a vector and would need dangerouslyAllowSVG. */}
+        <img
+          src={service.illustration}
+          alt=""
+          aria-hidden="true"
+          width={400}
+          height={220}
+          loading="lazy"
+          decoding="async"
+          className="-mx-6 -mt-6 h-36 w-[calc(100%+3rem)] rounded-t-card object-cover sm:-mx-7 sm:-mt-7 sm:w-[calc(100%+3.5rem)]"
+        />
+
+        <div className="-mt-1 flex items-start justify-between gap-3">
           <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-brand-soft text-brand-purple transition-all duration-300 ease-brand group-hover:bg-gradient-brand group-hover:text-white group-hover:shadow-glow">
             <Icon aria-hidden="true" className="h-7 w-7" />
           </span>

@@ -29,7 +29,7 @@ export default async function GalleryPage({ params }: PageProps) {
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
       >
-        <PrimaryButton href="/book">{tCommon('bookOnline')}</PrimaryButton>
+        <PrimaryButton href="/book">{tCommon('getEstimate')}</PrimaryButton>
       </PageHero>
 
       <section className="section bg-surface" aria-labelledby="gallery-heading">

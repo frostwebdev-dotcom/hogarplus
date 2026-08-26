@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220" role="img" aria-labelledby="t">
+  <title id="t">A cleaning checklist with ticked items</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EEF3FA"/>
+      <stop offset="1" stop-color="#DFE9F8"/>
+    </linearGradient>
+    <linearGradient id="tee" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3E8BFF"/><stop offset="1" stop-color="#1F66DE"/>
+    </linearGradient>
+    <linearGradient id="tee2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9B7BFF"/><stop offset="1" stop-color="#6F45E8"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="220" fill="url(#sky)"/>
+  <rect x="106" y="24" width="188" height="176" rx="12" fill="#FFFFFF"/>
+  <rect x="164" y="12" width="72" height="26" rx="8" fill="#845EF7"/>
+  <rect x="176" y="4" width="48" height="18" rx="7" fill="#B79BFF"/>
+  <g>
+    <rect x="128" y="62" width="26" height="26" rx="8" fill="#2A7DFF"/>
+    <path d="M134 75l5 5 10-11" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="166" y="70" width="106" height="10" rx="5" fill="#CBDAF0"/>
+  </g>
+  <g>
+    <rect x="128" y="104" width="26" height="26" rx="8" fill="#2A7DFF"/>
+    <path d="M134 117l5 5 10-11" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="166" y="112" width="84" height="10" rx="5" fill="#CBDAF0"/>
+  </g>
+  <g>
+    <rect x="128" y="146" width="26" height="26" rx="8" fill="#EEF3FA" stroke="#C1D3EE" stroke-width="3"/>
+    <rect x="166" y="154" width="96" height="10" rx="5" fill="#DDE7F5"/>
+  </g>
+  <path d="M320 62l6 14.399999999999999 14.399999999999999 6-14.399999999999999 6-6 14.399999999999999-6-14.399999999999999-14.399999999999999-6 14.399999999999999-6z" fill="#2A7DFF" opacity="0.9"/>
+  <path d="M72 140l5 12 12 5-12 5-5 12-5-12-12-5 12-5z" fill="#2A7DFF" opacity="0.65"/>
+</svg>

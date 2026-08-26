@@ -34,7 +34,7 @@ export default async function ServicesPage({ params }: PageProps) {
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
       >
-        <PrimaryButton href="/book">{tCommon('bookOnline')}</PrimaryButton>
+        <PrimaryButton href="/book">{tCommon('getEstimate')}</PrimaryButton>
         <PrimaryButton href="/contact" variant="ghostLight" withArrow>
           {tCommon('contactUs')}
         </PrimaryButton>

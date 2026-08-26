@@ -14,11 +14,11 @@
     },
     "gallery": {
       "title": "Gallery | HogarPlus Solutions",
-      "description": "A look at the spaces we care for — residential, commercial and before-and-after results from across New Jersey."
+      "description": "A look at the spaces we care for — residential and commercial work from across New Jersey."
     },
     "book": {
-      "title": "Book Online | HogarPlus Solutions",
-      "description": "Schedule your cleaning in three simple steps. Choose a time that works for you and we will confirm the details."
+      "title": "Get Estimate | HogarPlus Solutions",
+      "description": "Tell us your preferred window of time and the spaces you need cleaned. We call you back to set the best time to visit your home or office."
     },
     "contact": {
       "title": "Contact Us | HogarPlus Solutions",
@@ -30,7 +30,7 @@
     "brandTagline": "We care for your home, so you can enjoy what matters",
     "brandSubtitle": "Home cleaning and maintenance services",
     "skipToContent": "Skip to main content",
-    "bookOnline": "Book Online",
+    "getEstimate": "Get Estimate",
     "exploreServices": "Explore Services",
     "learnMore": "Learn more",
     "viewAll": "View all services",
@@ -54,7 +54,7 @@
     "about": "About",
     "services": "Services",
     "gallery": "Gallery",
-    "book": "Book Online",
+    "book": "Get Estimate",
     "contact": "Contact",
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu",
@@ -71,11 +71,12 @@
     "eyebrow": "Professional cleaning services in New Jersey",
     "headline": "We care for your home, so you can enjoy what matters.",
     "body": "Deep cleaning, maintenance, organization, and personalized solutions designed to create spotless, healthy, and comfortable spaces.",
-    "primaryCta": "Book Online",
+    "primaryCta": "Get Estimate",
     "secondaryCta": "Explore Services",
     "phoneCta": "Call (908) 540-5734",
     "scrollHint": "Scroll to explore",
-    "videoLabel": "Background video of a bright, freshly cleaned home"
+    "videoLabel": "Background video of a bright, freshly cleaned home",
+    "illustrationAlt": "Two HogarPlus Solutions cleaning professionals in branded T-shirts, one with a spray bottle and cloth and one with a mop, in a bright home."
   },
   "aboutPreview": {
     "eyebrow": "Who We Are",
@@ -209,6 +210,53 @@
       }
     }
   },
+  "intake": {
+    "propertyTypes": {
+      "residential": {
+        "label": "Home",
+        "heading": "Residential cleaning spaces"
+      },
+      "commercial": {
+        "label": "Office / commercial",
+        "heading": "Commercial & office spaces"
+      }
+    },
+    "timeWindows": {
+      "morning": {
+        "label": "Morning",
+        "hours": "7:00 AM – 1:00 PM"
+      },
+      "afternoon": {
+        "label": "Afternoon",
+        "hours": "1:00 PM – 6:00 PM"
+      },
+      "evening": {
+        "label": "Evening",
+        "hours": "6:00 PM – 12:00 AM"
+      }
+    },
+    "spaces": {
+      "bedrooms": "Master bedroom & secondary bedrooms",
+      "living": "Living room & family room",
+      "dining": "Dining room",
+      "kitchen": "Kitchen",
+      "bathrooms": "Bathrooms (master & guest)",
+      "homeOffice": "Home office / study",
+      "hallways": "Hallways, staircases & foyers",
+      "laundry": "Laundry room",
+      "sunroom": "Sunroom / patio / porch",
+      "reception": "Reception area & waiting room",
+      "executiveOffices": "Private executive offices",
+      "workstations": "Open-plan workstations & cubicles",
+      "conference": "Conference rooms & boardrooms",
+      "kitchenette": "Office kitchenette & breakroom",
+      "restrooms": "Restrooms (multi-stall & single-user)",
+      "serverRooms": "Server rooms & IT closets (dust-controlled)",
+      "corridors": "Corridors, hallways & elevators",
+      "storage": "Storage rooms & supply closets",
+      "other": "Other"
+    }
+  },
   "why": {
     "eyebrow": "Why Choose Us",
     "heading": "A team committed to excellence and satisfaction",
@@ -291,7 +339,7 @@
     "eyebrow": "Ready When You Are",
     "heading": "Book your cleaning in a few minutes",
     "description": "Pick a time that works for you and we'll confirm the details. Prefer to talk it through first? Give us a call.",
-    "primaryCta": "Book Online",
+    "primaryCta": "Get Estimate",
     "secondaryPrefix": "or call",
     "trust": "Fast and simple scheduling"
   },
@@ -358,17 +406,16 @@
     "hero": {
       "eyebrow": "Gallery",
       "title": "A look at the spaces we care for",
-      "subtitle": "Residential, commercial and before-and-after results from across New Jersey."
+      "subtitle": "Residential and commercial spaces from across New Jersey."
     },
     "filtersLabel": "Filter gallery by category",
     "filters": {
       "all": "All",
       "residential": "Residential",
-      "commercial": "Commercial",
-      "beforeAfter": "Before & After"
+      "commercial": "Commercial"
     },
     "empty": "No items in this category yet.",
-    "placeholderNote": "Demo gallery — the photographs shown are temporary stock images used to illustrate the layout. They will be replaced with HogarPlus Solutions' own photography.",
+    "placeholderNote": "Demo gallery — these are temporary stock photographs of similar spaces, used to illustrate the layout. They will be replaced with HogarPlus Solutions’ own photography.",
     "openItem": "Open image",
     "lightbox": {
       "label": "Gallery image viewer",
@@ -379,72 +426,66 @@
       "hint": "Use the arrow keys to browse, Escape to close."
     },
     "items": {
-      "teamBedroom": {
-        "title": "Bedroom refresh",
-        "alt": "Two cleaning professionals in uniform working together to make a bed with fresh linens in a bright bedroom."
+      "livingRoom": {
+        "title": "Living room",
+        "alt": "A bright, freshly cleaned living room with a sofa, low table and floor-to-ceiling curtains."
       },
-      "surfaceDetail": {
-        "title": "Surface detail clean",
-        "alt": "A cleaning professional wearing protective gloves wiping down a marble countertop in a modern living space."
-      },
-      "detailDusting": {
-        "title": "High detail dusting",
-        "alt": "A cleaning professional on a step ladder using an extendable duster to reach a high wall in an open-plan living room."
-      },
-      "supplies": {
-        "title": "Products and equipment",
-        "alt": "An assortment of unbranded spray bottles and cleaning product containers arranged on a light background."
-      },
-      "office": {
-        "title": "Office after-hours service",
-        "alt": "An open-plan office with tidy desks, clean floors and empty waste bins"
-      },
-      "lobby": {
-        "title": "Commercial lobby care",
-        "alt": "A commercial building lobby with polished floors and clean glass entry doors"
+      "kitchen": {
+        "title": "Kitchen",
+        "alt": "A spotless white kitchen with clear countertops, stainless steel appliances and a tiled floor."
       },
       "bathroom": {
-        "title": "Bathroom before & after",
-        "alt": "A bathroom shown before and after a detailed deep clean of tile, fixtures and mirrors"
+        "title": "Bathroom",
+        "alt": "A clean modern bathroom with a glass shower enclosure, vanity unit and polished mirror."
       },
-      "pantry": {
-        "title": "Pantry organization",
-        "alt": "A pantry before and after organization, with labeled containers and grouped items"
+      "diningArea": {
+        "title": "Dining area",
+        "alt": "A light dining area with a small table and chairs beside tall windows and a clean tiled floor."
+      },
+      "workspace": {
+        "title": "Open-plan workspace",
+        "alt": "An open-plan office floor with workstations, carpet tiles and clean glass partitions."
+      },
+      "reception": {
+        "title": "Reception area",
+        "alt": "A tidy reception area with a lit front desk, seating and a polished floor."
       }
     }
   },
   "bookPage": {
     "hero": {
-      "eyebrow": "Book Online",
-      "title": "Scheduling that takes a few minutes",
-      "subtitle": "Choose a time, tell us about your space, and we'll confirm the details before your visit."
+      "eyebrow": "Get Estimate",
+      "title": "Two answers and we can get started",
+      "subtitle": "Tell us the window of time that works for you and the spaces the job covers. We call you back to set the best time to visit."
     },
     "steps": {
       "eyebrow": "How It Works",
       "heading": "Three simple steps",
       "one": {
-        "title": "Pick a time",
-        "description": "Choose a slot from the scheduling calendar that fits your week."
+        "title": "Choose your window of time",
+        "description": "Morning, afternoon or evening — whichever block fits your day."
       },
       "two": {
-        "title": "Tell us about your space",
-        "description": "Share the size of your home or business and the areas that matter most."
+        "title": "List your spaces",
+        "description": "Tick the rooms and areas the job should cover, at home or at the office. Anything missing goes under \"Other\"."
       },
       "three": {
-        "title": "We confirm the details",
-        "description": "You receive a confirmation with the agreed scope, timing and next steps."
+        "title": "We call to arrange the visit",
+        "description": "Send it through the form, by email, or over the phone. We schedule a call and agree the best time to visit your home or office."
       }
     },
-    "scheduler": {
-      "eyebrow": "Scheduling",
-      "heading": "Choose your appointment",
-      "placeholderTitle": "Scheduling calendar coming soon",
-      "placeholderBody": "The live Calendly calendar will appear in this panel once the client's scheduling link is connected. Until then, you can reach us directly and we'll book you in.",
-      "placeholderNote": "Set NEXT_PUBLIC_CALENDLY_URL to activate the embedded calendar.",
-      "openInNewTab": "Open scheduling page",
-      "frameTitle": "Online scheduling calendar",
+    "request": {
+      "eyebrow": "What We Need",
+      "heading": "What to tell us",
+      "timeWindowsTitle": "The window of time",
+      "timeWindowsBody": "Pick the block that suits you. We confirm the exact hour when we call.",
+      "spacesTitle": "The spaces",
+      "spacesBody": "The list depends on whether the job is for a home or an office.",
+      "nextStepTitle": "Then we call you",
+      "nextStepBody": "Once we have your window of time and your list of spaces — by email or over the phone — we schedule a phone call with you to set the best time to visit the house or office.",
+      "formCta": "Send us the details",
       "alternativeTitle": "Prefer to talk first?",
-      "alternativeBody": "Call us and we'll walk through your options and find a time together."
+      "alternativeBody": "Call us and we will take down your window of time and spaces over the phone."
     }
   },
   "contactPage": {
@@ -485,14 +526,19 @@
         "service": "Service",
         "language": "Preferred language",
         "message": "Message",
-        "consent": "I agree to be contacted about my request."
+        "consent": "I agree to be contacted about my request.",
+        "propertyType": "Is this for a home or an office?",
+        "timeWindow": "Preferred window of time",
+        "spaces": "Spaces to be cleaned",
+        "otherSpace": "Tell us about the other space"
       },
       "placeholders": {
         "name": "Your full name",
         "email": "you@example.com",
-        "phone": "(862) 000-0000",
+        "phone": "(908) 000-0000",
         "service": "Select a service",
-        "message": "Tell us about your space, the rooms that matter most, and your preferred timing."
+        "message": "Anything else we should know — square footage, pets, access, how often you need us.",
+        "otherSpace": "e.g. garage, basement, gym"
       },
       "languages": {
         "en": "English",
@@ -503,7 +549,7 @@
       "submit": "Send message",
       "submitting": "Sending…",
       "successTitle": "Thank you — your message is ready to send.",
-      "successBody": "This is a demonstration form, so nothing was transmitted. Once the client's email service is connected, this same submission will be delivered to their inbox.",
+      "successBody": "This is a demonstration form, so nothing was transmitted. Once the client’s email service is connected, we will receive your time window and space list and call you to set the best time to visit.",
       "sendAnother": "Send another message",
       "errorSummary": "Please review the highlighted fields.",
       "validation": {
@@ -515,7 +561,17 @@
         "languageRequired": "Please choose a preferred language.",
         "messageMin": "Please tell us a little more (at least 10 characters).",
         "messageMax": "Message is too long (2000 characters maximum).",
-        "consentRequired": "Please confirm we may contact you."
+        "consentRequired": "Please confirm we may contact you.",
+        "propertyTypeRequired": "Please tell us whether this is for a home or an office.",
+        "timeWindowRequired": "Please choose a window of time.",
+        "spacesRequired": "Please select at least one space.",
+        "otherSpaceRequired": "Please describe the other space.",
+        "otherSpaceMax": "That description is too long (200 characters maximum)."
+      },
+      "hints": {
+        "timeWindow": "Pick the block that suits you. We confirm the exact hour when we call.",
+        "spaces": "Tick every space the job should cover. Choose \"Other\" if something is missing.",
+        "choosePropertyType": "Choose a home or an office above to see the list of spaces."
       }
     }
   },

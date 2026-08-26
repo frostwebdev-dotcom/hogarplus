@@ -14,11 +14,11 @@
     },
     "gallery": {
       "title": "Galería | HogarPlus Solutions",
-      "description": "Un vistazo a los espacios que cuidamos: resultados residenciales, comerciales y de antes y después en New Jersey."
+      "description": "Un vistazo a los espacios que cuidamos: trabajos residenciales y comerciales en todo New Jersey."
     },
     "book": {
-      "title": "Reservar en Línea | HogarPlus Solutions",
-      "description": "Programe su servicio de limpieza en tres pasos sencillos. Elija el horario que le convenga y confirmaremos los detalles."
+      "title": "Obtener Estimado | HogarPlus Solutions",
+      "description": "Cuéntenos su franja horaria preferida y los espacios que necesita limpiar. Le llamamos para fijar el mejor momento para visitar su casa u oficina."
     },
     "contact": {
       "title": "Contacto | HogarPlus Solutions",
@@ -30,7 +30,7 @@
     "brandTagline": "Cuidamos tu hogar para que disfrutes",
     "brandSubtitle": "Servicios de Mantenimiento en la limpieza de su hogar",
     "skipToContent": "Saltar al contenido principal",
-    "bookOnline": "Reservar en línea",
+    "getEstimate": "Obtener Estimado",
     "exploreServices": "Explorar servicios",
     "learnMore": "Más información",
     "viewAll": "Ver todos los servicios",
@@ -54,7 +54,7 @@
     "about": "Nosotros",
     "services": "Servicios",
     "gallery": "Galería",
-    "book": "Reservar en línea",
+    "book": "Obtener Estimado",
     "contact": "Contacto",
     "openMenu": "Abrir menú de navegación",
     "closeMenu": "Cerrar menú de navegación",
@@ -71,11 +71,12 @@
     "eyebrow": "Servicios profesionales de limpieza en New Jersey",
     "headline": "Cuidamos tu hogar para que disfrutes.",
     "body": "Limpieza profunda, mantenimiento, organización y soluciones personalizadas para crear espacios impecables, saludables y cómodos.",
-    "primaryCta": "Reservar en línea",
+    "primaryCta": "Obtener Estimado",
     "secondaryCta": "Explorar servicios",
     "phoneCta": "Llamar al (908) 540-5734",
     "scrollHint": "Desplácese para explorar",
-    "videoLabel": "Video de fondo de un hogar luminoso y recién limpiado"
+    "videoLabel": "Video de fondo de un hogar luminoso y recién limpiado",
+    "illustrationAlt": "Dos profesionales de limpieza de HogarPlus Solutions con camisetas de la marca, una con atomizador y paño y otro con trapeador, en una casa luminosa."
   },
   "aboutPreview": {
     "eyebrow": "¿Quiénes Somos?",
@@ -209,6 +210,53 @@
       }
     }
   },
+  "intake": {
+    "propertyTypes": {
+      "residential": {
+        "label": "Casa",
+        "heading": "Espacios de limpieza residencial"
+      },
+      "commercial": {
+        "label": "Oficina / comercial",
+        "heading": "Espacios comerciales y de oficina"
+      }
+    },
+    "timeWindows": {
+      "morning": {
+        "label": "Mañana",
+        "hours": "7:00 a. m. – 1:00 p. m."
+      },
+      "afternoon": {
+        "label": "Tarde",
+        "hours": "1:00 p. m. – 6:00 p. m."
+      },
+      "evening": {
+        "label": "Noche",
+        "hours": "6:00 p. m. – 12:00 a. m."
+      }
+    },
+    "spaces": {
+      "bedrooms": "Dormitorio principal y dormitorios secundarios",
+      "living": "Sala y sala familiar",
+      "dining": "Comedor",
+      "kitchen": "Cocina",
+      "bathrooms": "Baños (principal y de visitas)",
+      "homeOffice": "Oficina en casa / estudio",
+      "hallways": "Pasillos, escaleras y recibidores",
+      "laundry": "Cuarto de lavado",
+      "sunroom": "Solárium / patio / porche",
+      "reception": "Recepción y sala de espera",
+      "executiveOffices": "Oficinas ejecutivas privadas",
+      "workstations": "Estaciones de trabajo abiertas y cubículos",
+      "conference": "Salas de conferencias y de juntas",
+      "kitchenette": "Cocineta y sala de descanso",
+      "restrooms": "Baños (de varios cubículos e individuales)",
+      "serverRooms": "Salas de servidores y clósets de TI (con control de polvo)",
+      "corridors": "Corredores, pasillos y ascensores",
+      "storage": "Cuartos de almacenamiento y clósets de suministros",
+      "other": "Otro"
+    }
+  },
   "why": {
     "eyebrow": "Por Qué Elegirnos",
     "heading": "Un equipo comprometido con la excelencia y la satisfacción",
@@ -291,7 +339,7 @@
     "eyebrow": "Cuando Usted Quiera",
     "heading": "Reserve su limpieza en pocos minutos",
     "description": "Elija el horario que le convenga y confirmaremos los detalles. ¿Prefiere conversarlo primero? Llámenos.",
-    "primaryCta": "Reservar en línea",
+    "primaryCta": "Obtener Estimado",
     "secondaryPrefix": "o llame al",
     "trust": "Agendar es rápido y sencillo"
   },
@@ -358,17 +406,16 @@
     "hero": {
       "eyebrow": "Galería",
       "title": "Un vistazo a los espacios que cuidamos",
-      "subtitle": "Resultados residenciales, comerciales y de antes y después en todo New Jersey."
+      "subtitle": "Espacios residenciales y comerciales en todo New Jersey."
     },
     "filtersLabel": "Filtrar la galería por categoría",
     "filters": {
       "all": "Todo",
       "residential": "Residencial",
-      "commercial": "Comercial",
-      "beforeAfter": "Antes y después"
+      "commercial": "Comercial"
     },
     "empty": "Aún no hay elementos en esta categoría.",
-    "placeholderNote": "Galería de demostración: las fotografías mostradas son imágenes de archivo temporales que ilustran el diseño. Se reemplazarán por la fotografía propia de HogarPlus Solutions.",
+    "placeholderNote": "Galería de demostración: estas son fotografías de archivo temporales de espacios similares, usadas para mostrar el diseño. Se reemplazarán con las fotografías propias de HogarPlus Solutions.",
     "openItem": "Abrir imagen",
     "lightbox": {
       "label": "Visor de imágenes de la galería",
@@ -379,72 +426,66 @@
       "hint": "Use las flechas para navegar y Escape para cerrar."
     },
     "items": {
-      "teamBedroom": {
-        "title": "Dormitorio renovado",
-        "alt": "Dos profesionales de limpieza con uniforme trabajan juntas para tender una cama con ropa de cama limpia en un dormitorio luminoso."
+      "livingRoom": {
+        "title": "Sala",
+        "alt": "Una sala luminosa y recién limpiada con sofá, mesa baja y cortinas de piso a techo."
       },
-      "surfaceDetail": {
-        "title": "Limpieza detallada de superficies",
-        "alt": "Una profesional de limpieza con guantes protectores limpia una encimera de mármol en un espacio moderno."
-      },
-      "detailDusting": {
-        "title": "Desempolvado en altura",
-        "alt": "Una profesional de limpieza sobre una escalera de mano usa un plumero extensible para alcanzar una pared alta en una sala de planta abierta."
-      },
-      "supplies": {
-        "title": "Productos y equipo",
-        "alt": "Un conjunto de botellas rociadoras y envases de productos de limpieza sin marca sobre un fondo claro."
-      },
-      "office": {
-        "title": "Oficina atendida fuera de horario",
-        "alt": "Una oficina de planta abierta con escritorios ordenados, pisos limpios y papeleras vacías"
-      },
-      "lobby": {
-        "title": "Cuidado de vestíbulo comercial",
-        "alt": "El vestíbulo de un edificio comercial con pisos pulidos y puertas de vidrio limpias"
+      "kitchen": {
+        "title": "Cocina",
+        "alt": "Una cocina blanca impecable con mesones despejados, electrodomésticos de acero inoxidable y piso de baldosa."
       },
       "bathroom": {
-        "title": "Baño antes y después",
-        "alt": "Un baño antes y después de una limpieza profunda de azulejos, grifería y espejos"
+        "title": "Baño",
+        "alt": "Un baño moderno y limpio con ducha de vidrio, mueble de lavamanos y espejo pulido."
       },
-      "pantry": {
-        "title": "Despensa organizada",
-        "alt": "Una despensa antes y después de organizarse, con recipientes etiquetados y artículos agrupados"
+      "diningArea": {
+        "title": "Comedor",
+        "alt": "Un comedor luminoso con mesa pequeña y sillas junto a ventanales altos y piso de baldosa limpio."
+      },
+      "workspace": {
+        "title": "Espacio de trabajo abierto",
+        "alt": "Una planta de oficina abierta con estaciones de trabajo, alfombra modular y divisiones de vidrio limpias."
+      },
+      "reception": {
+        "title": "Recepción",
+        "alt": "Una recepción ordenada con mostrador iluminado, asientos y piso pulido."
       }
     }
   },
   "bookPage": {
     "hero": {
-      "eyebrow": "Reservar en Línea",
-      "title": "Agendar toma solo unos minutos",
-      "subtitle": "Elija un horario, cuéntenos sobre su espacio y confirmaremos los detalles antes de su visita."
+      "eyebrow": "Obtener Estimado",
+      "title": "Con dos respuestas podemos empezar",
+      "subtitle": "Cuéntenos la franja horaria que le funciona y los espacios que incluye el trabajo. Le llamamos para fijar el mejor momento para la visita."
     },
     "steps": {
       "eyebrow": "Cómo Funciona",
       "heading": "Tres pasos sencillos",
       "one": {
-        "title": "Elija un horario",
-        "description": "Seleccione en el calendario el espacio que mejor se ajuste a su semana."
+        "title": "Elija su franja horaria",
+        "description": "Mañana, tarde o noche: la franja que mejor se ajuste a su día."
       },
       "two": {
-        "title": "Cuéntenos sobre su espacio",
-        "description": "Indíquenos el tamaño de su hogar o negocio y las áreas que más le importan."
+        "title": "Indique sus espacios",
+        "description": "Marque las habitaciones y áreas que incluye el trabajo, en casa o en la oficina. Lo que falte va en «Otro»."
       },
       "three": {
-        "title": "Confirmamos los detalles",
-        "description": "Recibirá una confirmación con el alcance acordado, el horario y los próximos pasos."
+        "title": "Le llamamos para agendar la visita",
+        "description": "Envíelo por el formulario, por correo o por teléfono. Agendamos una llamada y acordamos el mejor momento para visitar su casa u oficina."
       }
     },
-    "scheduler": {
-      "eyebrow": "Agenda",
-      "heading": "Elija su cita",
-      "placeholderTitle": "Calendario de reservas próximamente",
-      "placeholderBody": "El calendario de Calendly aparecerá en este panel una vez que se conecte el enlace de agenda del cliente. Mientras tanto, puede comunicarse con nosotros y con gusto agendamos su visita.",
-      "placeholderNote": "Configure NEXT_PUBLIC_CALENDLY_URL para activar el calendario integrado.",
-      "openInNewTab": "Abrir la página de reservas",
-      "frameTitle": "Calendario de reservas en línea",
+    "request": {
+      "eyebrow": "Lo Que Necesitamos",
+      "heading": "Qué debe contarnos",
+      "timeWindowsTitle": "La franja horaria",
+      "timeWindowsBody": "Elija la franja que le convenga. Confirmamos la hora exacta en la llamada.",
+      "spacesTitle": "Los espacios",
+      "spacesBody": "La lista depende de si el trabajo es para una casa o una oficina.",
+      "nextStepTitle": "Luego le llamamos",
+      "nextStepBody": "En cuanto tengamos su franja horaria y su lista de espacios —por correo o por teléfono— agendamos una llamada con usted para fijar el mejor momento para visitar la casa u oficina.",
+      "formCta": "Envíenos los detalles",
       "alternativeTitle": "¿Prefiere conversarlo primero?",
-      "alternativeBody": "Llámenos y revisamos juntos las opciones para encontrar un horario."
+      "alternativeBody": "Llámenos y tomamos su franja horaria y sus espacios por teléfono."
     }
   },
   "contactPage": {
@@ -485,14 +526,19 @@
         "service": "Servicio",
         "language": "Idioma preferido",
         "message": "Mensaje",
-        "consent": "Acepto que me contacten sobre mi solicitud."
+        "consent": "Acepto que me contacten sobre mi solicitud.",
+        "propertyType": "¿Es para una casa o una oficina?",
+        "timeWindow": "Franja horaria preferida",
+        "spaces": "Espacios que se limpiarán",
+        "otherSpace": "Cuéntenos sobre el otro espacio"
       },
       "placeholders": {
         "name": "Su nombre completo",
         "email": "usted@ejemplo.com",
-        "phone": "(862) 000-0000",
+        "phone": "(908) 000-0000",
         "service": "Seleccione un servicio",
-        "message": "Cuéntenos sobre su espacio, las habitaciones que más importan y el horario que prefiere."
+        "message": "Cualquier otro detalle: metros cuadrados, mascotas, acceso, con qué frecuencia nos necesita.",
+        "otherSpace": "p. ej. garaje, sótano, gimnasio"
       },
       "languages": {
         "en": "Inglés",
@@ -503,7 +549,7 @@
       "submit": "Enviar mensaje",
       "submitting": "Enviando…",
       "successTitle": "Gracias: su mensaje está listo para enviarse.",
-      "successBody": "Este es un formulario de demostración, así que no se transmitió nada. Cuando se conecte el servicio de correo del cliente, este mismo envío llegará a su bandeja de entrada.",
+      "successBody": "Este es un formulario de demostración, así que no se transmitió nada. Cuando se conecte el servicio de correo del cliente, recibiremos su franja horaria y su lista de espacios, y le llamaremos para fijar el mejor momento para la visita.",
       "sendAnother": "Enviar otro mensaje",
       "errorSummary": "Revise los campos señalados.",
       "validation": {
@@ -515,7 +561,17 @@
         "languageRequired": "Elija un idioma preferido.",
         "messageMin": "Cuéntenos un poco más (mínimo 10 caracteres).",
         "messageMax": "El mensaje es demasiado largo (máximo 2000 caracteres).",
-        "consentRequired": "Confirme que podemos contactarle."
+        "consentRequired": "Confirme que podemos contactarle.",
+        "propertyTypeRequired": "Indíquenos si es para una casa o una oficina.",
+        "timeWindowRequired": "Elija una franja horaria.",
+        "spacesRequired": "Seleccione al menos un espacio.",
+        "otherSpaceRequired": "Describa el otro espacio.",
+        "otherSpaceMax": "La descripción es demasiado larga (máximo 200 caracteres)."
+      },
+      "hints": {
+        "timeWindow": "Elija la franja que le convenga. Confirmamos la hora exacta en la llamada.",
+        "spaces": "Marque todos los espacios que incluye el trabajo. Elija «Otro» si falta alguno.",
+        "choosePropertyType": "Elija casa u oficina arriba para ver la lista de espacios."
       }
     }
   },

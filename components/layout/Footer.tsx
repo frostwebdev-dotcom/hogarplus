@@ -48,7 +48,7 @@ export function Footer() {
             </p>
 
             <Link href="/book" className="btn-primary btn-sm mt-6">
-              {tCommon('bookOnline')}
+              {tCommon('getEstimate')}
             </Link>
           </div>
 

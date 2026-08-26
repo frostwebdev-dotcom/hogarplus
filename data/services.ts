@@ -35,6 +35,12 @@ export type Service = {
   includedCount: number;
   /** Marks the card that gets the subtle "most requested" emphasis. */
   featured?: boolean;
+  /**
+   * Card illustration under `public/illustrations`. Original artwork, drawn in
+   * the brand palette — the figures are the client's own crew: warm-toned,
+   * dark-haired, in branded T-shirts rather than maid uniforms.
+   */
+  illustration: string;
 };
 
 export const services: Service[] = [
@@ -42,6 +48,7 @@ export const services: Service[] = [
     id: 'residential',
     icon: 'home',
     slug: 'residential-cleaning',
+    illustration: '/illustrations/service-residential.svg',
     highlightCount: 3,
     includedCount: 5,
     featured: true
@@ -50,6 +57,7 @@ export const services: Service[] = [
     id: 'commercial',
     icon: 'building',
     slug: 'commercial-cleaning',
+    illustration: '/illustrations/service-commercial.svg',
     highlightCount: 3,
     includedCount: 5
   },
@@ -57,6 +65,7 @@ export const services: Service[] = [
     id: 'deep',
     icon: 'sparkles',
     slug: 'deep-cleaning',
+    illustration: '/illustrations/service-deep.svg',
     highlightCount: 3,
     includedCount: 5
   },
@@ -64,6 +73,7 @@ export const services: Service[] = [
     id: 'organization',
     icon: 'boxes',
     slug: 'home-organization',
+    illustration: '/illustrations/service-organization.svg',
     highlightCount: 3,
     includedCount: 5
   },
@@ -71,6 +81,7 @@ export const services: Service[] = [
     id: 'moveInOut',
     icon: 'truck',
     slug: 'move-in-move-out',
+    illustration: '/illustrations/service-move.svg',
     highlightCount: 3,
     includedCount: 5
   },
@@ -78,6 +89,7 @@ export const services: Service[] = [
     id: 'custom',
     icon: 'settings',
     slug: 'customized-plans',
+    illustration: '/illustrations/service-custom.svg',
     highlightCount: 3,
     includedCount: 5
   }

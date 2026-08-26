@@ -41,7 +41,7 @@ export default async function AboutPage({ params }: PageProps) {
         title={t('hero.title')}
         subtitle={t('hero.subtitle')}
       >
-        <PrimaryButton href="/book">{tCommon('bookOnline')}</PrimaryButton>
+        <PrimaryButton href="/book">{tCommon('getEstimate')}</PrimaryButton>
         <PrimaryButton href="/services" variant="ghostLight" withArrow>
           {tCommon('exploreServices')}
         </PrimaryButton>

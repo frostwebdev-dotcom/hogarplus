@@ -33,7 +33,7 @@ export function Hero() {
     >
       <HeroBackground label={t('videoLabel')} />
 
-      <div className="shell relative">
+      <div className="shell relative grid items-center gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-14">
         <motion.div
           className="max-w-3xl"
           variants={container}
@@ -97,6 +97,26 @@ export function Hero() {
             <span aria-hidden="true" className="h-px w-8 bg-gradient-to-r from-brand-blue to-brand-orchid" />
             {siteConfig.name} · New Jersey
           </motion.p>
+        </motion.div>
+
+        {/*
+          Original illustration of the crew. Hidden below `lg`, where the hero
+          is already tall and the copy has to carry the screen on its own.
+        */}
+        <motion.div
+          className="hidden lg:block"
+          initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, scale: 0.96 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element -- an inline SVG asset; next/image adds nothing to a vector and would need dangerouslyAllowSVG. */}
+          <img
+            src="/illustrations/team-hero.svg"
+            alt={t('illustrationAlt')}
+            width={640}
+            height={560}
+            className="mx-auto h-auto w-full max-w-[34rem]"
+          />
         </motion.div>
       </div>
 

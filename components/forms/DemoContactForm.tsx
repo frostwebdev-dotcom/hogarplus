@@ -7,6 +7,13 @@ import { useLocale, useTranslations } from 'next-intl';
 import { AlertCircle, CheckCircle2, Info, Loader2, Send } from 'lucide-react';
 
 import { services } from '@/data/services';
+import {
+  OTHER_SPACE,
+  propertyTypes,
+  spacesByPropertyType,
+  timeWindows,
+  type PropertyTypeId
+} from '@/data/intake';
 import { locales, type Locale } from '@/i18n/routing';
 import { cn } from '@/lib/utils';
 import { contactSchema, type ContactFormValues } from './contact-schema';
@@ -32,6 +39,7 @@ async function submitContactRequest(values: ContactFormValues): Promise<void> {
 export function DemoContactForm() {
   const t = useTranslations('contactPage.form');
   const tServices = useTranslations('services.items');
+  const tIntake = useTranslations('intake');
   const activeLocale = useLocale() as Locale;
 
   const formId = useId();
@@ -42,6 +50,8 @@ export function DemoContactForm() {
     register,
     handleSubmit,
     reset,
+    setValue,
+    watch,
     formState: { errors, isSubmitting }
   } = useForm<ContactFormValues>({
     resolver: zodResolver(contactSchema),
@@ -52,11 +62,27 @@ export function DemoContactForm() {
       email: '',
       phone: '',
       service: undefined,
+      propertyType: undefined,
+      timeWindow: undefined,
+      spaces: [],
+      otherSpace: '',
       language: activeLocale,
       message: '',
       consent: false as unknown as true
     }
   });
+
+  // The space checklist depends on the property type, so both are watched.
+  const propertyType = watch('propertyType') as PropertyTypeId | undefined;
+  const selectedSpaces = watch('spaces') ?? [];
+  const spaceOptions = propertyType ? spacesByPropertyType[propertyType] : [];
+  const needsOtherSpace = selectedSpaces.includes(OTHER_SPACE);
+
+  /** Switching property type invalidates the previous checklist. */
+  function onPropertyTypeChange() {
+    setValue('spaces', [], { shouldValidate: false });
+    setValue('otherSpace', '', { shouldValidate: false });
+  }
 
   async function onSubmit(values: ContactFormValues) {
     await submitContactRequest(values);
@@ -216,6 +242,139 @@ export function DemoContactForm() {
           </select>
         </Field>
       </div>
+
+      {/* Property type — decides which space checklist is shown below. */}
+      <fieldset className="flex flex-col gap-3">
+        <legend className="text-sm font-semibold text-navy">
+          {t('labels.propertyType')}{' '}
+          <span className="font-normal text-navy-400">({t('required')})</span>
+        </legend>
+
+        <div className="grid gap-3 sm:grid-cols-2">
+          {propertyTypes.map((type) => (
+            <label
+              key={type}
+              className="flex min-h-[3.25rem] cursor-pointer items-center gap-3 rounded-xl border-2 border-navy-100 px-5 transition-colors has-[:checked]:border-brand-blue has-[:checked]:bg-brand-blue/5 hover:border-brand-blue/60"
+            >
+              <input
+                type="radio"
+                value={type}
+                className="h-4 w-4 shrink-0 accent-brand-blue"
+                aria-describedby={errors.propertyType ? errorId('propertyType') : undefined}
+                {...register('propertyType', { onChange: onPropertyTypeChange })}
+              />
+              <span className="text-[0.9375rem] font-medium text-navy">
+                {tIntake(`propertyTypes.${type}.label`)}
+              </span>
+            </label>
+          ))}
+        </div>
+
+        {errors.propertyType ? (
+          <FieldError id={errorId('propertyType')}>
+            {errorText(errors.propertyType.message)}
+          </FieldError>
+        ) : null}
+      </fieldset>
+
+      {/* Time window — morning / afternoon / evening. */}
+      <fieldset className="flex flex-col gap-3">
+        <legend className="text-sm font-semibold text-navy">
+          {t('labels.timeWindow')}{' '}
+          <span className="font-normal text-navy-400">({t('required')})</span>
+        </legend>
+        <p className="-mt-1 text-sm leading-relaxed text-navy-400">{t('hints.timeWindow')}</p>
+
+        <div className="grid gap-3 sm:grid-cols-3">
+          {timeWindows.map((slot) => (
+            <label
+              key={slot}
+              className="flex min-h-[3.75rem] cursor-pointer items-center gap-3 rounded-xl border-2 border-navy-100 px-4 py-3 transition-colors has-[:checked]:border-brand-blue has-[:checked]:bg-brand-blue/5 hover:border-brand-blue/60"
+            >
+              <input
+                type="radio"
+                value={slot}
+                className="h-4 w-4 shrink-0 accent-brand-blue"
+                aria-describedby={errors.timeWindow ? errorId('timeWindow') : undefined}
+                {...register('timeWindow')}
+              />
+              <span className="flex flex-col">
+                <span className="text-[0.9375rem] font-medium text-navy">
+                  {tIntake(`timeWindows.${slot}.label`)}
+                </span>
+                <span className="text-sm text-navy-400">
+                  {tIntake(`timeWindows.${slot}.hours`)}
+                </span>
+              </span>
+            </label>
+          ))}
+        </div>
+
+        {errors.timeWindow ? (
+          <FieldError id={errorId('timeWindow')}>{errorText(errors.timeWindow.message)}</FieldError>
+        ) : null}
+      </fieldset>
+
+      {/* Spaces — the checklist swaps with the property type above. */}
+      <fieldset className="flex flex-col gap-3">
+        <legend className="text-sm font-semibold text-navy">
+          {t('labels.spaces')}{' '}
+          <span className="font-normal text-navy-400">({t('required')})</span>
+        </legend>
+        <p className="-mt-1 text-sm leading-relaxed text-navy-400">{t('hints.spaces')}</p>
+
+        {propertyType ? (
+          <>
+            <div className="grid gap-x-4 gap-y-1 sm:grid-cols-2">
+              {spaceOptions.map((space) => (
+                <label
+                  key={space}
+                  className="flex cursor-pointer items-start gap-3 rounded-lg px-2 py-2 text-[0.9375rem] leading-relaxed text-navy-600 transition-colors hover:bg-surface"
+                >
+                  <input
+                    type="checkbox"
+                    value={space}
+                    className="mt-0.5 h-5 w-5 shrink-0 accent-brand-blue"
+                    aria-describedby={errors.spaces ? errorId('spaces') : undefined}
+                    {...register('spaces')}
+                  />
+                  <span>{tIntake(`spaces.${space}`)}</span>
+                </label>
+              ))}
+            </div>
+
+            {needsOtherSpace ? (
+              <div className="mt-1">
+                <Field
+                  id={fieldId('otherSpace')}
+                  label={t('labels.otherSpace')}
+                  note={t('required')}
+                  error={errorText(errors.otherSpace?.message)}
+                  errorId={errorId('otherSpace')}
+                >
+                  <input
+                    id={fieldId('otherSpace')}
+                    type="text"
+                    placeholder={t('placeholders.otherSpace')}
+                    aria-invalid={Boolean(errors.otherSpace)}
+                    aria-describedby={errors.otherSpace ? errorId('otherSpace') : undefined}
+                    className={inputClass(Boolean(errors.otherSpace))}
+                    {...register('otherSpace')}
+                  />
+                </Field>
+              </div>
+            ) : null}
+          </>
+        ) : (
+          <p className="rounded-card border border-dashed border-navy-100 bg-surface px-4 py-3 text-sm text-navy-400">
+            {t('hints.choosePropertyType')}
+          </p>
+        )}
+
+        {errors.spaces ? (
+          <FieldError id={errorId('spaces')}>{errorText(errors.spaces.message)}</FieldError>
+        ) : null}
+      </fieldset>
 
       {/* Preferred language */}
       <fieldset className="flex flex-col gap-3">

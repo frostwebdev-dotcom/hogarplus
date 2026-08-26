@@ -102,7 +102,7 @@ export function Header() {
             <LanguageSwitcher tone="light" />
             <ClickToCallButton variant="button" tone="light" className="hidden xl:inline-flex" />
             <Link href="/book" className="btn-primary btn-sm">
-              {tCommon('bookOnline')}
+              {tCommon('getEstimate')}
             </Link>
           </div>
 
@@ -113,7 +113,7 @@ export function Header() {
           <div className="flex items-center gap-2 lg:hidden">
             <LanguageSwitcher tone="light" compact />
             <Link href="/book" className="btn-primary btn-sm hidden sm:inline-flex">
-              {tCommon('bookOnline')}
+              {tCommon('getEstimate')}
             </Link>
             <button
               id={MENU_TRIGGER_ID}

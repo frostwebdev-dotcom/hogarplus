@@ -60,7 +60,7 @@ components/
                        Testimonials, CountyLocator, BookingCTA
   services/            ServiceCard, ServiceChecklist
   gallery/             GalleryGrid, GalleryLightbox, GalleryTile
-  booking/             BookingPanel (Calendly-ready)
+  booking/             BookingPanel (intake requirements)
   forms/               DemoContactForm, contact-schema
   ui/                  PrimaryButton, SectionHeading, PageHero, ValueBadge,
                        ClickToCallButton, GradientPanel, Reveal, Icon
@@ -98,12 +98,9 @@ only to override something per environment:
 NEXT_PUBLIC_SITE_URL=
 NEXT_PUBLIC_PHONE=
 NEXT_PUBLIC_EMAIL=
-NEXT_PUBLIC_CALENDLY_URL=
 ```
 
-`NEXT_PUBLIC_CALENDLY_URL` is the only genuinely missing value — the client has
-not supplied a scheduling link, so the Book Online page shows a designed
-placeholder until one exists.
+Every value has a working default, so nothing is missing to run the demo.
 
 ## Demo content — what must be replaced
 
@@ -114,9 +111,16 @@ The remaining placeholder material is centralised and marked:
 - **`messages/{en,es}.json`** — the "what's included" service checklists are
   written for the demo and carry a visible notice on the page plus
   `TODO(client)` comments in the components that render them.
+- **`public/images/`** — six temporary stock photographs of *spaces*, listed
+  with their sources in that folder's README.
 - **`public/brand/README.md`**, **`public/images/README.md`** and
   **`public/videos/README.md`** — exactly what to supply and which config field
   to point at each asset.
+
+Not placeholder material: **`public/illustrations/`** is original artwork drawn
+for the client — the hero scene and the six service-card illustrations. The crew
+is depicted as it is: Colombian, in branded T-shirts. See that folder's README
+before editing any of it.
 
 Deliberately **not** claimed anywhere: certifications, years in business,
 customer counts, star ratings, guarantees, insurance, background checks,
@@ -144,4 +148,8 @@ everywhere. All animation is gated on `prefers-reduced-motion`.
 ## Not in this phase
 
 Real form delivery (the submit handler is a documented stub in
-`DemoContactForm.tsx`), a Calendly account, a CMS, analytics, and deployment.
+`DemoContactForm.tsx`), an online scheduling calendar, a CMS, analytics, and
+deployment.
+
+Booking is deliberately a phone-call flow: the visitor gives us a window of time
+and a list of spaces (see `data/intake.ts`), and we call back to agree a visit.

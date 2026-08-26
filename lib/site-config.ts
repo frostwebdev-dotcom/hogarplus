@@ -14,8 +14,7 @@
 const env = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
   phone: process.env.NEXT_PUBLIC_PHONE,
-  email: process.env.NEXT_PUBLIC_EMAIL,
-  calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL
+  email: process.env.NEXT_PUBLIC_EMAIL
 };
 
 /* ── Confirmed business details (source: client brand flyer) ─────────────── */
@@ -87,8 +86,6 @@ export const siteConfig = {
     ogImage: '/brand/hogarplus-brand-flyer.jpeg'
   },
 
-  /** Empty string means "not configured" — the booking page handles that. */
-  calendlyUrl: env.calendlyUrl?.trim() || '',
 
   /**
    * Social profiles. Empty on purpose — an empty array emits no `sameAs`
@@ -107,11 +104,7 @@ export const siteConfig = {
     'somerset',
     'middlesex',
     'monmouth'
-  ] as const,
-
-  flags: {
-    hasCalendly: Boolean(env.calendlyUrl?.trim())
-  }
+  ] as const
 } as const;
 
 export type CountyId = (typeof siteConfig.counties)[number];

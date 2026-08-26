@@ -73,11 +73,11 @@ export default async function BookPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Scheduler */}
-      <section className="section bg-white" aria-labelledby="book-scheduler-heading">
+      {/* What we need before a visit */}
+      <section className="section bg-white" aria-labelledby="book-request-heading">
         <div className="shell">
-          <h2 id="book-scheduler-heading" className="sr-only">
-            {t('scheduler.heading')}
+          <h2 id="book-request-heading" className="sr-only">
+            {t('request.heading')}
           </h2>
 
           <div className="grid gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] lg:gap-10">
@@ -85,9 +85,9 @@ export default async function BookPage({ params }: PageProps) {
 
             <Reveal delay={0.08} className="flex flex-col gap-6">
               <div className="rounded-panel border border-navy-100 bg-surface p-6 shadow-card sm:p-7">
-                <h3 className="font-heading text-xl text-navy">{t('scheduler.alternativeTitle')}</h3>
+                <h3 className="font-heading text-xl text-navy">{t('request.alternativeTitle')}</h3>
                 <p className="mt-3 text-[0.9375rem] leading-relaxed text-navy-500">
-                  {t('scheduler.alternativeBody')}
+                  {t('request.alternativeBody')}
                 </p>
 
                 <div className="mt-6 flex flex-col gap-3">

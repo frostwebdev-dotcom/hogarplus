@@ -195,7 +195,7 @@ export function MobileNavigation({ isOpen, onClose, triggerId }: MobileNavigatio
                   onClick={onClose}
                   className="btn-primary w-full"
                 >
-                  {tCommon('bookOnline')}
+                  {tCommon('getEstimate')}
                 </Link>
 
                 <ClickToCallButton variant="button" tone="light" className="w-full justify-center" />

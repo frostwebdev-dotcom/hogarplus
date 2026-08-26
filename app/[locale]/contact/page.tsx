@@ -36,7 +36,7 @@ export default async function ContactPage({ params }: PageProps) {
           {siteConfig.phone}
         </PrimaryButton>
         <PrimaryButton href="/book" variant="ghostLight" withArrow>
-          {tCommon('bookOnline')}
+          {tCommon('getEstimate')}
         </PrimaryButton>
       </PageHero>
 
